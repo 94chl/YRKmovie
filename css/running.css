@@ -1,0 +1,117 @@
+.container .current.listWrap {
+  width:1050px;
+  background: yellow;
+  margin:0 auto;
+  position: relative;
+}
+
+.container .current.listWrap .current.listTitle {
+  height:30px;
+  line-height: 30px;
+  background: #fff;
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .current.listWrap .current.listOrder {
+  position: absolute;
+  top:5px;
+  right:0;;
+}
+
+.container .current.listWrap .current.listOrder button {
+  float:left;
+  width:100px;
+  height:20px;
+  background: red;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.container .current.list .current.movie {
+  width:240px;
+  margin-left:30px;
+  margin-top:30px;
+  float:left;
+}
+
+.container .current.list .current.movie:last-child {
+  margin-bottom: 30px;
+}
+
+.container .current.list .current.movie {
+  position: relative;
+}
+
+.container .current.list .current.movie .poster {
+  width:240px;
+  height:343px;
+  background: #fff;
+}
+
+.container .current.list .current.movie .posterMenu {
+  display: block;
+  width:240px;
+  height:343px;
+  position: absolute;
+  background: skyblue;
+  top:0;
+  left:0;
+  display: none;
+}
+
+.container .current.list .current.movie .posterMenu div {
+  word-break: keep-all;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .current.list .current.movie .posterMenu.now {
+  display: block;
+}
+
+.container .current.list .current.movie .posterMenu>div {
+  width:220px;
+  height:253px;
+  background: #ddd;
+  margin:10px;
+  margin-bottom: 0;
+}
+
+.container .current.list .current.movie .posterMenu ul {
+  width:200px;
+  height:30px;
+  background: red;
+  margin:25px auto;
+}
+
+.container .current.list .current.movie .posterMenu ul li {
+  text-align: center;
+  float: left;
+  height:30px;
+  line-height: 30px;
+  background: orange;
+  width: 90px;
+  margin-left: 20px
+}
+
+.container .current.list .current.movie .posterMenu ul li:first-child {
+  margin-left: 0;
+}
+
+
+.container .current.list .current.movie .posterMenu ul li a {
+  display: block;
+  width: 100%;
+  height:100%;
+}
+
+.container .current.list .current.movie .posterMenu ul li a:hover {
+  background: #fff;
+}
+
+.container .current.list .current.movie .title {
+  font-weight: bold;
+  font-size: 16px;
+}

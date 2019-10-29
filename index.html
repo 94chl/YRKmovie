@@ -1,0 +1,766 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Naver Movie</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div id="headerWrap" class="clearfix">
+
+        <div class="headerBox">
+          <h1 id="logo"><a href="./index.html">로고</a></h1>
+        </div>
+
+        <div id="searchBox">
+          <form action="get">
+            <input type="text" name="search" id="search" placeholder="영화검색">
+            <input type="button" id="searchButton" value="검색">
+          </form>
+        </div>
+
+        <nav id="subnav">
+          <div id="loginBox">로그인</div>
+        </nav>
+      </div>
+
+      <nav class="headerNav">
+        <ul>
+          <li>
+            <a href="./index.html" class="now">홈</a>
+          </li>
+          <li>
+            <a href="./running/current.html">상영작, 예정작</a>
+            <ul>
+              <li class="headerNavList"><a href="./running/current.html">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="./running/premovie.html">개봉 예정영화</a></li>
+              <li class="headerNavList"><a href="./running/movieclip.html">예고편</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./rank/ranking.html">영화랭킹</a>
+            <ul>
+              <li class="headerNavList"><a href="./rank/ranking.html">랭킹</a></li>
+              <li class="headerNavList"><a href="./rank/directory.html">디렉토리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./ticket/reserve.html">예매</a>
+            <ul>
+              <li class="headerNavList"><a href="./ticket/reserve.html">예매하기</a></li>
+              <li class="headerNavList"><a href="./ticket/orderList.html">예매확인, 취소</a></li>
+              <li class="headerNavList"><a href="./ticket/coupon.html">예매권, 할인권 등록</a></li>
+              <li class="headerNavList"><a href="./ticket/discountCard.html">할인카드 안내, 등록</a></li>
+              <li class="headerNavList"><a href="#">이용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./point/point.html">평점, 리뷰</a>
+            <ul>
+              <li class="headerNavList"><a href="./point/point.html">네티즌 평점</a></li>
+              <li class="headerNavList"><a href="./point/review.html">네티즌 리뷰</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">다운로드</a>
+          </li>
+          <li>
+            <a href="#">인디극장</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--header(공통사항)-->
+
+    <div class="container">
+      <section class="sliderBox">
+        <div class="sliderWrap">
+          <button type="button" class="sliderBtn prev">
+            Prev
+          </button>
+          <ul>
+            <li class="slider slide1">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide2">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide3">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide4">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide5">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide6">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="slideList">
+                  <img src="" alt="movie_poster" width="100%" height="100%">
+                  <div class="listClickMenu">
+                    <ul>
+                      <li><a href="./movieDetail/main.html">상세보기</a></li>
+                      <li><a href="./ticket/reserve.html">예매하기</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button type="button" class="sliderBtn next">
+            Next
+          </button>
+
+          <div class="sliderBtnBox">
+            <ul class="sliderMenu">
+              <li class="sliderBtn1">예매순</li>
+              <li class="sliderBtn2">현재상영작</li>
+              <li class="sliderBtn3">개봉예정작</li>
+              <li class="sliderBtn4">평점순</li>
+              <li class="sliderBtn5">박스오피스</li>
+              <li class="sliderBtn6">다운로드순</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contentsWrap">
+        <article class="reviewSpotlight">
+          <div class="review">
+            <div>평점 &amp; 리뷰</div>
+            <ul>
+              <li class="reviewList now"><a href="#">1번</a></li>
+              <li class="reviewList"><a href="#">2번</a></li>
+              <li class="reviewList"><a href="#">3번</a></li>
+              <li class="reviewList"><a href="#">4번</a></li>
+            </ul>
+          </div>
+          <div class="spotlight">
+            <div>스포트라이트</div>
+          </div>
+        </article>
+        <article class="trailer">
+          <div>예고편</div>
+          <ul>
+            <li class="trailerList"><a href="#">1번</a></li>
+            <li class="trailerList"><a href="#">2번</a></li>
+            <li class="trailerList"><a href="#">3번</a></li>
+            <li class="trailerList"><a href="#">4번</a></li>
+          </ul>
+          <a href="#">더보기</a>
+        </article>
+        <article class="photo">
+          <div>포토</div>
+          <ul>
+            <li class="photoList"><a href="#">1번</a></li>
+            <li class="photoList"><a href="#">2번</a></li>
+            <li class="photoList"><a href="#">3번</a></li>
+            <li class="photoList"><a href="#">4번</a></li>
+            <li class="photoList"><a href="#">5번</a></li>
+          </ul>
+        </article>
+      </section>
+    </div>
+
+    <div id="notice" class='clearfix'>
+      <div>공지사항</div>
+      <div><a href="#">가나다라마바사</a></div>
+    </div>
+
+    <table id="treeData"></table>
+
+  </div>
+  <!--wrap-->
+
+  <footer>
+    <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
+  </footer>
+
+  <button type="button" id="topBtn">TOP</button>
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>

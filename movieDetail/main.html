@@ -1,0 +1,224 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Naver Movie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/movieDetail.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div id="headerWrap" class="clearfix">
+
+        <div class="headerBox">
+          <h1 id="logo"><a href="../index.html">로고</a></h1>
+        </div>
+
+        <div id="searchBox">
+          <form action="get">
+            <input type="text" name="search" id="search" placeholder="영화검색">
+            <input type="button" id="searchButton" value="검색">
+          </form>
+        </div>
+
+        <nav id="subnav">
+          <div id="loginBox">로그인</div>
+        </nav>
+      </div>
+
+      <nav class="headerNav">
+        <ul>
+          <li>
+            <a href="../index.html">홈</a>
+          </li>
+          <li>
+            <a href="../running/current.html">상영작, 예정작</a>
+            <ul>
+              <li class="headerNavList"><a href="../running/current.html">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="../running/premovie.html">개봉 예정영화</a></li>
+              <li class="headerNavList"><a href="../running/movieclip.html">예고편</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../rank/ranking.html">영화랭킹</a>
+            <ul>
+              <li class="headerNavList"><a href="../rank/ranking.html">랭킹</a></li>
+              <li class="headerNavList"><a href="../rank/directory.html">디렉토리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../ticket/reserve.html">예매</a>
+            <ul>
+              <li class="headerNavList"><a href="../ticket/reserve.html">예매하기</a></li>
+              <li class="headerNavList"><a href="../ticket/orderList.html">예매확인, 취소</a></li>
+              <li class="headerNavList"><a href="../ticket/coupon.html">예매권, 할인권 등록</a></li>
+              <li class="headerNavList"><a href="../ticket/discountCard.html">할인카드 안내, 등록</a></li>
+              <li class="headerNavList"><a href="#">이용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../point/point.html">평점, 리뷰</a>
+            <ul>
+              <li class="headerNavList"><a href="../point/point.html">네티즌 평점</a></li>
+              <li class="headerNavList"><a href="../point/review.html">네티즌 리뷰</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">다운로드</a>
+          </li>
+          <li>
+            <a href="#">인디극장</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--header(공통사항)-->
+
+    <div class="container">
+
+      <section class="contentsWrap">
+
+        <article class="trailerWrap">
+          <div class="player">
+            <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <button type="button" class="up">up</button>
+          <ul class="trailers"></ul>
+          <button type="button" class="down">down</button>
+        </article>
+
+        <article class="outlineWrap clearfix">
+          <div class="poster"><img src="" alt="poster" width="100%" height="100%"></div>
+          <div class="outlines">
+            <div class="title"></div>
+            <div class="outlineMenu">
+              <div>개요</div>
+              <ul class="outline">
+                <li class="genre"></li>
+                <li class="nation"></li>
+                <li class="runningTime"></li>
+                <li class="release"></li>
+              </ul>
+            </div>
+            <div class="outlineMenu">
+              <div>감독</div>
+              <div class="director"></div>
+            </div>
+            <div class="outlineMenu">
+              <div>주연</div>
+              <div class="actor"></div>
+            </div>
+            <div class="outlineMenu">
+              <div>등급</div>
+              <div class="filmRating"></div>
+            </div>
+            <div class="outlineMenu">
+              <div>평점</div>
+              <div class="rating"></div>
+            </div>
+            <div class="ticketing outlineMenu">
+              <button type="button" name="reserve" class="reserveBtn">예매</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="detailsWrap clearfix">
+
+          <nav class="detailsNav">
+            <a href="./main.html" class="tab now">주요정보</a>
+            <a href="./crew.html" class="tab">배우 &amp; 출연진</a>
+            <a href="./grade.html" class="tab">평점</a>
+          </nav>
+
+          <div class="details">
+            <div class="story">
+              <div class="detailsTab">
+                <p>줄거리</p>
+              </div>
+              <div class="storylineWrap">
+                <h3 class='keyword'>헤드라인</h3>
+                <p class='storyline'>줄거리</p>
+              </div>
+            </div>
+
+            <div class="shortActorDirector">
+              <div class="detailsTab">
+                <p>배우 &amp; 제작진</p>
+                <button type='button' class="more">더보기</button>
+              </div>
+              <ul>
+                <!--최대 6명-->
+              </ul>
+            </div>
+
+            <div class="shortRatings">
+              <div class="detailsTab">
+                <p>평점</p>
+                <button type='button' class="more">더보기</button>
+              </div>
+              <ul class='grades'>
+                <li class="grade clearfix">
+                  <div class="point">평점</div>
+                  <div class="commentWrap">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="writerWrap">
+                      <div class="writer">작성자</div>
+                      <div class="writeDate">작성날짜</div>
+                      <div class="report"><a href="#">신고</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="grade clearfix">
+                  <div class="point">평점</div>
+                  <div class="commentWrap">
+                    <p>감상평</p>
+                    <div class="writerWrap">
+                      <div class="writer">작성자</div>
+                      <div class="writeDate">작성날짜</div>
+                      <div class="report"><a href="#">신고</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="grade clearfix">
+                  <div class="point">평점</div>
+                  <div class="commentWrap">
+                    <p>감상평</p>
+                    <div class="writerWrap">
+                      <div class="writer">작성자</div>
+                      <div class="writeDate">작성날짜</div>
+                      <div class="report"><a href="#">신고</a></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <div id="notice" class='clearfix'>
+      <div>공지사항</div>
+      <div><a href="#">가나다라마바사</a></div>
+    </div>
+  </div>
+  <!--wrap-->
+
+  <footer>
+    <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
+  </footer>
+
+  <button type="button" id="topBtn">TOP</button>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/movieDetail.js"></script>
+</body>
+
+</html>

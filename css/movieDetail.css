@@ -1,0 +1,488 @@
+.container .contentsWrap {
+  width:1050px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.container .contentsWrap .trailerWrap {
+  width:780px;
+  height:360px;
+  margin:0 auto;
+  position: relative;
+  padding-top: 5px;
+}
+
+.container .contentsWrap .trailerWrap .player {
+  width: 640px;
+  height: 360px;
+  background: gold;
+  float:left;
+}
+
+.container .contentsWrap .trailerWrap .trailers {
+  float: left;
+  width:140px;
+  height: 300px;
+  margin-top: 28px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container .contentsWrap .trailerWrap .trailers .trailer {
+  margin: 3px;
+}
+
+.container .contentsWrap .trailerWrap .trailers .trailer .videos {
+  height: 100px;
+  cursor: pointer;
+}
+
+.container .contentsWrap .trailerWrap .trailers .trailer.hidden {
+  display: none;
+}
+
+.container .contentsWrap .trailerWrap>button {
+  width: 140px;
+  height: 28px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .contentsWrap .trailerWrap>button.up {
+  position: absolute;
+  top:5px;
+  right: 0;
+}
+
+.container .contentsWrap .trailerWrap>button.down {
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+
+.container .outlineWrap {
+  margin-top: 5px;
+  background: #ddd;
+  clear: both;
+}
+
+.container .outlineWrap>div {
+  text-indent: 10px;
+}
+
+.container .outlineWrap .outlines {
+  float: left;
+}
+
+.container .outlineWrap .outlineMenu {
+  clear: both;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.container .outlineWrap .outlineMenu:last-child {
+  margin-bottom: 0;
+}
+
+.container .outlineWrap .outlineMenu > div{
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+
+.container .outlineWrap .poster {
+  width:195px;
+  height:280px;
+  background: skyblue;
+  float: left;
+  text-indent: 0;
+}
+
+.container .outlineWrap .title {
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .outlineWrap .outline {
+  width:855px;
+  height: 20px;
+  background: #fff;
+}
+
+.container .outlineWrap .outline li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 5px;
+  margin-left: 0;
+  padding-right: 10px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+
+.container .outlineWrap .outline li:last-child {
+  border:none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.container .outlineMenu.ticketing .reserveBtn{
+  cursor: pointer;
+  background: pink;
+}
+
+.container .detailsWrap {
+  margin-top: 5px;
+  background: lightgreen;
+}
+
+.container .detailsWrap .detailsNav {
+  background: skyblue;
+  width: 100%;
+  height: 50px;
+}
+
+.container .detailsWrap .detailsNav .tab {
+  float: left;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.container .detailsWrap .detailsNav .tab.now {
+  background: blue;
+  color:#fff;
+}
+
+.container .detailsWrap .detailsNav .tab:hover {
+  color:red;
+  font-weight: bold;
+}
+
+.container .detailsWrap .details {
+  clear:both;
+  padding:0 15px;
+}
+
+.container .detailsWrap .details>div {
+  clear:both;
+}
+
+.container .detailsWrap .details .detailsTab {
+  margin-top:20px;
+}
+
+.container .detailsWrap .details .detailsTab button {
+  float:right;
+  cursor: pointer;
+}
+
+.container .detailsWrap .details .detailsTab p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  float:left;
+}
+
+.container .detailsWrap .details .story .storylineWrap {
+  clear: both;
+  text-indent: 10px;
+}
+
+.container .detailsWrap .details .story .storylineWrap .keyword {
+ font-size: 1.2em;
+ margin-bottom: 10px;
+}
+
+.container .detailsWrap .details .shortActorDirector ul {
+  clear:both;
+}
+
+.container .detailsWrap .details .shortActorDirector ul li {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width:170px;
+  float:left;
+  margin-bottom: 10px;
+}
+
+.container .detailsWrap .details .shortActorDirector ul li div {
+  margin: 0 15px;
+  margin-bottom: 10px;
+}
+
+.container .detailsWrap .details .shortActorDirector ul li .picture {
+  width:140px;
+  height:175px;
+  background: yellow;
+}
+
+.container .detailsWrap .details .shortRatings .grades {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade {
+  clear:both;
+  background: #fff;
+  width:100%;
+  min-height:60px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .point {
+  float:left;
+  background: orange;
+  margin:10px;
+  width:200px;
+  height: 40px;
+  line-height:40px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .commentWrap {
+  float:left;
+  background: gold;
+  margin:10px;
+  margin-left:0;
+  width:790px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .commentWrap p{
+  margin:10px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap {
+  float: right;
+  margin-right:10px;
+  margin-bottom: 10px;
+  background: pink;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap div {
+  float:left;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .writer {
+  padding-right: 5px;
+  border-right: 1px solid #000;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .writeDate {
+  margin-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #000;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .report {
+  margin-left: 5px;
+}
+
+/*crew*/
+
+
+.container .detailsWrap .crewWrap>div {
+  clear:both;
+  margin: 10px;
+}
+
+.container .detailsWrap .crewWrap .crewTab {
+  background: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .detailsWrap .crewWrap>div>ul {
+  margin-top:10px;
+}
+
+.container .detailsWrap .crewWrap>div>ul>li {
+  width:515px;
+  float:left;
+  margin-bottom: 10px;
+}
+
+.container .detailsWrap .crewWrap>div>ul>li>div {
+  float:left;
+  width:365px;
+  margin-bottom: 10px;
+}
+
+.container .detailsWrap .crewWrap>div ul li .picture {
+  width:140px;
+  height:175px;
+  background: yellow;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.container .detailsWrap .crewWrap>div>ul>li>.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .detailsWrap .crewStaff ul li .job {
+  width:140px;
+  background: yellow;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.container .detailsWrap .crewWrap .crewStaff {
+  background: pink;
+}
+
+.container .detailsWrap .crewWrap .crewStaff>ul {
+  background: orange;
+}
+
+.container .detailsWrap .crewWrap .crewStaff>ul>li {
+  clear: both;
+  width: 1030px;
+}
+
+.container .detailsWrap .crewWrap .crewStaff ul li .names {
+  width:870px;
+  background: lightgreen;
+  float:left;
+  margin-right: 10px;
+  padding:0;
+}
+
+.container .detailsWrap .crewWrap .crewStaff ul li .names .name {
+  float: left;
+  background: skyblue;
+  width:435px;
+}
+
+.container .detailsWrap .crewWrap .crewCompany table tr td:first-child {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+}
+
+/*grade*/
+
+.container .detailsWrap .gradeWrap>div {
+  clear:both;
+  margin: 10px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab {
+  background: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li {
+  position: relative;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li div{
+  float: left;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li .graphBy {
+  clear: both;
+  position: absolute;
+  top:0;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li .graphBy.netizen {
+  left:0;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li .graphBy.audience {
+  right:0;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li .graphTotal {
+  clear: both;
+  margin-top:20px;
+}
+
+.container .detailsWrap .gradeWrap .graphWrap ul li .graphBar {
+  clear: both;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade {
+  clear:both;
+  width:100%;
+  min-height:60px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .point {
+  float:left;
+  background: orange;
+  margin:10px;
+  margin-left: 0;
+  width:200px;
+  height: 40px;
+  line-height:40px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .commentWrap {
+  float:left;
+  background: gold;
+  margin:10px 0;
+  width:820px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .commentWrap p{
+  margin:10px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap {
+  float: left;
+  margin-right:10px;
+  margin-bottom: 10px;
+  background: pink;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap div {
+  float:left;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .writer {
+  padding-right: 5px;
+  border-right: 1px solid #000;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .writeDate {
+  margin-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #000;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .report {
+  margin-left: 5px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .likeWrap {
+  float: right;
+  margin-right:10px;
+  margin-bottom: 10px;
+  background: pink;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .likeWrap button {
+  float:left;
+  cursor: pointer;
+  margin-left: 5px;
+}

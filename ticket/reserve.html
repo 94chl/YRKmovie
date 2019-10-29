@@ -1,0 +1,193 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Naver Movie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/ticket.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div id="headerWrap" class="clearfix">
+
+        <div class="headerBox">
+          <h1 id="logo"><a href="../index.html">로고</a></h1>
+        </div>
+
+        <div id="searchBox">
+          <form action="get">
+            <input type="text" name="search" id="search" placeholder="영화검색">
+            <input type="button" id="searchButton" value="검색">
+          </form>
+        </div>
+
+        <nav id="subnav">
+          <div id="loginBox">로그인</div>
+        </nav>
+      </div>
+
+      <nav class="headerNav">
+        <ul>
+          <li>
+            <a href="../index.html">홈</a>
+          </li>
+          <li>
+            <a href="../running/current.html">상영작, 예정작</a>
+            <ul>
+              <li class="headerNavList"><a href="../running/current.html">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="../running/premovie.html">개봉 예정영화</a></li>
+              <li class="headerNavList"><a href="../running/movieclip.html">예고편</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../rank/ranking.html">영화랭킹</a>
+            <ul>
+              <li class="headerNavList"><a href="../rank/ranking.html">랭킹</a></li>
+              <li class="headerNavList"><a href="../rank/directory.html">디렉토리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./reserve.html" class="now">예매</a>
+            <ul>
+              <li class="headerNavList"><a href="./reserve.html">예매하기</a></li>
+              <li class="headerNavList"><a href="./orderList.html">예매확인, 취소</a></li>
+              <li class="headerNavList"><a href="./coupon.html">예매권, 할인권 등록</a></li>
+              <li class="headerNavList"><a href="./discountCard.html">할인카드 안내, 등록</a></li>
+              <li class="headerNavList"><a href="#">이용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../point/point.html">평점, 리뷰</a>
+            <ul>
+              <li class="headerNavList"><a href="../point/point.html">네티즌 평점</a></li>
+              <li class="headerNavList"><a href="../point/review.html">네티즌 리뷰</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">다운로드</a>
+          </li>
+          <li>
+            <a href="#">인디극장</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--header(공통사항)-->
+
+    <div class="container clearfix">
+
+      <section class="contentsWrap">
+        <div class="reservationInfoWrap">
+          <ul id="reservationInfo">
+            <li class="reserveInfo poster selected"><img src="../img/default_movieSelect.jpg" alt="poster" width="100%" height="100%"></li>
+            <li class="reserveInfo title">
+              <p class="menu">제목</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo point">
+              <p class="menu">평점</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo theater">
+              <p class="menu">극장</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo date">
+              <p class="menu">날짜</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo people">
+              <p class="menu">인원</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo seat">
+              <p class="menu">좌석</p>
+              <p class="selected"></p>
+            </li>
+            <li class="reserveInfo sum">
+              <p class="menu">금액</p>
+              <p class="selected"></p>
+            </li>
+          </ul>
+          <button type="button" name="reservationBtn" class="reservationBtn">예매하기</button>
+        </div>
+
+        <ul id="tabs">
+          <li class="tab movie"><button type="button" name="tabBtn" class="tabBtn">영화선택</button></li>
+          <li class="tab theater"><button type="button" name="tabBtn" class="tabBtn">극장선택</button></li>
+          <li class="tab date"><button type="button" name="tabBtn" class="tabBtn">날짜선택</button></li>
+          <li class="tab time"><button type="button" name="tabBtn" class="tabBtn">상영시간</button></li>
+          <li class="tab people"><button type="button" name="tabBtn" class="tabBtn">인원선택</button></li>
+        </ul>
+
+        <div id="processes">
+          <div class="process movie">
+            <div class="order">
+              <button type="button" name="button" class="orderBtn abc">가나다순</button>
+              <button type="button" name="button" class="orderBtn ranking clicked">예매순</button>
+            </div>
+            <ul class="movieList">
+              <li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">영화제목</button></li>
+            </ul>
+          </div>
+
+          <div class="process theater clearfix">
+
+            <ul class="regionList">
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">서울</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">경기 / 인천</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">부산 / 울산 / 경남</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">대구 / 경북</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">대전 / 충청 / 세종</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">광주 / 전라</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">강원</button></li>
+              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">제주</button></li>
+            </ul>
+
+            <div class="theaterList">
+              <ul>
+                <div>강남구</div>
+                <li class="theaters"><button type="button" name="theater" class="selectBtn theater">롯데시네마 브로드웨이</button></li>
+                <li class="theaters"><button type="button" name="theater" class="selectBtn theater">메가박스 시티</button></li>
+                <li class="theaters"><button type="button" name="theater" class="selectBtn theater">메가박스 코엑스</button></li>
+              </ul>
+              <button type="button" name="close" class="closeBtn">X</button>
+            </div>
+          </div>
+
+          <div class="process date">
+            <div id="datepicker"></div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <div id="notice" class='clearfix'>
+      <div>공지사항</div>
+      <div><a href="#">가나다라마바사</a></div>
+    </div>
+  </div>
+  <!--wrap-->
+
+  <footer>
+    <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
+  </footer>
+
+  <button type="button" id="topBtn">TOP</button>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/ticket.js"></script>
+
+</body>
+
+</html>

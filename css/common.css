@@ -1,0 +1,198 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap{
+  position: relative;
+  background: pink;
+}
+
+/*header*/
+
+#wrap header {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top:0;
+  left:0;
+  background: #fff;
+}
+
+#headerWrap {
+  width: 1050px;
+  height:40px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.headerBox {
+  float:left;
+}
+
+#logo {
+  background: rgb(0, 213, 100);
+  float: left;
+  width:200px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#logo a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#logo a img {
+
+}
+
+#searchBox {
+  float:right;
+  margin-right: 10px;
+}
+
+#searchBox #search {
+  height: 30px;
+  width: 150px;
+  margin-top: 5px;
+}
+
+#searchButton {
+  margin-left:-5px;
+  background: rgb(0, 213, 100);
+  border:none;
+  height:30px;
+  width:40px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#subnav {
+  float:right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#subnav #loginBox {
+  border: 1px solid #ddd;
+  font-size: 10px;
+  text-align: center;
+  width: 40px;
+  height:20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.headerNav {
+  height:40px;
+  clear:both;
+  background: rgb(0, 213, 100);
+}
+
+.headerNav>ul {
+  width:1050px;
+  margin: 0 auto;
+}
+
+.headerNav>ul>li {
+  float:left;
+  width:140px;
+  height:40px;
+  line-height: 40px;
+}
+
+.headerNav>ul>li:hover>a {
+  color:red;
+  background: green;
+}
+
+.headerNav>ul>li a.now {
+  color:red;
+  font-weight: bold;
+  background: rgb(255, 255, 255,0.3);
+}
+
+.headerNav>ul>li>a {
+  display: block;
+  width:100%;
+  height: 100%;
+  text-align: center;
+}
+
+.headerNav>ul>li ul {
+  display: none;
+}
+
+.headerNav>ul>li .headerNavList {
+  width:140px;
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+  background: rgb(0, 200, 100);
+  font-size: 12px;
+}
+
+.headerNav>ul>li ul.now {
+  display: block;
+}
+
+.headerNav>ul>li .headerNavList a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.headerNav>ul>li .headerNavList a:hover {
+  color:red;
+  font-weight: bold;
+}
+
+/*container*/
+.container {
+  width: 100%;
+  margin-top: 80px;
+}
+
+footer {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+footer p{
+  text-align: center;
+}
+
+#notice {
+  width:1050px;
+  height: 30px;
+  line-height: 30px;
+  margin:5px auto;
+  border:1px solid #ddd;
+}
+
+#notice div {
+  float:left;
+  margin-left: 10px;
+  font-size: 12px;
+  height:20px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+#notice div a:hover {
+  font-weight: bold;
+}
+
+#topBtn {
+  width:50px;
+  height:50px;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  right:5%;
+  bottom:5%;
+  cursor: pointer;
+}
