@@ -17,5 +17,5 @@ $(document).ready(function(){
   }
 
   $( "#datepicker" ).datepicker();
-
+  console.log($('.ui-datepicker .ui-datepicker-next span').text())
 });//document
