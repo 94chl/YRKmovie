@@ -182,7 +182,7 @@
     },
     "ranking": "3",
     "bookrate": "예매율",
-    "poster": "../img/default_movieSelect.jpg",
+    "poster": "./img/default_movieSelect.jpg",
     "now": "now",
     "production" : "제작사",
     "distributor" : "배급사",
