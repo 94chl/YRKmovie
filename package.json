@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/94chl/YRKmovie#readme",
   "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.9",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "http": "0.0.0"
