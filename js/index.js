@@ -14,9 +14,10 @@ $(window).on('load', function() {
 
   //sliderBtnBox 의 now클래스 지정
   $('.sliderBtnBox .sliderMenu li').on('click', function(){
-    now = $(this).attr('class').substring(9);
     $('.container .sliderBox .sliderWrap .slider').removeClass('now');
     $('.container .sliderBtnBox .sliderMenu li').removeClass('now');
+    now = $(this).attr('class').substring(9);
+    console.log(now)
     $('.container .sliderBox .sliderWrap .slider:nth-child(' + now + ')').addClass('now');
     $('.container .sliderBtnBox .sliderMenu li:nth-child(' + now + ')').addClass('now');
   });
