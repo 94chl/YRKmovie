@@ -76,7 +76,7 @@ $(window).on('load', function() {
 });
 
 $(document).ready(function(){
-   $.getJSON('../json/movies.json', function(data){
+   $.getJSON('./json/movies.json', function(data){
      $.each(data, function() {
        for(i = 1; i <= $('.slider.slide1 .listWrap:nth-child(1) .slideList').length; i++) {
          if(this.ranking == i) {
