@@ -106,15 +106,15 @@
               <p class="menu">날짜</p>
               <p class="selected"></p>
             </li>
+            <li class="reserveInfo time">
+              <p class="menu">시간</p>
+              <p class="selected"></p>
+            </li>
             <li class="reserveInfo people">
               <p class="menu">인원</p>
               <p class="selected"></p>
             </li>
-            <li class="reserveInfo seat">
-              <p class="menu">좌석</p>
-              <p class="selected"></p>
-            </li>
-            <li class="reserveInfo sum">
+            <li class="reserveInfo pay">
               <p class="menu">금액</p>
               <p class="selected"></p>
             </li>
@@ -123,40 +123,37 @@
         </div>
 
         <ul id="tabs">
-          <li class="tab movie"><button type="button" name="tabBtn" class="tabBtn">영화선택</button></li>
+          <li class="tab movie clicked"><button type="button" name="tabBtn" class="tabBtn">영화선택</button></li>
           <li class="tab theater"><button type="button" name="tabBtn" class="tabBtn">극장선택</button></li>
           <li class="tab date"><button type="button" name="tabBtn" class="tabBtn">날짜선택</button></li>
-          <li class="tab time"><button type="button" name="tabBtn" class="tabBtn">상영시간</button></li>
-          <li class="tab people"><button type="button" name="tabBtn" class="tabBtn">인원선택</button></li>
         </ul>
 
         <div id="processes">
-          <div class="process movie">
+
+          <div class="process movie clearfix">
             <div class="order">
-              <button type="button" name="button" class="orderBtn abc">가나다순</button>
+              <button type="button" name="button" class="orderBtn release">개봉순</button>
               <button type="button" name="button" class="orderBtn ranking clicked">예매순</button>
             </div>
-            <ul class="movieList">
-              <li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">영화제목</button></li>
-            </ul>
+            <ul class="movieList"></ul>
           </div>
 
           <div class="process theater clearfix">
 
             <ul class="regionList">
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">서울</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">경기 / 인천</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">부산 / 울산 / 경남</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">대구 / 경북</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">대전 / 충청 / 세종</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">광주 / 전라</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">강원</button></li>
-              <li class="regions"><button type="button" name="selectBtn" class="selectBtn region">제주</button></li>
+              <li class="regions su"><button type="button" name="selectBtn" class="selectBtn region">서울</button></li>
+              <li class="regions ic"><button type="button" name="selectBtn" class="selectBtn region">경기 / 인천</button></li>
+              <li class="regions bs"><button type="button" name="selectBtn" class="selectBtn region">부산 / 울산 / 경남</button></li>
+              <li class="regions dg"><button type="button" name="selectBtn" class="selectBtn region">대구 / 경북</button></li>
+              <li class="regions dj"><button type="button" name="selectBtn" class="selectBtn region">대전 / 충청 / 세종</button></li>
+              <li class="regions kj"><button type="button" name="selectBtn" class="selectBtn region">광주 / 전라</button></li>
+              <li class="regions kw"><button type="button" name="selectBtn" class="selectBtn region">강원</button></li>
+              <li class="regions jj"><button type="button" name="selectBtn" class="selectBtn region">제주</button></li>
             </ul>
 
-            <div class="theaterList">
+            <div class="theaterList su">
               <ul>
-                <div>강남구</div>
+                <div class="areaName">강남구</div>
                 <li class="theaters"><button type="button" name="theater" class="selectBtn theater">롯데시네마 브로드웨이</button></li>
                 <li class="theaters"><button type="button" name="theater" class="selectBtn theater">메가박스 시티</button></li>
                 <li class="theaters"><button type="button" name="theater" class="selectBtn theater">메가박스 코엑스</button></li>
@@ -165,8 +162,43 @@
             </div>
           </div>
 
-          <div class="process date">
+          <div class="process date clearfix">
             <div id="datepicker"></div>
+            <div id="timetable">
+              <div class="timetables">상영시간표</div>
+              <div class="chosenDate">날짜를 선택해주세요</div>
+              <div class="times"></div>
+            </div>
+            <div id="numbers">
+              <div class="inputs">
+                <label for="adults">성인</label>
+                <select id="adults">
+                  <option value="0" checked>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+              <div class="inputs">
+                <label for="students">학생</label>
+                <select id="students">
+                  <option value="0" checked>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
 

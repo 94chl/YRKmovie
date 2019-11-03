@@ -29,6 +29,9 @@ $(document).ready(function (){
 
 $(".current.listOrder").on("click", $("button"), function(e) {
   var orderBy = e.target.innerText;
+  $(".current.listOrder button").removeClass('clicked');
+  e.target.setAttribute('class', 'clicked');
+
   $('.current.movie').remove();
 
   if(orderBy == "개봉순") {

@@ -7,7 +7,8 @@
 
 /* 선택부분 */
 #tabs {
-  padding-top: 10px;
+  height: 40px;
+  background: #ddd;
 }
 
 #tabs .tab {
@@ -15,7 +16,12 @@
   width: 150px;
   height: 40px;
   line-height: 40px;
-  background: #ddd;
+  background: #d1cbcb;
+}
+
+#tabs .tab.clicked .tabBtn{
+  background: #000000;
+  color: #fff;
 }
 
 #tabs .tab .tabBtn {
@@ -24,9 +30,13 @@
   cursor: pointer;
 }
 
+#tabs .tab .tabBtn:hover {
+  font-weight: bold;
+}
+
 #processes {
   clear: both;
-  height:600px;
+  min-height:600px;
   width: 750px;
 }
 
@@ -41,7 +51,7 @@
 }
 
 #processes .process.movie{
-  display: none;
+
 }
 
 #processes .process.movie .order {
@@ -51,7 +61,7 @@
 
 #processes .process.movie .order .orderBtn{
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   height: 20px;
   cursor: pointer;
 }
@@ -75,12 +85,17 @@
   height: 130px;
 }
 
+#processes .process.movie .movieList .movies:hover .selectBtn {
+  font-weight: bold;
+}
+
 #processes .process.theater {
   position: relative;
   display: none;
 }
 
 #processes .process.theater .regionList {
+  margin-top: 25px;
   padding-left: 10px;
   padding-top: 10px;
 }
@@ -93,6 +108,10 @@
   margin-right: 10px;
   margin-bottom:10px;
   height: 130px;
+}
+
+#processes .process.theater .regionList .regions:hover .selectBtn {
+  font-weight: bold;
 }
 
 #processes .process.theater .theaterList {
@@ -134,8 +153,31 @@
   padding: 0 10px;
 }
 
+#processes .process.date {
+  display: none;
+}
+
+#processes .process.date > div {
+  margin-top: 25px;
+}
+
 #processes .process.date #datepicker {
-  padding: 10px;
+  float: left;
+  /* 높이 넓이 400px */
+}
+
+#processes .process.date #timetable {
+  float: left;
+}
+
+#processes .process.date #timetable .timetables {
+  text-align: center;
+  width: 342px;
+  background: #fff;
+}
+
+#processes .process.date #numbers {
+  clear: both;
 }
 
 .closeBtn {
@@ -148,12 +190,17 @@
   height:20px;
 }
 
+.closeBtn:hover {
+  font-weight: bold;
+}
+
+
 /* 미리보기 */
 
 .contentsWrap .reservationInfoWrap {
   background: skyblue;
   width:300px;
-  height:650px;
+  height:640px;
   text-align: center;
   position: absolute;
   right:0;
@@ -178,7 +225,7 @@
 }
 
 .contentsWrap #reservationInfo .reserveInfo.title {
-  margin-top:20px;
+  margin-top:10px;
 }
 
 .contentsWrap .reservationInfoWrap .reservationBtn {

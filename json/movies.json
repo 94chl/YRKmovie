@@ -126,7 +126,7 @@
     "grade":"관람등급",
     "nation":"국가",
     "runningtime":"러닝타임",
-    "release":"2019-10-01",
+    "release":"2019-09-05",
     "genre":["장르1", "장르2"],
     "point": {
       "netizen":"네티즌 평점",
@@ -136,7 +136,7 @@
     "ranking": "2",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "현재 개봉 여부",
+    "now": "now",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
