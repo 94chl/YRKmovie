@@ -35,7 +35,7 @@ $(document).ready(function(){
         $('.outlineWrap .rating').text(this.point.netizen);
         $('.detailsWrap .details .story .keyword').text(this.storyline.keyword);
         $('.detailsWrap .details .story .storyline').text(this.storyline.description);
-        $('.shortActorDirector > ul').append('<li><div class="picture"><img src="'+this.director.img+'"width="100%" heigth="100%"></div><div class="name">'+this.director.name+'</div><div class="role">'+this.director.role+'</div></li>');
+        $('.shortActorDirector > ul').append('<li><div class="picture"><img src="'+this.director.img+'"width="100%" heigth="100%"></div><div class="name">'+this.director.name+'</div><div class="role">감독</div></li>');
         $('.crewDirector>ul').append('<li><div class="picture"><img src="'+this.director.img+'"width="100%" heigth="100%"></div><div class="name">'+this.director.name+'</div><div class="nameEng">'+this.director.nameEng+'</div><div class="role">감독</div></li>');
         for(i=0; i<this.actor.length && i<5; i++) {
           $('.shortActorDirector>ul').append('<li><div class="picture"><img src="'+this.actor[i].img+'"width="100%" heigth="100%"></div><div class="name">'+this.actor[i].name+'</div><div class="role">'+this.actor[i].role+' 역</div></li>');
