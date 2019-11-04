@@ -69,12 +69,6 @@ $(document).on("mouseleave", ".posterMenu", function() {
   $(this).removeClass('now');
 })
 
-
-$(document).on('click', ".posterMenu ul li a", function() {
-  var movieName = $(this).parents('.posterMenu').siblings('.title').text();
-  sessionStorage.setItem("selectedMovie", movieName);
-})
-
 $(document).on('click', ".posterMenu ul li a", function() {
   var movieName = $(this).parents('.posterMenu').siblings('.title').text();
   sessionStorage.setItem("selectedMovie", movieName);

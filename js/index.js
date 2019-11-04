@@ -1,5 +1,4 @@
-//slider조작 함수
-$(window).on('load', function() {
+$(document).ready(function(){
   var slides = [];
   var now = 1;
   var sliderMove = setInterval(next, 3000);
@@ -73,9 +72,6 @@ $(window).on('load', function() {
     $(this).addClass('now');
   });
 
-});
-
-$(document).ready(function(){
    $.getJSON('./json/movies.json', function(data){
      $.each(data, function() {
        for(i = 1; i <= $('.slider.slide1 .listWrap:nth-child(1) .slideList').length; i++) {
