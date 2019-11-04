@@ -132,7 +132,7 @@
   text-align: center;
   margin-top:-25px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 3;
 }
 
 .container .sliderBox .sliderWrap .sliderBtn:hover {
