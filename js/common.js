@@ -1,4 +1,11 @@
-$(window).on('load', function(e) {
+$(document).ready(function() {
+  $('#searchButton').on('click', function() {
+    alert('준비중입니다');
+  });
+  $('#loginBox').on('click', function() {
+    alert('준비중입니다');
+  });
+
   //headerNavList 작동 함수
   $('.headerNav>ul>li').mouseover(function() {
     $(this).children('ul').addClass('now');
@@ -12,4 +19,4 @@ $(window).on('load', function(e) {
   $('#topBtn').on('click', function() {
     $(window).scrollTop(0);
   });
-});
+})

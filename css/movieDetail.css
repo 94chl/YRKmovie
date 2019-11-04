@@ -179,7 +179,7 @@
   margin-top:20px;
 }
 
-.container .detailsWrap .details .detailsTab button {
+.container .detailsWrap .details .detailsTab .more {
   float:right;
   cursor: pointer;
 }

@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Naver Movie</title>
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/ticket.css">
+  <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/ticket.js"></script>
 </head>
 
 <body>
@@ -22,19 +27,19 @@
         <div id="searchBox">
           <form action="get">
             <input type="text" name="search" id="search" placeholder="영화검색">
-            <input type="button" id="searchButton" value="검색">
+            <button type="button" name="searchButton" id="searchButton">검색</button>
           </form>
         </div>
 
         <nav id="subnav">
-          <div id="loginBox">로그인</div>
+          <button type="button" name="searchButton" id="loginBox">로그인</button>
         </nav>
       </div>
 
       <nav class="headerNav">
         <ul>
           <li>
-            <a href="../index.html" class="now">홈</a>
+            <a href="../index.html">홈</a>
           </li>
           <li>
             <a href="../running/current.html">상영작, 예정작</a>
@@ -52,7 +57,7 @@
             </ul>
           </li>
           <li>
-            <a href="./ticket/reserve.html">예매</a>
+            <a href="./reserve.html" class="now">예매</a>
             <ul>
               <li class="headerNavList"><a href="./reserve.html">예매하기</a></li>
               <li class="headerNavList"><a href="./orderList.html">예매확인, 취소</a></li>
@@ -79,7 +84,7 @@
     </header>
     <!--header(공통사항)-->
 
-    <div class="container">
+    <div class="container clearfix">
 
     </div>
 
@@ -94,9 +99,8 @@
     <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
   </footer>
 
-  <script src="./js/jquery-3.3.1.min.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/index.js"></script>
+  <button type="button" id="topBtn">TOP</button>
+
 </body>
 
 </html>

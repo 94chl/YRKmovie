@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Naver Movie</title>
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/rank.css">
 </head>
 
 <body>
@@ -22,33 +22,33 @@
         <div id="searchBox">
           <form action="get">
             <input type="text" name="search" id="search" placeholder="영화검색">
-            <input type="button" id="searchButton" value="검색">
+            <button type="button" name="searchButton" id="searchButton">검색</button>
           </form>
         </div>
 
         <nav id="subnav">
-          <div id="loginBox">로그인</div>
+          <button type="button" name="searchButton" id="loginBox">로그인</button>
         </nav>
       </div>
 
       <nav class="headerNav">
         <ul>
           <li>
-            <a href="../index.html" class="now">홈</a>
+            <a href="../index.html">홈</a>
           </li>
           <li>
-            <a href="../running/current.html">상영작, 예정작</a>
+            <a href="./running/current.html">상영작, 예정작</a>
             <ul>
-              <li class="headerNavList"><a href="../running/current.html">현재 상영영화</a></li>
-              <li class="headerNavList"><a href="../running/premovie.html">개봉 예정영화</a></li>
-              <li class="headerNavList"><a href="../running/movieclip.html">예고편</a></li>
+              <li class="headerNavList"><a href="./current.html">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="./premovie.html">개봉 예정영화</a></li>
+              <li class="headerNavList"><a href="./movieclip.html">예고편</a></li>
             </ul>
           </li>
           <li>
-            <a href="./rank/ranking.html">영화랭킹</a>
+            <a href="../rank/ranking.html" class="now">영화랭킹</a>
             <ul>
-              <li class="headerNavList"><a href="./rank/ranking.html">랭킹</a></li>
-              <li class="headerNavList"><a href="./rank/directory.html">디렉토리</a></li>
+              <li class="headerNavList"><a href="../rank/ranking.html">랭킹</a></li>
+              <li class="headerNavList"><a href="../rank/directory.html">디렉토리</a></li>
             </ul>
           </li>
           <li>
@@ -94,9 +94,11 @@
     <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
   </footer>
 
-  <script src="./js/jquery-3.3.1.min.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/index.js"></script>
+  <button type="button" id="topBtn">TOP</button>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/running.js"></script>
 </body>
 
 </html>
