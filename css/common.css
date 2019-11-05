@@ -191,8 +191,9 @@ footer p{
   height:50px;
   background: #000;
   color: #fff;
-  position: fixed;
-  right:5%;
-  bottom:5%;
   cursor: pointer;
+  position: fixed;
+  bottom:10px;
+  left:50%;
+  margin-left: 535px;
 }
