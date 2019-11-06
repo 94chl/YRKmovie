@@ -83,7 +83,82 @@
     <!--header(공통사항)-->
 
     <div class="container">
+      <section class="contentsWrap">
+        <div>영화 랭킹</div>
+        <label for="genres">장르</label>
+        <select name="genres" id="genres">
+          <option value="all" class="genre">전체</option>
+          <option value="drama" class="genre">드라마</option>
+          <option value="fantasy" class="genre">판타지</option>
+          <option value="horror" class="genre">공포</option>
+          <option value="romance" class="genre">멜로/애정/로맨스</option>
+          <option value="adventure" class="genre">모험</option>
+          <option value="thriller" class="genre">스릴러</option>
+          <option value="noir" class="genre">느와르</option>
+          <option value="documentary" class="genre">다큐멘터리</option>
+          <option value="comedy" class="genre">코미디</option>
+          <option value="family" class="genre">가족</option>
+          <option value="mystery" class="genre">미스터리</option>
+          <option value="war" class="genre">전쟁</option>
+          <option value="animation" class="genre">애니메이션</option>
+          <option value="crime" class="genre">범죄</option>
+          <option value="musical" class="genre">뮤지컬</option>
+          <option value="sf" class="genre">SF</option>
+          <option value="action" class="genre">액션</option>
+        </select>
 
+        <div class="orderList">
+          <div class="orderBy">조회순</div>
+          <div class="orderBy">평점순(현재상영영화)</div>
+          <div class="orderBy">평점순(모든영화)</div>
+        </div>
+
+        <table class="rankingTable">
+          <tr class="field">
+            <td class="ranking">순위</td>
+            <td class="movie">영화 정보</td>
+          </tr>
+          <tr class="record">
+            <td class="ranking">예시</td>
+            <td class="movie">
+              <div class="outlines">
+                <a href="#" class="poster"><img src="" alt="poster" width="100%" height="100%"></a>
+                <div class="outlineMenu title">
+                  <div class="filmRating">등급</div>
+                  <div class="title">제목</div>
+                </div>
+                <div class="outlineMenu">
+                  <div>평점</div>
+                  <div class="rating"></div>
+                  <div>예매율</div>
+                  <div class="bookRate"></div>
+                </div>
+                <div class="outlineMenu">
+                  <div>개요</div>
+                  <ul class="outline">
+                    <li class="genre">장르</li>
+                    <li class="runningTime">러닝타임</li>
+                    <li class="release">개봉일</li>
+                  </ul>
+                </div>
+                <div class="outlineMenu">
+                  <div>감독</div>
+                  <div class="director"></div>
+                </div>
+                <div class="outlineMenu">
+                  <div>출연</div>
+                  <div class="actor"></div>
+                </div>
+                <div class="outlineMenu media">
+                  <a href="#">포토</a>
+                  <a href="#">관련 영상</a>
+                </div>
+                <button type="button" name="reserve" class="reserveBtn">예매</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
     </div>
 
     <div id="notice" class='clearfix'>

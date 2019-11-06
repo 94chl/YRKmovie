@@ -1,0 +1,128 @@
+.container .contentsWrap {
+  width:1050px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.orderList {
+  background: gold;
+  width:100%;
+  height: 40px;
+}
+
+.orderList .orderBy {
+  float:left;
+  width:200px;
+  height: 40px;
+  line-height: 40px;
+  background: orange;
+}
+
+.rankingTable {
+  clear: both;
+}
+
+.rankingTable>tr {
+
+}
+
+.rankingTable .field .ranking {
+  background: #ddd;
+  width:200px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.rankingTable .field .movie {
+  background: #ddd;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.record .ranking {
+  text-align: center;
+}
+
+.record .movie >div {
+  text-indent: 10px;
+}
+
+.record .movie .outlines {
+  position: relative;
+  margin: 10px 0;
+}
+
+.record .movie .outlines .poster {
+  width:195px;
+  height:280px;
+  background: skyblue;
+  left:0;
+  top:0;
+  text-indent: 0;
+  float: left;
+}
+
+.record .movie .title {
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.record .movie .outlineMenu {
+  height: 20px;
+  line-height: 20px;
+}
+
+.record .movie .outlineMenu:last-child {
+  margin-bottom: 0;
+}
+
+.record .movie .outlineMenu > div{
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+
+.record .movie .outline {
+  width: 850px;
+  height: 20px;
+}
+
+.record .movie .outline li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 5px;
+  margin-left: 0;
+  padding-right: 10px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+
+.record .movie .outline li:last-child {
+  border:none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.record .movie .outlineMenu.media {
+
+}
+
+.record .movie .outlineMenu.media a {
+  border:1px solid #000;
+}
+
+.record .movie .reserveBtn{
+  cursor: pointer;
+  background: pink;
+  position:absolute;
+  right:0;
+  top:50%;
+  margin-top:25px;
+  height:100px;
+  width:100px;
+}
