@@ -1,11 +1,11 @@
-.container .current.listWrap {
+.container .listWrap {
   width:1050px;
   background: yellow;
   margin:0 auto;
   position: relative;
 }
 
-.container .current.listWrap .current.listTitle {
+.container .listWrap .listTitle {
   height:30px;
   line-height: 30px;
   background: #fff;
@@ -14,13 +14,13 @@
   font-size: 18px;
 }
 
-.container .current.listWrap .current.listOrder {
+.container .listWrap .listOrder {
   position: absolute;
   top:5px;
   right:0;;
 }
 
-.container .current.listWrap .current.listOrder button {
+.container .listWrap .listOrder button {
   float:left;
   width:100px;
   height:20px;
@@ -28,32 +28,32 @@
   margin-right: 20px;
 }
 
-.container .current.listWrap .current.listOrder button.clicked {
+.container .listWrap .listOrder button.clicked {
   font-weight: bold;
 }
 
-.container .current.list .current.movie {
+.container .list .movie {
   width:240px;
   margin-left:30px;
   margin-top:30px;
   float:left;
 }
 
-.container .current.list .current.movie:last-child {
+.container .list .movie:last-child {
   margin-bottom: 30px;
 }
 
-.container .current.list .current.movie {
+.container .list .movie {
   position: relative;
 }
 
-.container .current.list .current.movie .poster {
+.container .list .movie .poster {
   width:240px;
   height:343px;
   background: #fff;
 }
 
-.container .current.list .current.movie .posterMenu {
+.container .list .movie .posterMenu {
   display: block;
   width:240px;
   height:343px;
@@ -64,17 +64,17 @@
   display: none;
 }
 
-.container .current.list .current.movie .posterMenu div {
+.container .list .movie .posterMenu div {
   word-break: keep-all;
   overflow: hidden;
   text-align: center;
 }
 
-.container .current.list .current.movie .posterMenu.now {
+.container .list .movie .posterMenu.now {
   display: block;
 }
 
-.container .current.list .current.movie .posterMenu>div {
+.container .list .movie .posterMenu>div {
   width:220px;
   height:253px;
   background: #ddd;
@@ -82,14 +82,14 @@
   margin-bottom: 0;
 }
 
-.container .current.list .current.movie .posterMenu ul {
+.container .list .movie .posterMenu ul {
   width:200px;
   height:30px;
   background: red;
   margin:25px auto;
 }
 
-.container .current.list .current.movie .posterMenu ul li {
+.container .list .movie .posterMenu ul li {
   text-align: center;
   float: left;
   height:30px;
@@ -99,22 +99,22 @@
   margin-left: 20px
 }
 
-.container .current.list .current.movie .posterMenu ul li:first-child {
+.container .list .movie .posterMenu ul li:first-child {
   margin-left: 0;
 }
 
 
-.container .current.list .current.movie .posterMenu ul li a {
+.container .list .movie .posterMenu ul li a {
   display: block;
   width: 100%;
   height:100%;
 }
 
-.container .current.list .current.movie .posterMenu ul li a:hover {
+.container .list .movie .posterMenu ul li a:hover {
   background: #fff;
 }
 
-.container .current.list .current.movie .title {
+.container .list .movie .title {
   font-weight: bold;
   font-size: 16px;
 }

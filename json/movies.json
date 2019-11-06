@@ -89,7 +89,7 @@
     "ranking": "1",
     "bookrate": "34.13",
     "poster": "https://movie-phinf.pstatic.net/20190906_128/1567761736426S6Fje_JPEG/movie_image.jpg",
-    "now": "now",
+    "type": "current",
     "production" : "워너브라더스",
     "distributor" : "워너브라더스 코리아",
     "importer" : "워너브라더스 코리아"
@@ -136,7 +136,7 @@
     "ranking": "2",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -183,7 +183,7 @@
     "ranking": "3",
     "bookrate": "예매율",
     "poster": "./img/default_movieSelect.jpg",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -230,7 +230,7 @@
     "ranking": "4",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -277,7 +277,7 @@
     "ranking": "5",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -324,7 +324,7 @@
     "ranking": "6",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -371,7 +371,7 @@
     "ranking": "7",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -418,7 +418,7 @@
     "ranking": "8",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -465,7 +465,7 @@
     "ranking": "9",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
@@ -512,7 +512,54 @@
     "ranking": "10",
     "bookrate": "예매율",
     "poster": "포스터src",
-    "now": "now",
+    "type": "current",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "개봉예정1",
+    "director": {
+      "name": "이름",
+      "nameEng" : "영어표기",
+      "img": ""
+    },
+    "actor": [
+      {
+      "name": "이름",
+      "nameEng" : "영어표기",
+      "img": "",
+      "role": ["역할1", "역할2"],
+      "part": "주연"
+      },
+      {
+      "name": "이름",
+      "nameEng" : "영어표기",
+      "img": "",
+      "role": ["역할1"],
+      "part": "조연"
+      }
+    ],
+    "storyline": {
+      "keyword":"스토리 키워드",
+      "description": "스토리 설명"
+    },
+    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-27",
+    "genre":["장르1", "장르2"],
+    "point": {
+      "netizen":"네티즌 평점",
+      "spectator":"관람객 평점",
+      "critic":"전문가 평점"
+    },
+    "ranking": "10",
+    "bookrate": "예매율",
+    "poster": "포스터src",
+    "type": "premovie",
     "production" : "제작사",
     "distributor" : "배급사",
     "importer" : "수입사"
