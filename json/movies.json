@@ -6,71 +6,77 @@
       "nameEng" : "Todd Phillips",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F116%2F201909241144466131.jpg&type=u120_150&quality=95"
     },
-    "actor": [
-      {
-      "name": "호아킨 피닉스",
-      "nameEng" : "Joaquin Phoenix",
-      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F195%2F201807031748145311.jpg&type=u120_150&quality=95",
-      "role": ["아서 플렉", "조커"],
-      "part": "주연"
-      },
-      {
-      "name": "재지 비츠",
-      "nameEng" : "Zazie Beetz",
-      "img": "",
-      "role": ["소피 두몬드"],
-      "part": "조연"
-      },
-      {
-      "name": "로버트 드 니로",
-      "nameEng" : "Robert De Niro",
-      "img": "",
-      "role": ["머레이 프랭클린"],
-      "part": "조연"
-      },
-      {
-      "name": "프란시스 콘로이",
-      "nameEng" : "Frances Conroy",
-      "img": "",
-      "role": ["페니 플렉"],
-      "part": "조연"
-      },
-      {
-      "name": "브래트 컬렌",
-      "nameEng" : "Brett Cullen",
-      "img": "",
-      "role": ["토마스 웨인"],
-      "part": "조연"
-      },
-      {
-      "name": "쉐어 위햄",
-      "nameEng" : "Shea Whigham",
-      "img": "",
-      "role": ["버크 형사"],
-      "part": "조연"
-      },
-      {
-      "name": "빌캠프",
-      "nameEng" : "Bill Camp",
-      "img": "",
-      "role": ["개러티 형사"],
-      "part": "조연"
-      },
-      {
-      "name": "글렌 플레쉬러",
-      "nameEng" : "Glenn Fleshler",
-      "img": "",
-      "role": ["랜들"],
-      "part": "조연"
-      },
-      {
-      "name": "리 길",
-      "nameEng" : "Leigh Gill",
-      "img": "",
-      "role": ["게리"],
-      "part": "조연"
-      }
-    ],
+    "actor": {
+      "leading":
+      [
+        {
+        "name": "호아킨 피닉스",
+        "nameEng" : "Joaquin Phoenix",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F195%2F201807031748145311.jpg&type=u120_150&quality=95",
+        "role": ["아서 플렉", "조커"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "재지 비츠",
+        "nameEng" : "Zazie Beetz",
+        "img": "",
+        "role": ["소피 두몬드"],
+        "part": "supporting"
+        },
+        {
+        "name": "로버트 드 니로",
+        "nameEng" : "Robert De Niro",
+        "img": "",
+        "role": ["머레이 프랭클린"],
+        "part": "supporting"
+        },
+        {
+        "name": "프란시스 콘로이",
+        "nameEng" : "Frances Conroy",
+        "img": "",
+        "role": ["페니 플렉"],
+        "part": "supporting"
+        },
+        {
+        "name": "브래트 컬렌",
+        "nameEng" : "Brett Cullen",
+        "img": "",
+        "role": ["토마스 웨인"],
+        "part": "supporting"
+        },
+        {
+        "name": "쉐어 위햄",
+        "nameEng" : "Shea Whigham",
+        "img": "",
+        "role": ["버크 형사"],
+        "part": "supporting"
+        },
+        {
+        "name": "빌캠프",
+        "nameEng" : "Bill Camp",
+        "img": "",
+        "role": ["개러티 형사"],
+        "part": "supporting"
+        },
+        {
+        "name": "글렌 플레쉬러",
+        "nameEng" : "Glenn Fleshler",
+        "img": "",
+        "role": ["랜들"],
+        "part": "supporting"
+        },
+        {
+        "name": "리 길",
+        "nameEng" : "Leigh Gill",
+        "img": "",
+        "role": ["게리"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"내 인생이 비극인줄 알았는데, 코미디였어",
       "description": "고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자. 하지만 모두가 미쳐가는 코미디 같은 세상에서 맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데… 이제껏 본 적 없는 진짜 ‘조커’를 만나라!"
@@ -102,22 +108,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -149,22 +162,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -196,22 +216,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -243,22 +270,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -290,22 +324,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -337,22 +378,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -384,22 +432,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -431,22 +486,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -478,22 +540,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
@@ -525,22 +594,29 @@
       "nameEng" : "영어표기",
       "img": ""
     },
-    "actor": [
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1", "역할2"],
-      "part": "주연"
-      },
-      {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": "",
-      "role": ["역할1"],
-      "part": "조연"
-      }
-    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        }
+      ],
+      "suppoting":
+      [
+        {
+        "name": "이름",
+        "nameEng" : "영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
     "storyline": {
       "keyword":"스토리 키워드",
       "description": "스토리 설명"

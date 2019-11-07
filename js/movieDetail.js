@@ -30,18 +30,30 @@ $(document).ready(function(){
         $('.outlineWrap .runningTime').text(this.runningtime);
         $('.outlineWrap .release').text(this.release);
         $('.outlineWrap .director').text(this.director.name);
-        $('.outlineWrap .actor').text(this.actor[0].name);
+        var leadingActors = "";
+        for(i=0; i<this.actor.leading.length; i++) {
+          leadingActors = leadingActors + this.actor.leading[0].name + " ";
+        }
+        $('.outlineWrap .actor').text(leadingActors);
         $('.outlineWrap .filmRating').text(this.grade);
         $('.outlineWrap .rating').text(this.point.netizen);
         $('.detailsWrap .details .story .keyword').text(this.storyline.keyword);
         $('.detailsWrap .details .story .storyline').text(this.storyline.description);
         $('.shortActorDirector > ul').append('<li><div class="picture"><img src="'+this.director.img+'"width="100%" heigth="100%"></div><div class="name">'+this.director.name+'</div><div class="role">감독</div></li>');
         $('.crewDirector>ul').append('<li><div class="picture"><img src="'+this.director.img+'"width="100%" heigth="100%"></div><div class="name">'+this.director.name+'</div><div class="nameEng">'+this.director.nameEng+'</div><div class="role">감독</div></li>');
-        for(i=0; i<this.actor.length && i<5; i++) {
-          $('.shortActorDirector>ul').append('<li><div class="picture"><img src="'+this.actor[i].img+'"width="100%" heigth="100%"></div><div class="name">'+this.actor[i].name+'</div><div class="role">'+this.actor[i].role+' 역</div></li>');
+        for(i=0, u=0; i<5; i++) {
+          if(this.actor.leading[i]){
+            $('.shortActorDirector>ul').append('<li><div class="picture"><img src="' + this.actor.leading[i].img + '"width="100%" heigth="100%"></div><div class="name">'+ this.actor.leading[i].name +'</div><div class="role">'+ this.actor.leading[i].role +' 역</div></li>');
+          } else {
+            $('.shortActorDirector>ul').append('<li><div class="picture"><img src="' + this.actor.supporting[u].img + '"width="100%" heigth="100%"></div><div class="name">'+ this.actor.supporting[u].name +'</div><div class="role">'+ this.actor.supporting[u].role +' 역</div></li>');
+            u++
+          }
         };
-        for(i=0; i<this.actor.length; i++) {
-          $('.crewActor>ul').append('<li><div class="picture"><img src="'+this.actor[i].img+'"width="100%" heigth="100%"></div><div class="name">'+this.actor[i].name+'</div><div class="nameEng">'+this.actor[i].nameEng+'</div><div class="part">'+this.actor[i].part+'</div><div class="role">'+this.actor[i].role+' 역</div></li>');
+        for(i=0; i<this.actor.leading.length; i++) {
+          $('.crewActor>ul').append('<li><div class="picture"><img src="'+this.actor.leading[i].img+'"width="100%" heigth="100%"></div><div class="name">'+this.actor.leading[i].name+'</div><div class="nameEng">'+this.actor.leading[i].nameEng+'</div><div class="part">'+this.actor.leading[i].part+'</div><div class="role">'+this.actor.leading[i].role+' 역</div></li>');
+        };
+        for(i=0; i<this.actor.supporting.length; i++) {
+          $('.crewActor>ul').append('<li><div class="picture"><img src="'+this.actor.supporting[i].img+'"width="100%" heigth="100%"></div><div class="name">'+this.actor.supporting[i].name+'</div><div class="nameEng">'+this.actor.supporting[i].nameEng+'</div><div class="part">'+this.actor.supporting[i].part+'</div><div class="role">'+this.actor.supporting[i].role+' 역</div></li>');
         };
         $('.player iframe').attr('src', 'https://www.youtube.com/embed/' + this.video[0]);
         for(i=0; i<this.video.length; i++) {
