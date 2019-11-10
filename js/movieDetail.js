@@ -44,7 +44,7 @@ $(document).ready(function(){
         for(i=0, u=0; i<5; i++) {
           if(this.actor.leading[i]){
             $('.shortActorDirector>ul').append('<li><div class="picture"><img src="' + this.actor.leading[i].img + '"width="100%" heigth="100%"></div><div class="name">'+ this.actor.leading[i].name +'</div><div class="role">'+ this.actor.leading[i].role +' 역</div></li>');
-          } else {
+          } else if (this.actor.supporting[u]) {
             $('.shortActorDirector>ul').append('<li><div class="picture"><img src="' + this.actor.supporting[u].img + '"width="100%" heigth="100%"></div><div class="name">'+ this.actor.supporting[u].name +'</div><div class="role">'+ this.actor.supporting[u].role +' 역</div></li>');
             u++
           }

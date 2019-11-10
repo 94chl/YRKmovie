@@ -29,7 +29,7 @@ $(document).ready(function(){
   $.getJSON('../json/movies.json', function(data){
     $.each(data, function() {
       for(i = 1; i <= data.length; i++) {
-        if(this.ranking == i && this.now == "now") {
+        if(this.ranking == i && this.type == "current") {
           var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
           $('.process.movie .movieList').append(movieList);
         }
@@ -49,7 +49,7 @@ $(document).ready(function(){
       $.getJSON('../json/movies.json', function(data){
         for(i = 0; i < release.length; i++) {
           $.each(data, function() {
-            if(release[i] == this.release && this.now == "now") {
+            if(release[i] == this.release && this.type == "current") {
               var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
               $('.process.movie .movieList').append(movieList);
             }
@@ -60,7 +60,7 @@ $(document).ready(function(){
       $.getJSON('../json/movies.json', function(data){
         $.each(data, function() {
           for(i = 1; i <= data.length; i++) {
-            if(this.ranking == i && this.now == "now") {
+            if(this.ranking == i && this.type == "current") {
               var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
               $('.process.movie .movieList').append(movieList);
             }

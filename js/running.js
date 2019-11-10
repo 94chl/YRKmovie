@@ -7,13 +7,11 @@ function trimList() {
   };
 };
 
-var thisPage = $('.container section.listWrap')[0].classList[0];
-
 var release = [];
 
 $(document).ready(function (){
   sessionStorage.removeItem("selectedMovie");
-
+  var thisPage = $('.container section.listWrap')[0].classList[0];
    $.getJSON('../json/movies.json', function(data){
      $.each(data, function() {
        for(i = 1; i <= data.length; i++) {
@@ -27,11 +25,10 @@ $(document).ready(function (){
     release.sort(function(a, b){return new Date(b) - new Date(a)});
     trimList();
    });//getJSON
-});//document
 
-$(".listOrder").on("click", $("button"), function(e) {
+$(".listOrder .orderBtn").on("click", $("button"), function(e) {
   var orderBy = e.target.innerText;
-  $(".listOrder button").removeClass('clicked');
+  $(".listOrder .orderBtn").removeClass('clicked');
   e.target.setAttribute('class', 'clicked');
 
   $('.movie').remove();
@@ -62,6 +59,7 @@ $(".listOrder").on("click", $("button"), function(e) {
     });//getJSON
   }
 })
+});//document
 
 $(document).on("mouseenter", ".poster", function() {
   $(this).siblings('.posterMenu').addClass('now');

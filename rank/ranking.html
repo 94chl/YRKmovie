@@ -108,9 +108,9 @@
         </select>
 
         <div class="orderList">
-          <div class="orderBy">조회순</div>
-          <div class="orderBy">평점순(현재상영영화)</div>
-          <div class="orderBy">평점순(모든영화)</div>
+          <button type="button" class="orderBy rankNow clicked">조회순</button>
+          <button type="button" class="orderBy pointNow">평점순(현재상영영화)</button>
+          <button type="button" class="orderBy pointAll">평점순(모든영화)</button>
         </div>
 
         <table class="rankingTable">
@@ -118,23 +118,23 @@
             <td class="ranking">순위</td>
             <td class="movie">영화 정보</td>
           </tr>
-          <tr class="record">
+          <!-- <tr class="record">
             <td class="ranking">예시</td>
             <td class="movie">
               <div class="outlines">
                 <a href="#" class="poster"><img src="" alt="poster" width="100%" height="100%"></a>
                 <div class="outlineMenu title">
-                  <div class="filmRating">등급</div>
-                  <div class="title">제목</div>
+                  <div class="filmRating subMenu">등급</div>
+                  <div class="title subMenu">제목</div>
                 </div>
                 <div class="outlineMenu">
-                  <div>평점</div>
+                  <div class="subMenu">평점</div>
                   <div class="rating"></div>
-                  <div>예매율</div>
+                  <div class="subMenu">예매율</div>
                   <div class="bookRate"></div>
                 </div>
                 <div class="outlineMenu">
-                  <div>개요</div>
+                  <div class="subMenu">개요</div>
                   <ul class="outline">
                     <li class="genre">장르</li>
                     <li class="runningTime">러닝타임</li>
@@ -142,21 +142,21 @@
                   </ul>
                 </div>
                 <div class="outlineMenu">
-                  <div>감독</div>
+                  <div class="subMenu">감독</div>
                   <div class="director"></div>
                 </div>
                 <div class="outlineMenu">
-                  <div>출연</div>
+                  <div class="subMenu">출연</div>
                   <div class="actor"></div>
                 </div>
                 <div class="outlineMenu media">
                   <a href="#">포토</a>
                   <a href="#">관련 영상</a>
                 </div>
-                <button type="button" name="reserve" class="reserveBtn">예매</button>
+                <a href="../ticket/reserve.html" class="reserveBtn">예매</a>
               </div>
             </td>
-          </tr>
+          </tr> -->
         </table>
       </section>
     </div>

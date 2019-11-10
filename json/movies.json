@@ -120,7 +120,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -142,7 +142,7 @@
     "release":"2019-09-05",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"2",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -174,7 +174,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -196,7 +196,7 @@
     "release":"2019-09-20",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"3",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -228,7 +228,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -250,7 +250,7 @@
     "release":"2019-09-21",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"4",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -282,7 +282,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -304,7 +304,7 @@
     "release":"2019-09-22",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"4",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -336,7 +336,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -358,7 +358,7 @@
     "release":"2019-09-23",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"6",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -390,7 +390,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -412,7 +412,7 @@
     "release":"2019-09-24",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"7",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -444,7 +444,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -466,7 +466,7 @@
     "release":"2019-09-25",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"8",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -498,7 +498,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -520,7 +520,7 @@
     "release":"2019-09-26",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"9",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -552,7 +552,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -574,7 +574,7 @@
     "release":"2019-09-27",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"10",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -606,7 +606,7 @@
         "part": "leading"
         }
       ],
-      "suppoting":
+      "supporting":
       [
         {
         "name": "이름",
@@ -628,7 +628,7 @@
     "release":"2019-12-27",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"네티즌 평점",
+      "netizen":"100",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
