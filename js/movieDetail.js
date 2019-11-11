@@ -81,7 +81,8 @@ $(document).ready(function(){
 });
 
 
-$('.trailers').on('click',$('.trailers .trailer>button'), function(e) {
+$(document).on('click', '.trailers .trailer>button', function(e) {
   var src = e.target.id;
+  console.log(e.target.id);
   $('.player iframe').attr('src', 'https://www.youtube.com/embed/'+src);
 });

@@ -113,8 +113,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -123,8 +130,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -132,7 +146,7 @@
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
+      "keyword":"스토리 표제",
       "description": "스토리 설명"
     },
     "video":["비디오1 id", "비디오2 id", "비디오3 id"],
@@ -167,8 +181,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -177,8 +198,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -221,8 +249,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -231,8 +266,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -243,7 +285,7 @@
       "keyword":"스토리 키워드",
       "description": "스토리 설명"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
+    "video":["UB_O1-tYJmk", "비디오2 id", "비디오3 id"],
     "grade":"관람등급",
     "nation":"국가",
     "runningtime":"러닝타임",
@@ -275,8 +317,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -285,8 +334,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -329,8 +385,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -339,8 +402,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -383,8 +453,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -393,8 +470,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -437,8 +521,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -447,8 +538,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -491,8 +589,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -501,8 +606,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -545,8 +657,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -555,8 +674,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -599,8 +725,15 @@
       "leading":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "주연1 이름",
+        "nameEng" : "주연1 영어표기",
+        "img": "",
+        "role": ["역할1", "역할2"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2 이름",
+        "nameEng" : "주연2 영어표기",
         "img": "",
         "role": ["역할1", "역할2"],
         "part": "leading"
@@ -609,8 +742,15 @@
       "supporting":
       [
         {
-        "name": "이름",
-        "nameEng" : "영어표기",
+        "name": "조연1 이름",
+        "nameEng" : "조연1 영어표기",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2 이름",
+        "nameEng" : "조연2 영어표기",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
