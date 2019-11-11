@@ -25,7 +25,11 @@ $(document).ready(function(){
       if(this.title == title) {
         $('.outlineWrap .poster img').attr('src', this.poster);
         $('.outlineWrap .title').text(this.title);
-        $('.outlineWrap .genre').text(this.genre);
+        var genres = "";
+        for(o=0; o<this.genre.length;o++) {
+          genres = genres + this.genre[o]+ " ";
+        }
+        $('.outlineWrap .genre').text(genres);
         $('.outlineWrap .nation').text(this.nation);
         $('.outlineWrap .runningTime').text(this.runningtime);
         $('.outlineWrap .release').text(this.release);

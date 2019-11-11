@@ -43,6 +43,7 @@
 
 .rankingTable .field .movie {
   background: #ddd;
+  width: 950px;
   height:40px;
   line-height: 40px;
   text-align: center;

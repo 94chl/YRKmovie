@@ -224,7 +224,7 @@
     "release":"2019-09-20",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"3",
+      "netizen":"2",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
@@ -360,7 +360,7 @@
     "release":"2019-09-22",
     "genre":["장르1", "장르2"],
     "point": {
-      "netizen":"4",
+      "netizen":"5",
       "spectator":"관람객 평점",
       "critic":"전문가 평점"
     },
