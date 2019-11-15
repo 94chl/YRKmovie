@@ -1,20 +1,1640 @@
 [
   {
-    "region": "서울",
-    "theater": "megabox",
-    "city": "강남",
-    "name": "강남시티점"
-  },
-  {
-    "region": "서울",
-    "theater": "lotte",
-    "city": "강북",
-    "name": "강북"
-  },
-  {
     "region": "지역(대분류)",
     "theater": "영화관(롯데or메가박스)",
     "city": "지역(소분류)",
     "name": "영화관 지점명"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강남구",
+    "name": "롯데시네마-브로드웨이(신사)"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강남구",
+    "name": "메가박스 씨티(강남대로)"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강남구",
+    "name": "메가박스 코엑스"
+  },
+  {
+    "region": "서울",
+    "theater": "Eivom",
+    "city": "강남구",
+    "name": "이봄씨어터"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강동 / 송파구",
+    "name": "롯데시네마-강동"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강동 / 송파구",
+    "name": "롯데시네마-월드타워"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강동 / 송파구",
+    "name": "메가박스 강동"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강동 / 송파구",
+    "name": "메가박스 송파파크하비오"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강북구",
+    "name": "롯데시네마-수유"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강서구",
+    "name": "롯데시네마-가양"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "강서구",
+    "name": "롯데시네마-김포공항"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강서구",
+    "name": "메가박스 마곡"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "강서구",
+    "name": "메가박스 화곡"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "관악구",
+    "name": "롯데시네마-서울대입구"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "관악구",
+    "name": "롯데시네마-신림"
+  },
+  {
+    "region": "서울",
+    "theater": "KU",
+    "city": "광진구",
+    "name": "KU시네마테크"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "광진구",
+    "name": "롯데시네마-건대입구"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "광진구",
+    "name": "메가박스 군자"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "구로구",
+    "name": "롯데시네마-신도림"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "금천구",
+    "name": "롯데시네마-가산디지털"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "금천구",
+    "name": "롯데시네마-독산"
+  },
+  {
+    "region": "서울",
+    "theater": "Deosup",
+    "city": "노원구",
+    "name": "더숲 아트시네마"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "노원구",
+    "name": "롯데시네마-노원"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "노원구",
+    "name": "롯데시네마-수락산"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "도봉구",
+    "name": "메가박스 창동"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "동대문구",
+    "name": "롯데시네마-장안"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "동대문구",
+    "name": "롯데시네마-청량리"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "동작구",
+    "name": "메가박스 이수"
+  },
+  {
+    "region": "서울",
+    "theater": "Artnine",
+    "city": "동작구",
+    "name": "아트나인"
+  },
+  {
+    "region": "서울",
+    "theater": "KT&G",
+    "city": "마포구",
+    "name": "KT&G 상상마당 시네마"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "마포구",
+    "name": "롯데시네마-합정"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "마포구",
+    "name": "롯데시네마-홍대입구"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "마포구",
+    "name": "메가박스 상암 월드컵경기장"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "마포구",
+    "name": "메가박스 홍대"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "서대문구",
+    "name": "메가박스 신촌"
+  },
+  {
+    "region": "서울",
+    "theater": "Arthouse",
+    "city": "서대문구",
+    "name": "아트하우스 모모"
+  },
+  {
+    "region": "서울",
+    "theater": "Film",
+    "city": "서대문구",
+    "name": "필름포럼"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "서초구",
+    "name": "메가박스 강남"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "서초구",
+    "name": "메가박스 센트럴(고속터미널)"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "성동구",
+    "name": "메가박스 성수"
+  },
+  {
+    "region": "서울",
+    "theater": "Arirang",
+    "city": "성북구",
+    "name": "아리랑시네센터"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "양천구",
+    "name": "메가박스 목동"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "영등포구",
+    "name": "롯데시네마-영등포"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "용산구",
+    "name": "롯데시네마-용산"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "은평구",
+    "name": "롯데시네마-은평(롯데몰)"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "은평구",
+    "name": "메가박스 은평"
+  },
+  {
+    "region": "서울",
+    "theater": "Nangman",
+    "city": "종로구",
+    "name": "낭만극장"
+  },
+  {
+    "region": "서울",
+    "theater": "Nangman",
+    "city": "종로구",
+    "name": "낭만극장"
+  },
+  {
+    "region": "서울",
+    "theater": "Seoul",
+    "city": "종로구",
+    "name": "서울극장"
+  },
+  {
+    "region": "서울",
+    "theater": "Seoulart",
+    "city": "종로구",
+    "name": "서울아트시네마"
+  },
+  {
+    "region": "서울",
+    "theater": "Cinecube",
+    "city": "종로구",
+    "name": "시네큐브 광화문"
+  },
+  {
+    "region": "서울",
+    "theater": "Emu",
+    "city": "종로구",
+    "name": "에무시네마"
+  },
+  {
+    "region": "서울",
+    "theater": "Indi",
+    "city": "종로구",
+    "name": "인디스페이스"
+  },
+  {
+    "region": "서울",
+    "theater": "Heoliwood",
+    "city": "종로구",
+    "name": "허리우드극장"
+  },
+  {
+    "region": "서울",
+    "theater": "Daehan",
+    "city": "중구",
+    "name": "대한극장"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "중구",
+    "name": "롯데시네마-에비뉴엘(명동)"
+  },
+  {
+    "region": "서울",
+    "theater": "Lotte",
+    "city": "중구",
+    "name": "롯데시네마-황확"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "중구",
+    "name": "메가박스 동대문"
+  },
+  {
+    "region": "서울",
+    "theater": "Megabox",
+    "city": "중랑구",
+    "name": "메가박스상봉"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "고양",
+    "name": "롯데시네마-라페스타(일산)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "고양",
+    "name": "롯데시네마-주엽"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "고양",
+    "name": "메가박스 고양스타필드"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "고양",
+    "name": "메가박스 백석"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "고양",
+    "name": "메가박스 일산"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "고양",
+    "name": "메가박스 일산벨라시타"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "고양",
+    "name": "메가박스 킨텍스"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "광명",
+    "name": "롯데시네마-광명(광명사거리)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "광명",
+    "name": "롯데시네마-광명아울렛"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "광주",
+    "name": "롯데시네마-광주터미널(경기)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "구리",
+    "name": "롯데시네마-구리아울렛"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "군포",
+    "name": "롯데시네마-산본피트인"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "김포",
+    "name": "메가박스 김포한강신도시"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "남양주",
+    "name": "롯데시네마-마석"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "남양주",
+    "name": "롯데시네마-진접"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "남양주",
+    "name": "메가박스 남양주"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "남양주",
+    "name": "메가박스 별내"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Donggang",
+    "city": "동두천",
+    "name": "동광극장(문화극장3관)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Culture",
+    "city": "동두천",
+    "name": "문화극장(동두천)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "부천",
+    "name": "롯데시네마-부천(신중동역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "부천",
+    "name": "롯데시네마-부천역"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "부천",
+    "name": "메가박스 부천스타필드시티"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Fantastic",
+    "city": "부천",
+    "name": "판타스틱큐브"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "성남",
+    "name": "롯데시네마-성남(모란역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "성남",
+    "name": "롯데시네마-성남중앙(신흥역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "성남",
+    "name": "롯데시네마-위례"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "성남",
+    "name": "메가박스 분당"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "수원",
+    "name": "롯데시네마-광교아울렛"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "수원",
+    "name": "롯데시네마-서수원"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "수원",
+    "name": "롯데시네마-수원(수원역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "수원",
+    "name": "메가박스 수원"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "수원",
+    "name": "메가박스 수원남문"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "수원",
+    "name": "메가박스 영통"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "시흥",
+    "name": "롯데시네마-시화"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "시흥",
+    "name": "메가박스 시흥배곧"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안산",
+    "name": "롯데시네마-센트럴락(안산)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안산",
+    "name": "롯데시네마-안산"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안산",
+    "name": "롯데시네마-안산고잔"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "안산",
+    "name": "메가박스 안산중앙"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안성",
+    "name": "롯데시네마-안성"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안양",
+    "name": "롯데시네마-안양(안양역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안양",
+    "name": "롯데시네마-안양일번가"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안양",
+    "name": "롯데시네마-인덕원"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "안양",
+    "name": "롯데시네마-평촌(범계역)"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "양주",
+    "name": "롯데시네마-양주고읍"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "양주",
+    "name": "메가박스 양주"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "오산",
+    "name": "롯데시네마-오산"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "오산",
+    "name": "메가박스 오산"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "용인",
+    "name": "롯데시네마-수지"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "용인",
+    "name": "롯데시네마-용인기흥"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "용인",
+    "name": "롯데시네마-용인역북"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "용인",
+    "name": "메가박스 용인테크노밸리"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "의정부",
+    "name": "롯데시네마-의정부민락"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "의정부",
+    "name": "메가박스 의정부 민락"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "파주",
+    "name": "롯데시네마-파주아울렛"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "파주",
+    "name": "롯데시네마-파주운정"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "파주",
+    "name": "메가박스 파주금촌"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "파주",
+    "name": "메가박스 파주운정"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "파주",
+    "name": "메가박스 파주출판도시"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Myeong",
+    "city": "파주",
+    "name": "명필름아트센터"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Heyri",
+    "city": "파주",
+    "name": "헤이리시네마"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "평택",
+    "name": "롯데시네마-송탄"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "평택",
+    "name": "롯데시네마-평택비전"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "평택",
+    "name": "메가박스 평택"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "하남",
+    "name": "메가박스 미사강변"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "하남",
+    "name": "메가박스 하남스타필드"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "화성",
+    "name": "롯데시네마-병점"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Lotte",
+    "city": "화성",
+    "name": "롯데시네마-항남"
+  },
+  {
+    "region": "경기 / 인천",
+    "theater": "Megabox",
+    "city": "화성",
+    "name": "메가박스 동탄"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-광복"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-대영"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-동래"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-동부산"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-부산본점(롯데백화점)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-사상"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-서면(전포동)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-센텀시티"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-오투(부산대)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "부산",
+    "name": "롯데시네마-프리미엄 해운대(장산역)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "부산",
+    "name": "메가박스 덕천"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "부산",
+    "name": "메가박스 부산극장"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "부산",
+    "name": "메가박스 정관"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "부산",
+    "name": "메가박스 해운대(장산)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "BusanCinema",
+    "city": "부산",
+    "name": "영화의전당"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "울산",
+    "name": "롯데시네마-울산(백화점)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "울산",
+    "name": "롯데시네마-울산성남"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "울산",
+    "name": "메가박스 울산"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Cineseven",
+    "city": "거제",
+    "name": "시네세븐 거제"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "거창",
+    "name": "메가박스 거창"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "김해",
+    "name": "롯데시네마-김해부원"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "김해",
+    "name": "롯데시네마-김해아울렛(장유)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Mirangcinema",
+    "city": "밀양",
+    "name": "밀양시네마"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "사천",
+    "name": "메가박스 사천"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "양산",
+    "name": "메가박스 양산"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "양산",
+    "name": "메가박스 양산라피에스타"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "진주",
+    "name": "롯데시네마-엠비씨네(진주)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "진주",
+    "name": "롯데시네마-진주혁신(진주몰)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "진주",
+    "name": "롯데시네마-프리미엄 진주(중안)"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "창원",
+    "name": "롯데시네마-마산터미널"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "진해",
+    "name": "롯데시네마-진해"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "창원",
+    "name": "롯데시네마-창원"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "창원",
+    "name": "롯데시네마-프리미엄 경남대"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "창원",
+    "name": "메가박스 마산"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Megabox",
+    "city": "창원",
+    "name": "메가박스 창원"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Cineart",
+    "city": "창원",
+    "name": "씨네아트 리좀"
+  },
+  {
+    "region": "부산 / 울산 / 경남",
+    "theater": "Lotte",
+    "city": "통영",
+    "name": "롯데시네마-통영"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Grace",
+    "city": "대구",
+    "name": "그레이스실버극장"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Dongsong",
+    "city": "대구",
+    "name": "동성아트홀"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-대구광장"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네-대구율하"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-대구현풍"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-동성로"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-상인"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-성서"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "대구",
+    "name": "롯데시네마-프리미엄 만경"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "대구",
+    "name": "메가박스 대구"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "대구",
+    "name": "메가박스 대구 신세계"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "대구",
+    "name": "메가박스 대구이시아"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "대구",
+    "name": "메가박스 북대구(칠곡)"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Ohoh",
+    "city": "대구",
+    "name": "오오극장"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "경산",
+    "name": "롯데시네마-경산"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "경산",
+    "name": "메가박스 경산하양"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "경주",
+    "name": "롯데시네마-경주"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "경주",
+    "name": "메가박스 경주"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "구미",
+    "name": "롯데시네마-구미공단"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "구미",
+    "name": "롯데시네마-구미프라임 1번가"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "구미",
+    "name": "롯데시네마-프리미엄 구미센트럴"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "구미",
+    "name": "메가박스 구미강동"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "김천",
+    "name": "메가박스 김천"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "문경",
+    "name": "메가박스 문경"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "안동",
+    "name": "롯데시네마-프리미엄 안동"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Andong",
+    "city": "안동",
+    "name": "안동중앙시네마"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "영주",
+    "name": "롯데시네마-영주"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "예천",
+    "name": "메가박스 경북도청"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Lotte",
+    "city": "포항",
+    "name": "롯데시네마-포항"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Megabox",
+    "city": "포항",
+    "name": "메가박스 남포항"
+  },
+  {
+    "region": "대구 / 경북",
+    "theater": "Indiplus",
+    "city": "포항",
+    "name": "인디플러스 포항"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Artcinema",
+    "city": "대전",
+    "name": "대전아트시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "대전",
+    "name": "롯데시네마-대전(백화점)"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "대전",
+    "name": "롯데시네마-대전둔산(월평동)"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "대전",
+    "name": "롯데시네마-대전센트럴"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "대전",
+    "name": "메가박스 대전"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "대전",
+    "name": "메가박스 대전중앙로"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "제천",
+    "name": "메가박스 제천"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "진천",
+    "name": "메가박스 진천"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "청주",
+    "name": "롯데시네마-서청주(아울렛)"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "청주",
+    "name": "롯데시네마-청주 용암"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "청주",
+    "name": "롯데시네마-청주(성안길)"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "청주",
+    "name": "메가박스 오창"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "청주",
+    "name": "메가박스 청주충북대점"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "충주",
+    "name": "롯데시네마-충주"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "충주",
+    "name": "메가박스 충주"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "공주",
+    "name": "메가박스 공주"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Nonsan",
+    "city": "논산",
+    "name": "논산시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Artcinema",
+    "city": "당진시",
+    "name": "당진아트시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Joinandcinema",
+    "city": "당진시",
+    "name": "조인앤시네마 당진"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Myeongbo",
+    "city": "보령",
+    "name": "명보시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Geumseong",
+    "city": "부여군",
+    "name": "금성시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Starbox",
+    "city": "부여군",
+    "name": "스타박스"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Gibeolpo",
+    "city": "서천",
+    "name": "서천 기벌포영화관"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Lotte",
+    "city": "아산",
+    "name": "롯데시네마-아산터미널"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Yesan",
+    "city": "예산",
+    "name": "예산시네마"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "천안",
+    "name": "메가박스 천안"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Indiplus",
+    "city": "천안",
+    "name": "인디플러스 천안"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Nangman",
+    "city": "천안",
+    "name": "천안낭만극장"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Smallcinema",
+    "city": "태안",
+    "name": "태안 작은영화관"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "홍성군",
+    "name": "메가박스 홍성내포"
+  },
+  {
+    "region": "강원",
+    "theater": "Independentart",
+    "city": "강릉",
+    "name": "강릉독립예술극장 신영"
+  },
+  {
+    "region": "강원",
+    "theater": "Lotte",
+    "city": "동해",
+    "name": "롯데시네마-동해"
+  },
+  {
+    "region": "강원",
+    "theater": "Megabox",
+    "city": "속초",
+    "name": "메가박스-속초"
+  },
+  {
+    "region": "강원",
+    "theater": "Lotte",
+    "city": "원주",
+    "name": "롯데시네마-남원주"
+  },
+  {
+    "region": "강원",
+    "theater": "Lotte",
+    "city": "원주",
+    "name": "롯데시네마-원주무실"
+  },
+  {
+    "region": "강원",
+    "theater": "Megabox",
+    "city": "원주",
+    "name": "메가박스 원주"
+  },
+  {
+    "region": "강원",
+    "theater": "Megabox",
+    "city": "원주",
+    "name": "메가박스 원주센트럴"
+  },
+  {
+    "region": "강원",
+    "theater": "Mediacenter",
+    "city": "원주",
+    "name": "원주영상미디어센터 모두극장"
+  },
+  {
+    "region": "강원",
+    "theater": "Megabox",
+    "city": "춘천",
+    "name": "메가박스 남춘천"
+  },
+  {
+    "region": "대전 / 충청 / 세종",
+    "theater": "Megabox",
+    "city": "세종",
+    "name": "메가박스 세종"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Gwangju",
+    "city": "광주",
+    "name": "광주극장"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Gwangju",
+    "city": "광주",
+    "name": "광주극장"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Independent",
+    "city": "광주",
+    "name": "광주독립영화관"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "광주",
+    "name": "롯데시네마-광주(백화점)"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "광주",
+    "name": "롯데시네마-광주광산"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "광주",
+    "name": "롯데시네마-수완(아울렛)"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "광주",
+    "name": "롯데시네마-충창로"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "광주",
+    "name": "메가박스 광주 상무"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "광주",
+    "name": "메가박스 광주 하남"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "광주",
+    "name": "메가박스 전대(광주)"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "광주",
+    "name": "메가박스 첨단"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Dongri",
+    "city": "고창",
+    "name": "동리시네마"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "군산",
+    "name": "롯데시네마-군산나운"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "군산",
+    "name": "롯데시네마-군산몰"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Horizon",
+    "city": "김제",
+    "name": "지평선영화관"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "남원",
+    "name": "메가박스 남원"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Hue",
+    "city": "완주",
+    "name": "완주 휴 시네마"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "익산",
+    "name": "롯데시네마-익산모현"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "전주",
+    "name": "롯데시네마-전주(백화점)"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Lotte",
+    "city": "전주",
+    "name": "롯데시네마-전주평화"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "전주",
+    "name": "메가박스 송천"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "전주",
+    "name": "메가박스 전주"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "DigitalIndependence",
+    "city": "전주",
+    "name": "전주디지털독립 영화관"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Cinematown",
+    "city": "전주",
+    "name": "전주시네마타운"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Joyandcinema",
+    "city": "전주",
+    "name": "조이앤시네마 전주"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Smallcinema",
+    "city": "고흥",
+    "name": "고흥작은영화관"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Naturedream",
+    "city": "구례",
+    "name": "구례자연드림시네마"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "목포",
+    "name": "메가박스 목포"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "목포",
+    "name": "메가박스 목포하당(포르모)"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "순천",
+    "name": "메가박스 순천"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "여수",
+    "name": "메가박스 여수"
+  },
+  {
+    "region": "광주 / 전라",
+    "theater": "Megabox",
+    "city": "여수",
+    "name": "메가박스 여수웅천"
+  },
+  {
+    "region": "제주",
+    "theater": "Lotte",
+    "city": "서귀포",
+    "name": "롯데시네마-서귀포"
+  },
+  {
+    "region": "제주",
+    "theater": "Lotte",
+    "city": "제주시",
+    "name": "롯데시네마-제주삼화"
+  },
+  {
+    "region": "제주",
+    "theater": "Lotte",
+    "city": "제주시",
+    "name": "롯데시네마-제주아라"
+  },
+  {
+    "region": "제주",
+    "theater": "Megabox",
+    "city": "제주시",
+    "name": "메가박스 제주"
   }
 ]

@@ -123,14 +123,16 @@
   width:750px;
   height: 600px;
   display: none;
+  overflow-y: scroll;
 }
 
-#processes .process.theater .theaterList>ul {
+#processes .process.theater .theaterList .cityList {
   margin:10px;
   margin-bottom: 0;
+  padding-right: 10px;
 }
 
-#processes .process.theater .theaterList>ul>div {
+#processes .process.theater .theaterList .cityList .cityName {
   height:70px;
   line-height: 70px;
   float: left;

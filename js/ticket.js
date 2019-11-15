@@ -84,11 +84,55 @@ $(document).ready(function(){
   })
 
   $('.regionList .regions').on('click', function() {
-    var clicked = $(this)[0].classList[1];
-    $('.process.theater .theaterList.'+clicked).show();
+    var clicked = $(this).text();
+    var cityList = [];
+    $.getJSON('../json/theater.json', function(data){
+      $.each(data, function() {
+        if(clicked.indexOf(this.region) >= 0) {
+          cityList.push(this.city)
+        }
+      });
+
+      cityList = new Set(cityList)
+      cityList = Array.from(cityList)
+
+      for(i=0; i<cityList.length; i++) {
+        var city = '<ul class="cityList clearfix"><div class="cityName">'+cityList[i]+'</div></ul>';
+        $('.theaterList').append(city);
+      };
+
+      // $('.cityList .cityName')[i].innerText
+      $.each(data, function() {
+        for(i=0; i<$('.cityList .cityName').length; i++) {
+          if($('.cityList .cityName')[i].innerText == this.city) {
+            var theaters = `<li class="theaters"><button type="button" name ="thater" class="selectBtn theater">`+this.name+`</button></li>`;
+            var node = document.createElement("LI");
+            var listClass = document.createAttribute("class");
+            var btn = document.createElement("BUTTON");
+            var btnType = document.createAttribute("class");
+            var btnName = document.createAttribute("class");
+            var btnClass = document.createAttribute("class");
+            var textnode = document.createTextNode(this.name);
+            listClass.value = "theaters";
+            node.setAttributeNode(listClass);
+            btnType.value = "button";
+            btnName.value = "theater";
+            btnClass.value = "selectBtn theater";
+            btn.setAttributeNode(btnType);
+            btn.setAttributeNode(btnName);
+            btn.setAttributeNode(btnClass);
+            btn.appendChild(textnode);
+            node.appendChild(btn);
+            $('.cityList')[i].append(node)
+          }
+        }
+      });
+    });//getJSON
+    $('.theaterList').show()
   });
 
   $('.process.theater .theaterList .closeBtn').on('click', function() {
+    $('.theaterList .cityList').remove();
     $(this).parents('.theaterList').hide();
   })
 
