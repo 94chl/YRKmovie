@@ -105,7 +105,6 @@ $(document).ready(function(){
       $.each(data, function() {
         for(i=0; i<$('.cityList .cityName').length; i++) {
           if($('.cityList .cityName')[i].innerText == this.city) {
-            var theaters = `<li class="theaters"><button type="button" name ="thater" class="selectBtn theater">`+this.name+`</button></li>`;
             var node = document.createElement("LI");
             var listClass = document.createAttribute("class");
             var btn = document.createElement("BUTTON");
@@ -136,12 +135,15 @@ $(document).ready(function(){
     $(this).parents('.theaterList').hide();
   })
 
-  $('.process.theater .theaterList ul').on('click', $('.theaters .selectBtn.theater'), function(e) {
+  $(document).on('click', '.theaters .selectBtn.theater', function(e) {
     var clicked = e.target.innerText;
     $('.reserveInfo.theater .selected').text(clicked);
   })
 
-  $("#datepicker").datepicker();
+  $("#datepicker").datepicker({
+    minDate:0,
+    maxDate:5
+  });
 
   $('#datepicker').on('change', function(){
     var month = $("#datepicker").val().substring(0,2);

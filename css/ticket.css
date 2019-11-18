@@ -133,9 +133,7 @@
 }
 
 #processes .process.theater .theaterList .cityList .cityName {
-  height:70px;
-  line-height: 70px;
-  float: left;
+
   margin-right: 10px;
   background: #ddd;
   padding:0 10px;
