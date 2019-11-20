@@ -283,6 +283,10 @@
   margin-left: 5px;
 }
 
+.container .detailsWrap .details .shortRatings .likeWrap {
+  display: none;
+}
+
 /*crew*/
 
 
@@ -381,8 +385,124 @@
   background: #fff;
   height: 30px;
   line-height: 30px;
+  position: relative;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab>p {
+  float: left;
   font-size: 18px;
   font-weight: bold;
+  background: #ddd;
+  height: 30px;
+  line-height: 30px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReviewBtn {
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  background: skyblue;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview {
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -300px;
+  margin-top: -375px;
+  z-index: 10;
+  background: #fff;
+  width: 600px;
+  height: 750px;
+  display: none;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .addReviewTab {
+  width:100%;
+  height:30px;
+  text-indent: 10px;
+  color:#fff;
+  background: #000;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .addReviewTitle {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview em {
+  color:#777;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question {
+  width:550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  border-top:1px solid #ddd;
+  padding-top:10px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question #slider {
+  float: left;
+  margin-left: 65px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question #minbeds {
+  float: left;
+  height: 20px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question.slider em {
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question .ui-slider {
+  width:300px;
+  height: 18px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .question .ui-slider .ui-slider-handle {
+  background: #000;
+  height: 24px;
+  width: 24px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview textarea {
+  resize:none;
+  overflow-y: scroll;
+  width: 100%;
+  border: none;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .textCheck {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .textCheck em{
+  color:#000fff;
+  font-weight: bold;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .btnWrap {
+  width:550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .detailsWrap .gradeWrap .gradeTab .addReview .btnWrap button {
+  border:1px solid #000;
+  width:100px;
+  height:50px;
+  line-height: 50px;
 }
 
 .container .detailsWrap .gradeWrap .graphWrap ul li {
@@ -442,47 +562,58 @@
   background: gold;
   margin:10px 0;
   width:820px;
+  min-height: 100px;
+  position: relative;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .commentWrap p{
   margin:10px;
+  background: #ddd;
+  margin-bottom: 40px;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap {
-  float: left;
+  position: absolute;
+  left:0;
+  bottom:0;
   margin-right:10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background: pink;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap div {
   float:left;
+  border-right: 1px solid #000;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .writer {
   padding-right: 5px;
-  border-right: 1px solid #000;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .writeDate {
   margin-left: 5px;
   padding-right: 5px;
-  border-right: 1px solid #000;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .report {
   margin-left: 5px;
 }
 
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap div:last-child {
+  border:none;
+}
+
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .likeWrap {
-  float: right;
-  margin-right:10px;
-  margin-bottom: 10px;
-  background: pink;
+  position: absolute;
+  right:0;
+  bottom:0;
+  margin-bottom: 5px;
+  width:220px;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .likeWrap button {
-  float:left;
+  float: left;
   cursor: pointer;
-  margin-left: 5px;
+  margin-right: 10px;
+  width:100px;
 }

@@ -85,7 +85,7 @@ $(document).ready(function(){
 
   sessionStorage.removeItem("selectedMovie");
   $('.listClickMenu ul li').on('click', function() {
-    var movieName = $(this).parents('.listClickMenu').attr('title')
+    var movieName = $(this).parents('.listClickMenu').attr('title');
     sessionStorage.setItem("selectedMovie", movieName);
   })
 });

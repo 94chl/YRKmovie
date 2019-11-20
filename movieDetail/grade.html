@@ -8,9 +8,28 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/movieDetail.css">
+  <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
   <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
   <script src="../js/common.js"></script>
   <script src="../js/movieDetail.js"></script>
+  <script>
+    $(function() {
+      var select = $("#minbeds");
+      var slider = $("#slider").slider({
+        min: 1,
+        max: 10,
+        range: "min",
+        value: select[0].selectedIndex + 1,
+        slide: function(event, ui) {
+          select[0].selectedIndex = ui.value - 1;
+        }
+      });
+      $("#minbeds").on("change", function() {
+        slider.slider("value", this.selectedIndex + 1);
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -141,124 +160,74 @@
           <div class="gradeWrap">
 
             <div class="graphWrap">
-              <div class="gradeTab">통계</div>
-              <ul>
-                <li>
-                  <div class="graphBy netizen">네티즌 평점</div>
-                  <div class="graphTotal">총평</div>
-                  <div class="graphBar">막대그래프</div>
-                  <div class="graphCircle">원형그래프</div>
-                </li>
-                <li>
-                  <div class="graphBy audience">관람객 평점</div>
-                  <div class="graphTotal">총평</div>
-                  <div class="graphBar">막대그래프</div>
-                  <div class="graphCircle">원형그래프</div>
-                </li>
-              </ul>
+              <div class="gradeTab">
+                <p>통계</p>
+              </div>
+              <div class="graph">
+                이미지를 통째로 가져오거나 항목을 없애자
+              </div>
             </div>
 
             <div class="reviewWrap">
-              <div class="gradeTab">네티즌 평점</div>
-              <ul class='grades'>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
+              <div class="gradeTab">
+                <p>네티즌 평점</p>
+                <button type="button" name="addReviewBtn" class="addReviewBtn">내 평점 등록</button>
+                <form class="addReview">
+                  <div class="addReviewTab">내 평점 등록</div>
+                  <div class="addReviewTitle">영화제목</div>
+                  <div class="question slider">
+                    <div id="slider"></div>
+                    <select name="minbeds" id="minbeds">
+                      <option value="1" selected>1점</option>
+                      <option value="2">2점</option>
+                      <option value="3">3점</option>
+                      <option value="4">4점</option>
+                      <option value="5">5점</option>
+                      <option value="6">6점</option>
+                      <option value="7">7점</option>
+                      <option value="8">8점</option>
+                      <option value="9">9점</option>
+                      <option value="10">10점</option>
+                    </select>
+                    <em>별점을 선택하세요</em>
                   </div>
-                </li>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>감상평</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
+                  <div class="question strongPoint">
+                    <p>어떤 점이 좋았나요? 감상포인트를 추천해주세요! <em>중복 선택 가능</em></p>
+                    <label><input type="checkbox" name="strongPoint" value="directing">연출</option></label>
+                    <label><input type="checkbox" name="strongPoint" value="acting">연기</option></label>
+                    <label><input type="checkbox" name="strongPoint" value="story">스토리</option></label>
+                    <label><input type="checkbox" name="strongPoint" value="image">영상미</option></label>
+                    <label><input type="checkbox" name="strongPoint" value="ost">OST</option></label>
                   </div>
-                </li>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>감상평</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
+                  <div class="question tension">
+                    <p>긴장감 지수를 선택해 주세요</p>
+                    <label><input type="radio" name="tesion" value="high" required></option>높음</label>
+                    <label><input type="radio" name="tesion" value="normal"></option>보통</label>
+                    <label><input type="radio" name="tesion" value="low"></option>낮음</label>
                   </div>
-                </li>
-              </ul>
+                  <div class="question review">
+                    <textarea name="name" rows="8" cols="80" maxlength="1000" placeholder="감상평을 남겨주세요. 영화와 상관없는 내용은 약관에 의해 제재를 받을수 있습니다."></textarea>
+                    <div class="textCheck"><em>0</em> / 최대 1000자</div>
+                  </div>
+                  <div class="question spoiler">
+                    <p>감상평에 스포일러가 포함되어있나요?</p>
+                    <label><input type="radio" name="spoiler" value="t" required>있음</label>
+                    <label><input type="radio" name="spoiler" value="f">없음</label>
+                  </div>
+                  <div class="btnWrap">
+                    <button type="button" name="button" class="cancleBtn">취소</button>
+                    <button type="button" name="button" class="confirmBtn">확인</button>
+                  </div>
+                </form>
+
+              </div>
+              <ul class='grades netizen'></ul>
             </div>
             <div class="reviewWrap">
-              <div class="gradeTab">평론가 평점</div>
-              <ul class='grades'>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>감상평</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="grade clearfix">
-                  <div class="point">평점</div>
-                  <div class="commentWrap">
-                    <p>감상평</p>
-                    <div class="writerWrap">
-                      <div class="writer">작성자</div>
-                      <div class="writeDate">작성날짜</div>
-                      <div class="report"><a href="#">신고</a></div>
-                    </div>
-                    <div class="likeWrap">
-                      <button type="button">공감</button>
-                      <button type="button">비공감</button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              <div class="gradeTab">
+                <p>평론가 평점</p>
+              </div>
+              <ul class='grades critic'></ul>
             </div>
 
           </div>
