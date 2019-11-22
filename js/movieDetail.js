@@ -86,16 +86,19 @@ $(document).ready(function(){
 
   var reviews = [];
 
-  reviews.push({
-    title: newReview.title,
-    point: newReview.point,
-    review: newReview.review,
-    date: newReview.date,
-    writer: newReview.writer,
-    userId: newReview.userId,
-    like: newReview.like,
-    dislike: newReview.dislike
-  });
+  if(newReview) {
+    reviews.push({
+      title: newReview.title,
+      point: newReview.point,
+      review: newReview.review,
+      date: newReview.date,
+      writer: newReview.writer,
+      userId: newReview.userId,
+      like: newReview.like,
+      dislike: newReview.dislike
+    });
+  }
+
 
   $.getJSON('../json/review.json', function(data){
     $.each(data, function() {
@@ -122,7 +125,7 @@ $(document).ready(function(){
     });
     reviews.sort(function(a, b){return new Date(b.date) - new Date(a.date)});
     for(i=0; i <reviews.length; i++) {
-      var addReview = '<li class="grade clearfix"><div class="point">'+reviews[i].point+'/10</div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button">신고</a></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
+      var addReview = '<li class="grade clearfix"><div class="point">'+reviews[i].point+'/10</div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button" class="reportBtn">신고</a></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
       $('.netizen.grades').append(addReview);
     }
   });//getJSON

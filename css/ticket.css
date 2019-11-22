@@ -168,12 +168,46 @@
 
 #processes .process.date #timetable {
   float: left;
+  width: 342px;
 }
 
 #processes .process.date #timetable .timetables {
   text-align: center;
-  width: 342px;
   background: #fff;
+  font-size: 1.5em;
+}
+
+#processes .process.date #timetable .chosenDate {
+  margin-top: 5px;
+  text-indent: 20px;
+  font-size: 1.3em;
+}
+
+#processes .process.date .times {
+
+}
+
+#processes .process.date .times .screenWrap {
+
+}
+
+#processes .process.date .times .screenWrap .screen {
+  text-indent: 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  clear:both;
+}
+
+#processes .process.date .times .screenWrap .timetableWrap {
+  margin-top: 5px;
+}
+
+#processes .process.date .times .screenWrap .timetableWrap .time {
+  float: left;
+  height: 20px;
+  width:75px;
+  background: #fff;
+  margin: 5px;
 }
 
 #processes .process.date #numbers {
@@ -229,11 +263,63 @@
 }
 
 .contentsWrap .reservationInfoWrap .reservationBtn {
+  display: block;
   border:1px solid #fff;
   height: 30px;
+  line-height: 30px;
   cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .contentsWrap .reservationInfoWrap #reservationInfo .reserveInfo p {
+  float: left;
+}
+
+/*예약완료*/
+
+.contentsWrap #completeReserve {
+  background: skyblue;
+  width:500px;
+  height:500px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.contentsWrap #completeReserve .completeMessage {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contentsWrap #completeReserve .reserveInfo {
+  margin: 20px 10px;
+  background: gold;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.contentsWrap #completeReserve .reserveInfo .menu {
+  width: 100px;
+  text-indent: 10px;
+  margin-left: 30px;
+}
+
+.contentsWrap #completeReserve .reserveInfo .selected {
+  margin-left: 20px;
+}
+
+.contentsWrap #completeReserve .reserveInfo.poster {
+  background: #ddd;
+  height: 415px;
+  width: 290px;
+}
+
+.contentsWrap #completeReserve .reserveInfo.title {
+  margin-top:10px;
+}
+
+.contentsWrap #completeReserve .reserveInfo p {
   float: left;
 }

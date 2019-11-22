@@ -402,6 +402,7 @@
   line-height: 30px;
   float: right;
   background: skyblue;
+  cursor: pointer;
 }
 
 .container .detailsWrap .gradeWrap .gradeTab .addReview {
@@ -503,6 +504,7 @@
   width:100px;
   height:50px;
   line-height: 50px;
+  cursor: pointer;
 }
 
 .container .detailsWrap .gradeWrap .graphWrap ul li {
@@ -597,6 +599,10 @@
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .report {
   margin-left: 5px;
+}
+
+.container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap .report .reportBtn {
+  cursor: pointer;
 }
 
 .container .detailsWrap .gradeWrap .reviewWrap .grades .grade .writerWrap div:last-child {
