@@ -1,0 +1,287 @@
+.container .contentsWrap {
+  width:1050px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*영화 선택*/
+
+.container .contentsWrap .movieSelect {
+  padding-top:10px;
+}
+
+.container .contentsWrap .movieSelect>div {
+  margin:10px;
+  margin-top:0;
+  background: orange;
+}
+
+.container .contentsWrap .movieSelect>label {
+  margin:0 10px;
+  margin-bottom:5px;
+  float: left;
+  background: #ddd;
+}
+
+/*표 필드*/
+.container .contentsWrap .reviewWrap {
+  clear:both;
+}
+
+.container .contentsWrap .reviewWrap .pointTab{
+  position: relative;
+}
+
+.container .contentsWrap .reviewWrap .pointTab>p{
+  height: 50px;
+  line-height: 50px;
+}
+
+.container .contentsWrap .reviewWrap .pointTab .addReviewBtn {
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right:0;
+  top:50%;
+  margin-top: -15px;
+  background: skyblue;
+  cursor: pointer;
+}
+
+.container .contentsWrap .reviewWrap .reviews{
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .field{
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .field>td {
+  width:150px;
+  text-align: center;
+}
+
+.container .contentsWrap .reviewWrap .reviews .field .title {
+  background: #ddd;
+}
+
+.container .contentsWrap .reviewWrap .reviews .field .pointWrap {
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .field .commentWrap {
+  width:550px;
+  background: #ddd;
+}
+
+.container .contentsWrap .reviewWrap .reviews .field .writerWrap {
+  width:100px;
+}
+
+.container .contentsWrap .reviewWrap .reviews .field .likeWrap {
+  background: #ddd;
+  width:100px;
+}
+/*리뷰*/
+.container .contentsWrap .reviewWrap .reviews .review{
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .review>td {
+  width:150px;
+  padding: 5px;
+  border-bottom:1px solid #000;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review:last-child>td {
+  border-bottom: none;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .title {
+  color:#c76520;
+  font-weight: bold;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .pointWrap {
+  background: #ddd;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .pointWrap .starPoint {
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .pointWrap .point {
+  text-align: center;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .commentWrap {
+  width:550px;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .commentWrap .comment {
+  display: inline;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .commentWrap .report {
+  display: inline;
+  margin-left: 10px;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .commentWrap .report .reportBtn {
+  color:#888;
+  cursor: pointer;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .writerWrap {
+  background: #ddd;
+  width:100px;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .writerWrap .writer {
+  color:#888;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .writerWrap .writeDate {
+  color:#888;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .likeWrap {
+  width:100px;
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .likeWrap .likeBtn {
+
+}
+
+.container .contentsWrap .reviewWrap .reviews .review .likeWrap .likeBtn em {
+
+}
+/*리뷰 쓰기*/
+.stars {
+  width:550px;
+}
+
+.stars img {
+  width:100%;
+}
+
+.container .contentsWrap .addReview {
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -300px;
+  margin-top: -375px;
+  z-index: 10;
+  background: #fff;
+  width: 600px;
+  height: 750px;
+  display: none;
+}
+
+.container .contentsWrap .addReview .addReviewTab {
+  width:100%;
+  height:30px;
+  line-height:30px;
+  text-indent: 10px;
+  color:#fff;
+  background: #000;
+}
+
+.container .contentsWrap .addReview .addReviewTitle {
+  width:550px;
+  margin: 0 auto;
+}
+
+.container .contentsWrap .addReview .addReviewTitle .selectedTitle {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .contentsWrap .addReview .addReviewTitle .movieTitle {
+  margin:5px 10px;
+  float: left;
+}
+
+.container .contentsWrap .addReview em {
+  color:#777;
+}
+
+.container .contentsWrap .addReview .question {
+  clear: both;
+  width:550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  border-top:1px solid #ddd;
+  padding-top:10px;
+}
+
+.container .contentsWrap .addReview .question .starRating {
+  width:270px;
+  margin: 0 auto;
+}
+
+.container .contentsWrap .addReview .question #rateYo {
+  float: left;
+}
+
+.container .contentsWrap .addReview .question #minbeds {
+  float: left;
+  height: 20px;
+  width: 70px;
+  margin-left: 30px;
+  top: 50%;
+  margin-top:5px;
+}
+
+.container .contentsWrap .addReview .question.slider em {
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+.container .contentsWrap .addReview .question .ui-slider {
+  width:300px;
+  height: 18px;
+}
+
+.container .contentsWrap .addReview .question .ui-slider .ui-slider-handle {
+  background: #000;
+  height: 24px;
+  width: 24px;
+}
+
+.container .contentsWrap .addReview textarea {
+  resize:none;
+  overflow-y: scroll;
+  width: 100%;
+  border: none;
+}
+
+.container .contentsWrap .addReview .textCheck {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.container .contentsWrap .addReview .textCheck em{
+  color:#000fff;
+  font-weight: bold;
+}
+
+.container .contentsWrap .addReview .btnWrap {
+  width:550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .contentsWrap .addReview .btnWrap button {
+  border:1px solid #000;
+  width:100px;
+  height:50px;
+  line-height: 50px;
+  cursor: pointer;
+}

@@ -19,4 +19,6 @@ $(document).ready(function() {
   $('#topBtn').on('click', function() {
     $(window).scrollTop(0);
   });
+  var newWindowIcon = '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
+  $('header a[target="_blank"]').append(newWindowIcon)
 })

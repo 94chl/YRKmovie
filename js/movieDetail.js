@@ -119,15 +119,21 @@ $(document).ready(function(){
           dislike: this.dislike
         });
       } else if(this.title == title && critic == "critic") {
-        var addReview = '<li class="grade clearfix"><div class="point">'+this.point+'/10</div><div class="commentWrap"><p>'+this.review+'</p><div class="writerWrap"><div class="writer">'+this.writer+'</div><div class="writeDate">'+this.date+'</div></div></div></li>'
+        var addReview = '<li class="grade clearfix"><div class="pointWrap"><div class="starPoint reviewData">'+this.point+'</div><div class="point reviewData">'+this.point+'/10</div></div><div class="commentWrap"><p>'+this.review+'</p><div class="writerWrap"><div class="writer">'+this.writer+'</div><div class="writeDate">'+this.date+'</div></div></div></li>'
         $('.critic.grades').append(addReview);
       }
     });
     reviews.sort(function(a, b){return new Date(b.date) - new Date(a.date)});
     for(i=0; i <reviews.length; i++) {
-      var addReview = '<li class="grade clearfix"><div class="point">'+reviews[i].point+'/10</div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button" class="reportBtn">신고</a></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
+      var addReview = '<li class="grade clearfix"><div class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button" class="reportBtn">신고</button></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
       $('.netizen.grades').append(addReview);
     }
+    $('.starPoint').each(function(){
+      $(this).rateYo({
+        rating:$(this).text()/2,
+        readOnly: true
+      })
+    })
   });//getJSON
 
   $(".addReviewBtn").on('click', function() {
@@ -148,31 +154,31 @@ $(document).ready(function(){
       alert("긴장감 지수를 선택해주세요.");
     } else if ($('.question.review .textCheck em').text() == 0) {
       alert("감상평을 작성해주세요.")
-    }else if ($('.question.spoiler input:radio:checked').length == 0) {
+    } else if ($('.question.spoiler input:radio:checked').length == 0) {
       alert("스포일러 여부를 선택해주세요.");
+    } else {
+      var d = new Date();
+      var newDate = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+      var strongPoints = [];
+      for(i=0; i < $('.question.strongPoint input:checkbox:checked').length; i++) {
+        strongPoints.push($('.question.strongPoint input:checkbox:checked')[i].value)
+      }
+      var newReview = {
+        title: title,
+        point: $("#rateYo").rateYo("rating")*2,
+        review: $("form.addReview textarea").val(),
+        date: newDate,
+        strongPoint : strongPoints,
+        tension: $('.question.tension input:radio:checked').val(),
+        spoiler: $('.question.spoiler input:radio:checked').val(),
+        writer: "임시 사용자",
+        userId: "test"
+      };
+      //로그인시스템 미구현으로 userId, writer는 임시값
+      sessionStorage.setItem("reviews", JSON.stringify(newReview));
+      $("form.addReview").hide();
+      window.location.reload()
     }
-
-    var d = new Date();
-    var newDate = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-    var strongPoints = [];
-    for(i=0; i < $('.question.strongPoint input:checkbox:checked').length; i++) {
-      strongPoints.push($('.question.strongPoint input:checkbox:checked')[i].value)
-    }
-    var newReview = {
-      title: title,
-      point: $("#slider").slider("value"),
-      review: $("form.addReview textarea").val(),
-      date: newDate,
-      strongPoint : strongPoints,
-      tension: $('.question.tension input:radio:checked').val(),
-      spoiler: $('.question.spoiler input:radio:checked').val(),
-      writer: "임시 사용자",
-      userId: "test"
-    };
-    //로그인시스템 미구현으로 userId, writer는 임시값
-    sessionStorage.setItem("reviews", JSON.stringify(newReview));
-    $("form.addReview").hide();
-    window.location.reload()
   })
 
   $('.review.question textarea').keyup(function (e){
@@ -186,7 +192,6 @@ $(document).ready(function(){
         $('.textCheck em').text("1000");
     }
   });
-
 });
 
 

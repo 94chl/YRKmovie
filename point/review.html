@@ -7,10 +7,12 @@
   <title>New Naver Movie</title>
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/point.css">
+  <link rel="stylesheet" href="../css/review.css">
+  <link rel="stylesheet" href="../css/jquery.rateyo.css" type="text/css" />
   <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.rateyo.js"></script>
   <script src="../js/common.js"></script>
-  <script src="../js/running.js"></script>
+  <script src="../js/review.js"></script>
 </head>
 
 <body>
@@ -44,15 +46,10 @@
             <ul>
               <li class="headerNavList"><a href="../current.html">현재 상영영화</a></li>
               <li class="headerNavList"><a href="../premovie.html">개봉 예정영화</a></li>
-              <li class="headerNavList"><a href="../movieclip.html">예고편</a></li>
             </ul>
           </li>
           <li>
             <a href="../rank/ranking.html">영화랭킹</a>
-            <ul>
-              <li class="headerNavList"><a href="../rank/ranking.html">랭킹</a></li>
-              <li class="headerNavList"><a href="../rank/directory.html">디렉토리</a></li>
-            </ul>
           </li>
           <li>
             <a href="../ticket/reserve.html">예매</a>
@@ -64,11 +61,7 @@
             </ul>
           </li>
           <li>
-            <a href="./point.html" class="now">평점, 리뷰</a>
-            <ul>
-              <li class="headerNavList"><a href="./point.html">네티즌 평점</a></li>
-              <li class="headerNavList"><a href="./review.html">네티즌 리뷰</a></li>
-            </ul>
+            <a href="./review.html" class="now">평점</a>
           </li>
           <li>
             <a href="https://series.naver.com/" target="_blank" title="새 창에서 열기">다운로드</a>
@@ -82,6 +75,80 @@
     <!--header(공통사항)-->
 
     <div class="container">
+
+      <section class="contentsWrap">
+
+        <div class="movieSelect">
+          <div>현재 상영작 평점 보기</div>
+        </div>
+
+        <div class="reviewWrap">
+          <div class="pointTab">
+            <p><em class="selected">전체</em> 평점 리스트</p>
+            <button type="button" name="addReviewBtn" class="addReviewBtn">내 평점 등록</button>
+          </div>
+          <table class='reviews netizen'>
+            <tr class="field">
+              <td class="title">제목</td>
+              <td class="pointWrap">평점</td>
+              <td class="commentWrap">감상평</td>
+              <td class="writerWrap">글쓴이 날짜</td>
+              <td class="likeWrap">추천</td>
+            </tr>
+          </table>
+          <form class="addReview">
+            <div class="addReviewTab">내 평점 등록</div>
+            <div class="addReviewTitle">
+              <div class="selectedTitle">영화 제목을 선택해주세요</div>
+            </div>
+            <div class="question slider">
+              <div class="starRating">
+                <div id="rateYo"></div>
+                <select name="minbeds" id="minbeds">
+                  <option value="1">1점</option>
+                  <option value="2">2점</option>
+                  <option value="3">3점</option>
+                  <option value="4">4점</option>
+                  <option value="5">5점</option>
+                  <option value="6">6점</option>
+                  <option value="7">7점</option>
+                  <option value="8">8점</option>
+                  <option value="9">9점</option>
+                  <option value="10">10점</option>
+                </select>
+              </div>
+              <em>별점을 선택하세요</em>
+            </div>
+            <div class="question strongPoint">
+              <p>어떤 점이 좋았나요? 감상포인트를 추천해주세요! <em>중복 선택 가능</em></p>
+              <label><input type="checkbox" name="strongPoint" value="directing">연출</label>
+              <label><input type="checkbox" name="strongPoint" value="acting">연기</label>
+              <label><input type="checkbox" name="strongPoint" value="story">스토리</label>
+              <label><input type="checkbox" name="strongPoint" value="image">영상미</label>
+              <label><input type="checkbox" name="strongPoint" value="ost">OST</label>
+            </div>
+            <div class="question tension">
+              <p>긴장감 지수를 선택해 주세요</p>
+              <label><input type="radio" name="tesion" value="high">높음</label>
+              <label><input type="radio" name="tesion" value="normal">보통</label>
+              <label><input type="radio" name="tesion" value="low">낮음</label>
+            </div>
+            <div class="question review">
+              <textarea name="name" rows="8" cols="80" maxlength="1000" placeholder="감상평을 남겨주세요. 영화와 상관없는 내용은 약관에 의해 제재를 받을수 있습니다."></textarea>
+              <div class="textCheck"><em>0</em> / 최대 1000자</div>
+            </div>
+            <div class="question spoiler">
+              <p>감상평에 스포일러가 포함되어있나요?</p>
+              <label><input type="radio" name="spoiler" value="t">있음</label>
+              <label><input type="radio" name="spoiler" value="f">없음</label>
+            </div>
+            <div class="btnWrap">
+              <button type="button" name="button" class="cancleBtn">취소</button>
+              <button type="button" name="button" class="confirmBtn">확인</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
     </div>
 

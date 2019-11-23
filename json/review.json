@@ -38,13 +38,5 @@
     "date": "2019-10-21",
     "writer": "할리퀸",
     "userId": "critic321"
-  },
-  {
-    "title": "제목",
-    "point": "평점(10점 만점, 정수로 기입)",
-    "review": "한줄평",
-    "date": "작성날짜(yyyy-mm-dd)",
-    "writer": "작성자(이름 혹은 닉네임)",
-    "userId": "작성자 id(최소 5글자)"
   }
 ]

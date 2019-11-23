@@ -9,6 +9,11 @@
   background: pink;
 }
 
+.newWindowIcon {
+ height:12px;
+ margin-left: 5px;
+}
+
 /*header*/
 
 #wrap header {

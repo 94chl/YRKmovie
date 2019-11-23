@@ -8,26 +8,34 @@
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/movieDetail.css">
-  <link rel="stylesheet" href="../css/jquery-ui.css" type="text/css" />
+  <link rel="stylesheet" href="../css/jquery.rateyo.css" type="text/css" />
   <script src="../js/jquery-3.3.1.min.js"></script>
-  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/jquery.rateyo.js"></script>
   <script src="../js/common.js"></script>
   <script src="../js/movieDetail.js"></script>
   <script>
     $(function() {
       var select = $("#minbeds");
-      var slider = $("#slider").slider({
-        min: 1,
-        max: 10,
-        range: "min",
-        value: select[0].selectedIndex + 1,
-        slide: function(event, ui) {
-          select[0].selectedIndex = ui.value - 1;
-        }
+      var rateYo = $("#rateYo").rateYo({
+        halfStar: true,
+        rating: select[0].selectedIndex + 0.5
       });
+
       $("#minbeds").on("change", function() {
-        slider.slider("value", this.selectedIndex + 1);
+        rateYo.rateYo("option", "rating", (this.selectedIndex + 1) / 2);
       });
+
+      $("#rateYo").on("rateyo.set", function(e, data) {
+        $('#minbeds>option').each(function() {
+          if ($(this).val() == data.rating * 2) {
+            $(this).prop('selected', true);
+            $('#minbeds').val($(this).val())
+          }
+        })
+      });
+      $('.cancleBtn').on('click', function() {
+        rateYo.rateYo("option", "rating", 0.5);
+      })
     });
   </script>
 </head>
@@ -63,15 +71,10 @@
             <ul>
               <li class="headerNavList"><a href="../running/current.html">현재 상영영화</a></li>
               <li class="headerNavList"><a href="../running/premovie.html">개봉 예정영화</a></li>
-              <li class="headerNavList"><a href="../running/movieclip.html">예고편</a></li>
             </ul>
           </li>
           <li>
             <a href="../rank/ranking.html">영화랭킹</a>
-            <ul>
-              <li class="headerNavList"><a href="../rank/ranking.html">랭킹</a></li>
-              <li class="headerNavList"><a href="../rank/directory.html">디렉토리</a></li>
-            </ul>
           </li>
           <li>
             <a href="../ticket/reserve.html">예매</a>
@@ -83,17 +86,13 @@
             </ul>
           </li>
           <li>
-            <a href="../point/point.html">평점, 리뷰</a>
-            <ul>
-              <li class="headerNavList"><a href="../point/point.html">네티즌 평점</a></li>
-              <li class="headerNavList"><a href="../point/review.html">네티즌 리뷰</a></li>
-            </ul>
+            <a href="../point/review.html">평점</a>
           </li>
           <li>
             <a href="https://series.naver.com/" target="_blank" title="새 창에서 열기">다운로드</a>
           </li>
           <li>
-            <a href="#">인디극장</a>
+            <a href="https://tv.naver.com/indiecinema" target="_blank" title="새 창에서 열기">인디극장</a>
           </li>
         </ul>
       </nav>
@@ -175,34 +174,36 @@
                   <div class="addReviewTab">내 평점 등록</div>
                   <div class="addReviewTitle">영화제목</div>
                   <div class="question slider">
-                    <div id="slider"></div>
-                    <select name="minbeds" id="minbeds">
-                      <option value="1" selected>1점</option>
-                      <option value="2">2점</option>
-                      <option value="3">3점</option>
-                      <option value="4">4점</option>
-                      <option value="5">5점</option>
-                      <option value="6">6점</option>
-                      <option value="7">7점</option>
-                      <option value="8">8점</option>
-                      <option value="9">9점</option>
-                      <option value="10">10점</option>
-                    </select>
+                    <div class="starRating">
+                      <div id="rateYo"></div>
+                      <select name="minbeds" id="minbeds">
+                        <option value="1">1점</option>
+                        <option value="2">2점</option>
+                        <option value="3">3점</option>
+                        <option value="4">4점</option>
+                        <option value="5">5점</option>
+                        <option value="6">6점</option>
+                        <option value="7">7점</option>
+                        <option value="8">8점</option>
+                        <option value="9">9점</option>
+                        <option value="10">10점</option>
+                      </select>
+                    </div>
                     <em>별점을 선택하세요</em>
                   </div>
                   <div class="question strongPoint">
                     <p>어떤 점이 좋았나요? 감상포인트를 추천해주세요! <em>중복 선택 가능</em></p>
-                    <label><input type="checkbox" name="strongPoint" value="directing">연출</option></label>
-                    <label><input type="checkbox" name="strongPoint" value="acting">연기</option></label>
-                    <label><input type="checkbox" name="strongPoint" value="story">스토리</option></label>
-                    <label><input type="checkbox" name="strongPoint" value="image">영상미</option></label>
-                    <label><input type="checkbox" name="strongPoint" value="ost">OST</option></label>
+                    <label><input type="checkbox" name="strongPoint" value="directing">연출</label>
+                    <label><input type="checkbox" name="strongPoint" value="acting">연기</label>
+                    <label><input type="checkbox" name="strongPoint" value="story">스토리</label>
+                    <label><input type="checkbox" name="strongPoint" value="image">영상미</label>
+                    <label><input type="checkbox" name="strongPoint" value="ost">OST</label>
                   </div>
                   <div class="question tension">
                     <p>긴장감 지수를 선택해 주세요</p>
-                    <label><input type="radio" name="tesion" value="high" required></option>높음</label>
-                    <label><input type="radio" name="tesion" value="normal"></option>보통</label>
-                    <label><input type="radio" name="tesion" value="low"></option>낮음</label>
+                    <label><input type="radio" name="tesion" value="high">높음</label>
+                    <label><input type="radio" name="tesion" value="normal">보통</label>
+                    <label><input type="radio" name="tesion" value="low">낮음</label>
                   </div>
                   <div class="question review">
                     <textarea name="name" rows="8" cols="80" maxlength="1000" placeholder="감상평을 남겨주세요. 영화와 상관없는 내용은 약관에 의해 제재를 받을수 있습니다."></textarea>
@@ -210,7 +211,7 @@
                   </div>
                   <div class="question spoiler">
                     <p>감상평에 스포일러가 포함되어있나요?</p>
-                    <label><input type="radio" name="spoiler" value="t" required>있음</label>
+                    <label><input type="radio" name="spoiler" value="t">있음</label>
                     <label><input type="radio" name="spoiler" value="f">없음</label>
                   </div>
                   <div class="btnWrap">
