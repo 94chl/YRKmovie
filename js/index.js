@@ -156,4 +156,9 @@ $(document).ready(function(){
     var movieName = $(this).parents('.listClickMenu').attr('title');
     sessionStorage.setItem("selectedMovie", movieName);
   })
+
+  $(document).on('click', '.reviewList a', function() {
+    var movieName = $(this).parents('.reviewList').find('.miniTitle>div:first-child').text();
+    sessionStorage.setItem("selectedMovie", movieName);
+  })
 });
