@@ -5,7 +5,21 @@
     "review": "재밌었어요",
     "date": "2019-11-11",
     "writer": "최용록",
-    "userId": "MrChoi123"
+    "userId": "MrChoi123",
+    "type":"netizen",
+    "like":"1",
+    "dislike":"0"
+  },
+  {
+    "title": "제목3",
+    "point": "10",
+    "review": "테스트",
+    "date": "2019-11-11",
+    "writer": "최용록",
+    "userId": "123",
+    "type":"netizen",
+    "like":"1",
+    "dislike":"0"
   },
   {
     "title": "조커",
@@ -13,7 +27,10 @@
     "review": "재밌었어요",
     "date": "2019-11-11",
     "writer": "최용록",
-    "userId": "MrChoi123"
+    "userId": "MrChoi123",
+    "type":"netizen",
+    "like":"1",
+    "dislike":"0"
   },
   {
     "title": "조커",
@@ -21,7 +38,10 @@
     "review": "기대보다 별로였네요",
     "date": "2019-10-11",
     "writer": "브루스 웨인",
-    "userId": "KoreaNo1"
+    "userId": "KoreaNo1",
+    "type":"netizen",
+    "like":"10",
+    "dislike":"0"
   },
   {
     "title": "조커",
@@ -29,7 +49,10 @@
     "review": "볼만했어요",
     "date": "2019-11-01",
     "writer": "배트맨",
-    "userId": "Batman321"
+    "userId": "Batman321",
+    "type":"netizen",
+    "like":"1",
+    "dislike":"0"
   },
   {
     "title": "조커",
@@ -37,6 +60,7 @@
     "review": "아 오졌다 이게 영화지",
     "date": "2019-10-21",
     "writer": "할리퀸",
-    "userId": "critic321"
+    "userId": "critic321",
+    "type":"critic"
   }
 ]

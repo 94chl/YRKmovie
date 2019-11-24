@@ -19,9 +19,7 @@ $(document).ready(function(){
 
   $.getJSON('../json/review.json', function(data){
     $.each(data, function() {
-      var critic = this.userId.slice(0,6);
-      //평론가는 아이디 앞을 critic으로 가정
-      if(critic != "critic") {
+      if(this.type != "critic") {
         var userId = this.userId.slice(0,3);
         for(i=0; i<this.userId.length-3; i++) {
           userId = userId+"*"

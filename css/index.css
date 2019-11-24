@@ -1,11 +1,11 @@
 .container .sliderBox {
   background: skyblue;
-  height: 620px;
+  height: 600px;
 }
 
 .container .sliderBox .sliderWrap {
   width: 100%;
-  height: 590px;
+  height: 575px;
   position: relative;
 }
 
@@ -57,7 +57,7 @@
   position: relative;
   box-sizing: border-box;
   margin-right: 18.75px;
-  margin-top: 10px
+  margin-top: 5px
 }
 
 .container .sliderBox .sliderWrap .slider .slideList:nth-child(5) {
@@ -151,7 +151,7 @@
 }
 
 .container .sliderBox .sliderWrap .sliderBtnBox {
-  margin-top:20px;
+
 }
 
 .container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu {
@@ -201,54 +201,134 @@
 }
 
 .container .contentsWrap article {
-  height: 200px;
   background: rgb(164, 95, 254);
 }
 
-.container .contentsWrap .reviewSpotlight {
+.container .contentsWrap .reviewsEvents {
   margin-top:5px;
+  height:300px;
 }
 
-.container .contentsWrap .reviewSpotlight>div {
+.container .contentsWrap .reviewsEvents>div {
   float:left;
-  width:50%;
   height: 100%;
   background: orange;
 }
 
-.container .contentsWrap .reviewSpotlight .review div {
+.container .contentsWrap .reviewsEvents .review {
+  width: 650px;
+}
+
+.container .contentsWrap .reviewsEvents .review>div {
   background: yellow;
   height:30px;
   line-height: 30px;
 }
 
-.container .contentsWrap .reviewSpotlight .review .reviewList {
-  height:30px;
-  line-height: 30px;
+.container .contentsWrap .reviewsEvents .review .reviewList {
+  height:40px;
+  line-height: 40px;
   background: gold;
 }
 
-.container .contentsWrap .reviewSpotlight .review .reviewList a {
-  width: 100%;
-  height: 100%;
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle {
+  width:650px;
+  float: left;
+  position: relative;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniTitle {
+  width:535px;
+  float: left;
+  position: relative;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle>div {
+  float:left
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPointWrap {
+  position: absolute;
+  top:0;
+  right:20px;
+  width: 200px;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPointWrap .rateYo {
+  float: left;
+  margin:10px 0;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPoint {
+
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniReviews{
+  display: none;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniReviews{
+  float: left;
   display: block;
 }
 
-.container .contentsWrap .reviewSpotlight .review .reviewList.now {
-  color: red;
-  font-weight: bold;
-  height:80px;
+.container .contentsWrap .reviewsEvents .review .reviewList .miniReviews .miniReview{
+  height: 30px;
+  line-height: 30px;
+  width:500px;
+  background: pink;
+  margin-bottom:5px;
+  overflow: hidden;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now {
+  height:150px;
   background: #fff;
 }
 
-.container .contentsWrap .reviewSpotlight .spotlight div {
+.container .contentsWrap .reviewsEvents .review .reviewList .miniPoster {
+  float: left;
+  height:140px;
+  min-width: 100px;
+  margin: 5px;
+  display: none;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniPoster {
+  display: block;
+}
+
+.container .contentsWrap .reviewsEvents .event {
+  width:400px;
+  height: 300px;
+  background: pink;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventWrap {
   background: rgb(254, 234, 95);
   height:30px;
   line-height: 30px;
 }
 
+.container .contentsWrap .reviewsEvents .event .eventWrap .eventTab {
+  float: left;
+  margin-left: 10px;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventWrap .eventPage {
+  float: right;
+  margin-right: 10px;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventImage {
+  height: 270px;
+  background: blue;
+  text-align: center;
+}
+
 .container .contentsWrap .trailer{
   position: relative;
+  height: 235px;
 }
 
 .container .contentsWrap .trailer>div {
@@ -259,8 +339,8 @@
 
 .container .contentsWrap .trailer .trailerList {
   float:left;
-  width:200px;
-  height:150px;
+  width:245px;
+  height:185px;
   background: yellow;
   margin-top:10px;
   margin-left:15px;
@@ -281,30 +361,4 @@
   height: 30px;
   line-height: 30px;
   background: lightgreen;
-}
-
-
-.container .contentsWrap .photo{
-  position: relative;
-}
-
-.container .contentsWrap .photo>div {
-  background: #ddd;
-  height:30px;
-  line-height: 30px;
-}
-
-.container .contentsWrap .photo .photoList {
-  float:left;
-  width:169px;
-  height:150px;
-  background: yellow;
-  margin-top:10px;
-  margin-left:5px;
-}
-
-.container .contentsWrap .photo .photoList a {
-  display: block;
-  width: 100%;
-  height: 100%;
 }

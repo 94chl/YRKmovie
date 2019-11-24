@@ -81,7 +81,7 @@ $(document).ready(function(){
     };
   });
 
-  $('.process.movie .movieList').on('click', $('.movies .selectBtn'), function(e) {
+  $('.process.movie .movieList').on('click', '.movies .selectBtn', function(e) {
     var clicked = e.target.innerText;
     $.getJSON('../json/movies.json', function(data){
       $.each(data, function() {
@@ -90,6 +90,7 @@ $(document).ready(function(){
           $('#reservationInfo .title.reserveInfo .selected').text(this.title);
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
           reserveInfo.title = this.title;
+          $('#timetable .times .chosenTime').text("");
         }
       });
     });//getJSON
@@ -283,7 +284,7 @@ $(document).ready(function(){
   })
 
   $('.reservationBtn').on('click', function() {
-    var orderId = randomString(5, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    var orderId = randomString(7, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
     reserveInfo.orderId = orderId;
     if(reserveInfo.title == null) {
       alert('영화를 선택해주세요')
@@ -295,8 +296,10 @@ $(document).ready(function(){
       alert('상영시간을 선택해주세요')
     } else if (reserveInfo.adult + reserveInfo.student == 0) {
       alert('인원 수를 확인해주세요')
+    } else {
+      sessionStorage.setItem("reservation", JSON.stringify(reserveInfo));
+      location.href = "./completeReserve.html";
     };
-    sessionStorage.setItem("reservation", JSON.stringify(reserveInfo));
   })
 
   function randomString(length, chars) {
@@ -325,6 +328,13 @@ $(document).ready(function(){
     $('#completeReserve .reserveInfo.people .selected').text(total);
   }
 
-
-
+  $('#orderCheck .checkBtn').on('click', function() {
+    if ($('#orderIdCheck').val() == "") {
+      alert("예약번호를 입력해주세요.")
+    } else if($('#orderIdCheck').val() != "" && reservation && $('#orderIdCheck').val() == reservation.orderId) {
+      location.href = "./completeReserve.html";
+    } else if($('#orderIdCheck').val() != "" && reservation && $('#orderIdCheck').val() != reservation.orderId) {
+      alert("예약 내역이 없습니다. 예약번호를 확인해주세요.")
+    }
+  })
 });//document

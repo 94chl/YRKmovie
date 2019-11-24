@@ -102,8 +102,7 @@ $(document).ready(function(){
 
   $.getJSON('../json/review.json', function(data){
     $.each(data, function() {
-      var critic = this.userId.slice(0,6);
-      if(this.title == title && critic != "critic") {
+      if(this.title == title && this.type != "critic") {
         var userId = this.userId.slice(0,3);
         for(i=0; i<this.userId.length-3; i++) {
           userId = userId+"*"
@@ -118,7 +117,7 @@ $(document).ready(function(){
           like: this.like,
           dislike: this.dislike
         });
-      } else if(this.title == title && critic == "critic") {
+      } else if(this.title == title && this.type == "critic") {
         var addReview = '<li class="grade clearfix"><div class="pointWrap"><div class="starPoint reviewData">'+this.point+'</div><div class="point reviewData">'+this.point+'/10</div></div><div class="commentWrap"><p>'+this.review+'</p><div class="writerWrap"><div class="writer">'+this.writer+'</div><div class="writeDate">'+this.date+'</div></div></div></li>'
         $('.critic.grades').append(addReview);
       }
