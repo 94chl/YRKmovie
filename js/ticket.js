@@ -90,7 +90,7 @@ $(document).ready(function(){
           $('#reservationInfo .title.reserveInfo .selected').text(this.title);
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
           reserveInfo.title = this.title;
-          $('#timetable .times .chosenTime').text("");
+          $('#timetable .times .chosenMovie').text("");
         }
       });
     });//getJSON
@@ -152,6 +152,7 @@ $(document).ready(function(){
     var clicked = e.target.innerText;
     $('.reserveInfo.theater .selected').text(clicked);
     reserveInfo.theater = clicked;
+    $('.chosenTheater').text("");
 
     var theater = e.target.classList[2];
     if(theater == "Megabox") {
@@ -228,7 +229,7 @@ $(document).ready(function(){
 
     $('#timetable .times .screen').each(function() {
       for(i=0; i<timetables.length; i++) {
-        if(timetables[i].name == $(this).text()[0] && reserveInfo.title != null) {
+        if(timetables[i].name == $(this).text()[0] && reserveInfo.title != null && reserveInfo.theater != "") {
           for(u=0; u<timetables[i].time.length; u++) {
             var timeList = '<li class="time"><button type="button" name="selectBtn" class="selectBtn">'+ timetables[i].time[u] +'</button></li>';
             $(this).siblings('.timetableWrap').append(timeList);
