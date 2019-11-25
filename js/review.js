@@ -3,6 +3,8 @@ $(document).ready(function(){
 
   var reviews = [];
 
+  var selectedReview = [];
+
   if(newReview) {
     reviews.push({
       title: newReview.title,
@@ -15,7 +17,7 @@ $(document).ready(function(){
       dislike: newReview.dislike
     });
   }
-
+  var page = 1;
 
   $.getJSON('../json/review.json', function(data){
     $.each(data, function() {
@@ -36,10 +38,17 @@ $(document).ready(function(){
         });
       }
     });
+    for(i=0; i<Math.ceil(reviews.length/10); i++) {
+      $('.pageList .pages').append('<li class="page"><button type="button" name="button" class="pageBtn">'+(i+1)+'</button></li>')
+    }
+
     reviews.sort(function(a, b){return new Date(b.date) - new Date(a.date)});
-    for(i=0; i <reviews.length; i++) {
-      var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">공감<em class="like reviewData"></em></button></td></tr>'
-      $('.netizen.reviews').append(addReview);
+    for(i=(page*10)-10, u=0; u<10; i++) {
+      if(i<reviews.length) {
+        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">'+reviews[i].like+'<em class="like reviewData"></em></button></td></tr>'
+        $('.netizen.reviews').append(addReview);
+        u++;
+      }
     }
     $('.starPoint').each(function(){
       $(this).rateYo({
@@ -48,6 +57,34 @@ $(document).ready(function(){
       })
     })
   });//getJSON
+
+  $(document).on('click', '.page .pageBtn', function(e) {
+    var checkTitle = $('.movieSelect .movieTitle>input:checked').val();
+    page = e.target.innerText;
+    $('.reviews .review').remove()
+    for(i=(page*10)-10, u=0; u<10;) {
+      if(i<reviews.length && checkTitle =="전체") {
+        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">'+reviews[i].like+'<em class="like reviewData"></em></button></td></tr>'
+        $('.netizen.reviews').append(addReview);
+        u++;
+        i++;
+      } else if(i<selectedReview.length && checkTitle !="전체" && checkTitle == selectedReview[i].title) {
+        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+selectedReview[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+selectedReview[i].point+'</div><div class="point reviewData">'+selectedReview[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+selectedReview[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+selectedReview[i].writer+'('+selectedReview[i].userId+')</div><div class="writeDate reviewData">'+selectedReview[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">'+selectedReview[i].like+'<em class="like reviewData"></em></button></td></tr>'
+        $('.netizen.reviews').append(addReview);
+        u++;
+        i++;
+      } else {
+        break
+      }
+    }
+
+    $('.starPoint').each(function(){
+      $(this).rateYo({
+        rating:$(this).text()/2,
+        readOnly: true
+      })
+    })
+  })
 
   $.getJSON('../json/movies.json', function(data){
     $('.movieSelect').append('<label class="movieTitle"><input type="radio" name="movieTitle" value="전체" checked>전체</label>');
@@ -63,15 +100,53 @@ $(document).ready(function(){
     var selected = $(this).val();
 
     $('.reviewWrap .reviews .review').remove();
+    selectedReview.length = 0;
 
     for(i=0; i <reviews.length; i++) {
       if(selected == "전체"){
-        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">공감<em class="like reviewData"></em></button></td></tr>'
-        $('.netizen.reviews').append(addReview);
+        selectedReview.push({
+          title: reviews[i].title,
+          point: reviews[i].point,
+          review: reviews[i].review,
+          date: reviews[i].date,
+          writer: reviews[i].writer,
+          userId: reviews[i].userId,
+          like: reviews[i].like,
+          dislike: reviews[i].dislike
+        });
       } else if (selected != "all" && reviews[i].title == selected) {
-        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">공감<em class="like reviewData"></em></button></td></tr>'
-        $('.netizen.reviews').append(addReview);
+        selectedReview.push({
+          title: reviews[i].title,
+          point: reviews[i].point,
+          review: reviews[i].review,
+          date: reviews[i].date,
+          writer: reviews[i].writer,
+          userId: reviews[i].userId,
+          like: reviews[i].like,
+          dislike: reviews[i].dislike
+        });
       }
+    }
+    page = 1;
+    for(i=(page*10)-10, u=0; u<10;) {
+      if(i<reviews.length && selected =="전체") {
+        console.log(11)
+        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+reviews[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+reviews[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate reviewData">'+reviews[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">'+reviews[i].like+'<em class="like reviewData"></em></button></td></tr>'
+        $('.netizen.reviews').append(addReview);
+        u++;
+        i++;
+      } else if(i<selectedReview.length && selected !="전체" && selected == selectedReview[i].title) {
+        var addReview = '<tr class="review"><td class="title"><a href="#" class="title reviewData">'+selectedReview[i].title+'</a></td><td class="pointWrap"><div class="starPoint reviewData">'+selectedReview[i].point+'</div><div class="point reviewData">'+selectedReview[i].point+'/10</div></td><td class="commentWrap"><p class="comment reviewData">'+selectedReview[i].review+'</p><div class="report"><button type="button" class="reportBtn">신고</button></div></td><td class="writerWrap"><div class="writer reviewData">'+selectedReview[i].writer+'('+selectedReview[i].userId+')</div><div class="writeDate reviewData">'+selectedReview[i].date+'</div></td><td class="likeWrap"><button type="button" class="likeBtn">'+selectedReview[i].like+'<em class="like reviewData"></em></button></td></tr>'
+        $('.netizen.reviews').append(addReview);
+        u++;
+        i++;
+      } else {
+        break
+      }
+    };
+    $('.pageList .pages .page').remove();
+    for(i=0; i<Math.ceil(selectedReview.length/10); i++) {
+      $('.pageList .pages').append('<li class="page"><button type="button" name="button" class="pageBtn">'+(i+1)+'</button></li>')
     }
     $('.reviewWrap .pointTab .selected').text(selected);
     $('.starPoint').each(function(){

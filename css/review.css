@@ -157,6 +157,27 @@
 .container .contentsWrap .reviewWrap .reviews .review .likeWrap .likeBtn em {
 
 }
+
+.pageList .pages {
+  text-align: center;
+}
+
+.pageList .pages .page {
+  display: inline;
+  margin-right: 10px;
+}
+
+.pageList .pages .page:last-child {
+  margin-right: 0;
+}
+
+.pageList .pages .page>button {
+  cursor: pointer;
+}
+
+.pageList .pages .page>button.now {
+  color:red;
+}
 /*리뷰 쓰기*/
 .stars {
   width:550px;
@@ -172,7 +193,7 @@
   left:50%;
   margin-left: -300px;
   margin-top: -375px;
-  z-index: 10;
+  z-index: 100;
   background: #fff;
   width: 600px;
   height: 750px;
