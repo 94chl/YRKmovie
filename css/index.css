@@ -1,6 +1,6 @@
 .container .sliderBox {
-  background: skyblue;
   height: 600px;
+  background: rgb(105,110,113);
 }
 
 .container .sliderBox .sliderWrap {
@@ -20,30 +20,6 @@
   display: block;
 }
 
-.container .sliderBox .sliderWrap .slider.slide1 {
-  background: #f47272;
-}
-
-.container .sliderBox .sliderWrap .slider.slide2 {
-  background: orange;
-}
-
-.container .sliderBox .sliderWrap .slider.slide3 {
-  background: yellow;
-}
-
-.container .sliderBox .sliderWrap .slider.slide4 {
-  background: lightgreen;
-}
-
-.container .sliderBox .sliderWrap .slider.slide5 {
-  background: skyblue;
-}
-
-.container .sliderBox .sliderWrap .slider.slide5 {
-  background: #ddd;
-}
-
 .container .sliderBox .sliderWrap .slider .listWrap {
   margin:0 auto;
   width: 1050px;
@@ -52,10 +28,8 @@
 .container .sliderBox .sliderWrap .slider .slideList {
   width:195px;
   height:280px;
-  border:1px solid #000;
   float:left;
   position: relative;
-  box-sizing: border-box;
   margin-right: 18.75px;
   margin-top: 5px
 }
@@ -72,9 +46,9 @@
   position: absolute;
   top:0;
   left:0;
-  background: yellow;
   font-weight: bold;
-  color:red;
+  font-size: 2em;
+  color:#fff;
   width:20px;
   height:20px;
   text-align: center;
@@ -105,7 +79,7 @@
   text-align: center;
   height:30px;
   line-height: 30px;
-  background: orange;
+  background: #333;
 }
 
 .container .sliderBox .sliderWrap .slider .slideList .listClickMenu ul li:first-child {
@@ -116,10 +90,12 @@
   display: block;
   width: 100%;
   height:100%;
+  color: #fff;
 }
 
 .container .sliderBox .sliderWrap .slider .slideList .listClickMenu ul li a:hover {
   background: #fff;
+  color:#333;
 }
 
 .container .sliderBox .sliderWrap .sliderBtn {
@@ -201,18 +177,19 @@
 }
 
 .container .contentsWrap article {
-  background: rgb(164, 95, 254);
+  margin-bottom: 10px;
+  border-bottom:1px dashed #000;
+  padding-bottom: 10px;
 }
 
 .container .contentsWrap .reviewsEvents {
-  margin-top:5px;
+  margin-top:10px;
   height:300px;
 }
 
 .container .contentsWrap .reviewsEvents>div {
   float:left;
   height: 100%;
-  background: orange;
 }
 
 .container .contentsWrap .reviewsEvents .review {
@@ -220,31 +197,39 @@
 }
 
 .container .contentsWrap .reviewsEvents .review>div {
-  background: yellow;
   height:30px;
   line-height: 30px;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList {
   height:40px;
   line-height: 40px;
-  background: gold;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList .miniTitle {
   width:650px;
   float: left;
   position: relative;
+  border-top: 1px solid #888;
+  color: #0024ff;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList.now .miniTitle {
   width:535px;
   float: left;
   position: relative;
+  border-bottom: 1px solid #ddd;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList .miniTitle>div {
   float:left
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle>div:first-child {
+  font-weight: bold;
+  text-indent: 10px;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPointWrap {
@@ -276,9 +261,12 @@
   height: 30px;
   line-height: 30px;
   width:500px;
-  background: pink;
   margin-bottom:5px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 10px;
+  font-size: 0.9em;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList.now {
@@ -301,18 +289,18 @@
 .container .contentsWrap .reviewsEvents .event {
   width:400px;
   height: 300px;
-  background: pink;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap {
-  background: rgb(254, 234, 95);
   height:30px;
   line-height: 30px;
+  margin-bottom: 5px;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap .eventTab {
   float: left;
   margin-left: 10px;
+  font-size: 1.2em;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap .eventPage {
@@ -321,8 +309,8 @@
 }
 
 .container .contentsWrap .reviewsEvents .event .eventImage {
+  border-top: 1px solid #888;
   height: 270px;
-  background: blue;
   text-align: center;
 }
 
@@ -332,9 +320,11 @@
 }
 
 .container .contentsWrap .trailer>div {
-  background: #ddd;
   height:30px;
   line-height: 30px;
+  border-bottom: 1px solid #888;
+  font-size: 1.2em;
+  padding-bottom: 5px;
 }
 
 .container .contentsWrap .trailer .trailerList {

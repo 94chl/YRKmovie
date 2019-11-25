@@ -125,7 +125,15 @@ $(document).ready(function(){
     reviews.sort(function(a, b){return new Date(b.date) - new Date(a.date)});
     for(i=0; i <reviews.length; i++) {
       var addReview = '<li class="grade clearfix"><div class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button" class="reportBtn">신고</button></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
-      $('.netizen.grades').append(addReview);
+      $('.reviewWrap .netizen.grades').append(addReview);
+    }
+    for(i=0; i < 5; i++) {
+      if(reviews.length<=i) {
+        break
+      } else {
+      var addReview = '<li class="grade clearfix"><div class="pointWrap"><div class="starPoint reviewData">'+reviews[i].point+'</div><div class="point reviewData">'+reviews[i].point+'/10</div></div><div class="commentWrap"><p>'+reviews[i].review+'</p><div class="writerWrap"><div class="writer">'+reviews[i].writer+'('+reviews[i].userId+')</div><div class="writeDate">'+reviews[i].date+'</div><div class="report"><button type="button" class="reportBtn">신고</button></div></div><div class="likeWrap"><button type="button">공감</button><button type="button">비공감</button></div></div></li>'
+      $('.shortRatings .netizen.grades').append(addReview);
+      }
     }
     $('.starPoint').each(function(){
       $(this).rateYo({

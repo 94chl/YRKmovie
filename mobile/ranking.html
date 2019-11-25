@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Naver Movie</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/rank.css">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/rank.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div id="headerWrap" class="clearfix">
+
+        <div class="headerBox">
+          <h1 id="logo"><a href="../index.html">로고</a></h1>
+        </div>
+
+        <div id="searchBox">
+          <form action="get">
+            <input type="text" name="search" id="search" placeholder="영화검색">
+            <button type="button" name="searchButton" id="searchButton">검색</button>
+          </form>
+        </div>
+
+        <nav id="subnav">
+          <button type="button" name="searchButton" id="loginBox">로그인</button>
+        </nav>
+      </div>
+
+      <nav class="headerNav">
+        <ul>
+          <li>
+            <a href="../index.html">홈</a>
+          </li>
+          <li>
+            <a href="../running/current.html">상영작, 예정작</a>
+            <ul>
+              <li class="headerNavList"><a href="../current.html">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="../premovie.html">개봉 예정영화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./ranking.html" class="now">영화랭킹</a>
+          </li>
+          <li>
+            <a href="../ticket/reserve.html">예매</a>
+            <ul>
+              <li class="headerNavList"><a href="../ticket/reserve.html">예매하기</a></li>
+              <li class="headerNavList"><a href="../ticket/orderList.html">예매확인, 취소</a></li>
+              <li class="headerNavList"><a href="https://help.naver.com/support/contents/contents.help?serviceNo=800&categoryNo=2647" target="_blank" title="새 창에서 열기">할인카드 안내, 등록</a></li>
+              <li class="headerNavList"><a href="https://help.naver.com/support/service/main.help?serviceNo=800&categoryNo=12386" target="_blank" title="새 창으로 열기">이용안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../point/review.html">평점</a>
+          </li>
+          <li>
+            <a href="https://series.naver.com/" target="_blank" title="새 창에서 열기">다운로드</a>
+          </li>
+          <li>
+            <a href="https://tv.naver.com/indiecinema" target="_blank" title="새 창에서 열기">인디극장</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--header(공통사항)-->
+
+    <div class="container">
+      <section class="contentsWrap">
+        <div>영화 랭킹</div>
+        <label for="genres">장르</label>
+        <select name="genres" id="genres">
+          <option value="all" class="genre">전체</option>
+          <option value="drama" class="genre">드라마</option>
+          <option value="fantasy" class="genre">판타지</option>
+          <option value="horror" class="genre">공포</option>
+          <option value="romance" class="genre">로맨스</option>
+          <option value="adventure" class="genre">모험</option>
+          <option value="thriller" class="genre">스릴러</option>
+          <option value="noir" class="genre">느와르</option>
+          <option value="documentary" class="genre">다큐멘터리</option>
+          <option value="comedy" class="genre">코미디</option>
+          <option value="family" class="genre">가족</option>
+          <option value="mystery" class="genre">미스터리</option>
+          <option value="war" class="genre">전쟁</option>
+          <option value="animation" class="genre">애니메이션</option>
+          <option value="crime" class="genre">범죄</option>
+          <option value="musical" class="genre">뮤지컬</option>
+          <option value="sf" class="genre">SF</option>
+          <option value="action" class="genre">액션</option>
+        </select>
+
+        <div class="orderList">
+          <button type="button" class="orderBy rankNow clicked">조회순</button>
+          <button type="button" class="orderBy pointNow">평점순(현재상영영화)</button>
+          <button type="button" class="orderBy pointAll">평점순(모든영화)</button>
+        </div>
+
+        <table class="rankingTable">
+          <tr class="field">
+            <td class="ranking">순위</td>
+            <td class="movie">영화 정보</td>
+          </tr>
+          <!-- <tr class="record">
+            <td class="ranking">예시</td>
+            <td class="movie">
+              <div class="outlines">
+                <a href="#" class="poster"><img src="" alt="poster" width="100%" height="100%"></a>
+                <div class="outlineMenu title">
+                  <div class="filmRating subMenu">등급</div>
+                  <div class="title subMenu">제목</div>
+                </div>
+                <div class="outlineMenu">
+                  <div class="subMenu">평점</div>
+                  <div class="rating"></div>
+                  <div class="subMenu">예매율</div>
+                  <div class="bookRate"></div>
+                </div>
+                <div class="outlineMenu">
+                  <div class="subMenu">개요</div>
+                  <ul class="outline">
+                    <li class="genre">장르</li>
+                    <li class="runningTime">러닝타임</li>
+                    <li class="release">개봉일</li>
+                  </ul>
+                </div>
+                <div class="outlineMenu">
+                  <div class="subMenu">감독</div>
+                  <div class="director"></div>
+                </div>
+                <div class="outlineMenu">
+                  <div class="subMenu">출연</div>
+                  <div class="actor"></div>
+                </div>
+                <div class="outlineMenu media">
+                  <a href="#">포토</a>
+                  <a href="#">관련 영상</a>
+                </div>
+                <a href="../ticket/reserve.html" class="reserveBtn">예매</a>
+              </div>
+            </td>
+          </tr> -->
+        </table>
+      </section>
+    </div>
+
+    <div id="notice" class='clearfix'>
+      <div>공지사항</div>
+      <div><a href="#">가나다라마바사</a></div>
+    </div>
+  </div>
+  <!--wrap-->
+
+  <button type="button" id="topBtn">TOP</button>
+
+  <footer>
+    <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
+  </footer>
+
+</body>
+
+</html>

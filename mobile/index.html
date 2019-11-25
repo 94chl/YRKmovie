@@ -1,0 +1,433 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Naver Movie</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/jquery.rateyo.css" type="text/css" />
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/jquery.rateyo.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/mobile.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="clearfix">
+    <header>
+      <div id="headerWrap" class="clearfix">
+
+        <div class="headerBox clearfix">
+          <h1 id="logo"><a href="./index.html">로고</a></h1>
+          <h2 id="mainPage"><a href="./index.html">메인페이지</a></h2>
+          <button type="button" name="sideBarBtn" class="sideBarBtn">3</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <nav id="subnav">
+        <button type="button" name="searchButton" id="loginBox">로그인</button>
+      </nav>
+      <ul>
+        <li>
+          <button type="button" name="sideBarMenu" class="sideBarMenu">상영작, 예정작</button>
+          <ul>
+            <li class="headerNavList"><a href="./current.html">현재 상영영화</a></li>
+            <li class="headerNavList"><a href="./premovie.html">개봉 예정영화</a></li>
+          </ul>
+        </li>
+        <li>
+          <button type="button" name="sideBarMenu" class="sideBarMenu">영화랭킹</button>
+        </li>
+        <li class="now">
+          <button type="button" name="sideBarMenu" class="sideBarMenu">예매</button>
+          <ul>
+            <li class="headerNavList"><a href="./reserve.html">예매하기</a></li>
+            <li class="headerNavList"><a href="./orderList.html">예매확인, 취소</a></li>
+            <li class="headerNavList"><a href="https://help.naver.com/support/contents/contents.help?serviceNo=800&categoryNo=2647" target="_blank" title="새 창에서 열기">할인카드 안내, 등록</a></li>
+            <li class="headerNavList"><a href="https://help.naver.com/support/service/main.help?serviceNo=800&categoryNo=12386" target="_blank" title="새 창으로 열기">이용안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://series.naver.com/" target="_blank" title="새 창에서 열기">다운로드</a>
+        </li>
+        <li>
+          <a href="https://tv.naver.com/indiecinema" target="_blank" title="새 창에서 열기">인디극장</a>
+        </li>
+      </ul>
+    </nav>
+    <!--header(공통사항)-->
+
+    <div class="container">
+      <section class="sliderBox">
+        <div class="sliderWrap">
+          <ul>
+            <li class="slider slide1">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide2">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide3">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide4">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide5">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="slider slide6">
+              <ul class="listWrap">
+                <li class="slideList">
+                  <div>1</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>2</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>3</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>4</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <div>5</div>
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+                <li class="slideList">
+                  <a href="./main.html"><img src="" alt="movie_poster" width="100%" height="100%"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="sliderBtnBox">
+            <ul class="sliderMenu">
+              <li class="sliderBtn1">예매순</li>
+              <li class="sliderBtn2">현재상영작</li>
+              <li class="sliderBtn3">개봉예정작</li>
+              <li class="sliderBtn4">평점순</li>
+              <li class="sliderBtn5">박스오피스</li>
+              <li class="sliderBtn6">다운로드순</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contentsWrap">
+        <article class="reviewsEvents">
+          <div class="review">
+            <div>평점 &amp; 리뷰</div>
+            <ul>
+              <li class="reviewList now">
+                <div class="miniPoster">
+                  <a href="./main.html"><img src="" alt="" height="100%"></a>
+                </div>
+                <div class="miniTitle">
+                  <a href="./main.html"></a>
+                  <div class="miniPointWrap">
+                    <em class="rateYo"></em>
+                    <em class="miniPoint"></em>
+                  </div>
+                </div>
+                <ul class="miniReviews">
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                </ul>
+              </li>
+              <li class="reviewList">
+                <div class="miniPoster">
+                  <a href="./main.html"><img src="" alt="" height="100%"></a>
+                </div>
+                <div class="miniTitle">
+                  <a href="./main.html"></a>
+                  <div class="miniPointWrap">
+                    <em class="rateYo"></em>
+                    <em class="miniPoint"></em>
+                  </div>
+                </div>
+                <ul class="miniReviews">
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                </ul>
+              </li>
+              <li class="reviewList">
+                <div class="miniPoster">
+                  <a href="./main.html"><img src="" alt="" height="100%"></a>
+                </div>
+                <div class="miniTitle">
+                  <a href="./main.html"></a>
+                  <div class="miniPointWrap">
+                    <em class="rateYo"></em>
+                    <em class="miniPoint"></em>
+                  </div>
+                </div>
+                <ul class="miniReviews">
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                </ul>
+              </li>
+              <li class="reviewList">
+                <div class="miniPoster">
+                  <a href="./main.html"><img src="" alt="" height="100%"></a>
+                </div>
+                <div class="miniTitle">
+                  <a href="./main.html"></a>
+                  <div class="miniPointWrap">
+                    <em class="rateYo"></em>
+                    <em class="miniPoint"></em>
+                  </div>
+                </div>
+                <ul class="miniReviews">
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                  <li class="miniReview"><a href="./grade.html"></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="event">
+            <div class="eventWrap">
+              <div class="eventTab">이벤트</div>
+              <a href="https://series.naver.com/movie/eventList.nhn" class="eventPage">더보기</a>
+            </div>
+            <div class="eventImage">
+              <a href="https://series.naver.com/event/details.nhn?eventNo=12670&productType=MOVIE">
+                <img src="https://movie-phinf.pstatic.net/20191121_164/1574321067837RK5DS_PNG/%BF%B5%C8%AD_%BD%BA%C6%F7%C6%AE%B6%F3%C0%CC%C6%AE_210x190.png" alt="eventImage" height="100%">
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </div>
+
+    <div id="notice" class='clearfix'>
+      <div>공지사항</div>
+      <div><a href="#">가나다라마바사</a></div>
+    </div>
+
+    <table id="treeData"></table>
+
+  </div>
+  <!--wrap-->
+
+  <button type="button" id="topBtn">TOP</button>
+
+  <a href="./mobile/index.html" id="pcBtn">PC 페이지 보기</a>
+
+  <footer>
+    <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>
+  </footer>
+
+</body>
+
+</html>

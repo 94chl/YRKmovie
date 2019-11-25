@@ -6,7 +6,6 @@
 
 #wrap{
   position: relative;
-  background: pink;
 }
 
 .newWindowIcon {
@@ -37,7 +36,7 @@
 }
 
 #logo {
-  background: rgb(0, 213, 100);
+  background: rgb(0, 219, 97);
   float: left;
   width:200px;
   text-align: center;
@@ -67,7 +66,7 @@
 
 #searchButton {
   margin-left:-5px;
-  background: rgb(0, 213, 100);
+  background: rgb(0, 219, 97);
   border:none;
   height:30px;
   width:40px;
@@ -94,7 +93,7 @@
 .headerNav {
   height:40px;
   clear:both;
-  background: rgb(0, 213, 100);
+  background: rgb(0, 219, 97);
 }
 
 .headerNav>ul {
@@ -110,14 +109,17 @@
 }
 
 .headerNav>ul>li:hover>a {
-  color:red;
-  background: green;
+  font-size: 1.1em;
 }
 
-.headerNav>ul>li a.now {
-  color:red;
+.headerNav>ul>li>a.now {
+  color:#fff;
+  font-size: 1.1em;
+  background: rgb(0, 157, 11);
+}
+
+.headerNav>ul>li>a.now~ul>li>a.now {
   font-weight: bold;
-  background: rgb(255, 255, 255,0.3);
 }
 
 .headerNav>ul>li>a {
@@ -151,8 +153,7 @@
 }
 
 .headerNav>ul>li .headerNavList a:hover {
-  color:red;
-  font-weight: bold;
+  font-size: 1.1em;
 }
 
 /*container*/
@@ -201,4 +202,18 @@ footer p{
   bottom:10px;
   left:50%;
   margin-left: 535px;
+}
+
+#mobileBtn {
+  display: block;
+  clear:both;
+  width:100%;
+  height:100px;
+  line-height: 100px;
+  font-size:3em;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
 }

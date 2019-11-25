@@ -1,0 +1,495 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap{
+  width:100%;
+  position: relative;
+  background: pink;
+}
+
+.newWindowIcon {
+ height:50%;
+ margin-left: 5%;
+}
+
+/*header*/
+
+#wrap header {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 50;
+  top:0;
+  left:0;
+  background: #fff;
+}
+
+#headerWrap {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.headerBox {
+  text-align: center;
+  background: #ddd;
+}
+
+#logo {
+  background: orange;
+  width:25%;
+  height:100%;
+  text-align: center;
+  float: left;
+}
+
+#logo a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#mainPage {
+  background: rgb(0, 213, 100);
+  width:50%;
+  height:100%;
+  text-align: center;
+  float: left;
+}
+
+#mainPage a {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#logo a img {
+
+}
+
+.sideBarBtn {
+  float: left;
+  height: 100%;
+  width:25%;
+  background: gold;
+}
+
+.sidebar {
+  height:100%;
+  width:50%;
+  background: skyblue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 51;
+  display: none;
+}
+
+#subnav {
+  height: 15%;
+  width: 100%;
+}
+
+#subnav #loginBox {
+  border: 1px solid #000;
+  font-size: 10px;
+  text-align: center;
+  width: 70%;
+  cursor: pointer;
+  height: 50%;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+.sidebar>ul {
+  width:100%;
+}
+
+.sidebar>ul>li {
+  width:100%;
+  min-height:5%;
+  background: yellow;
+  margin-top:3%;
+  border-top:2px solid #000;
+}
+
+.sidebar>ul>li:first-child {
+  margin-top:0;
+}
+
+.sidebar>ul>li.now {
+  color:red;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+}
+
+.sidebar>ul>li .sideBarMenu {
+  min-height:5%;
+  width:100%;
+  background: green;
+}
+
+.sidebar>ul>li ul {
+
+}
+
+.sidebar>ul>li .headerNavList {
+  width:100%;
+  height:5%;
+  text-align: center;
+  background: rgb(0, 200, 100);
+  display: none;
+}
+
+.sidebar>ul>li.now .headerNavList {
+  display: block;
+}
+
+.sidebar>ul>li .headerNavList a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar>ul>li .headerNavList a:hover {
+  color:red;
+  font-weight: bold;
+}
+
+/*container*/
+.container {
+  width: 100%;
+  margin-top: 10%;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p{
+  text-align: center;
+}
+
+#notice {
+  width:100%;
+  height: 5%;
+  margin:0 auto;
+  border:1px solid #ddd;
+}
+
+#notice div {
+  float:left;
+  margin-left: 1%;
+  height:100%;
+  margin-top: 1%;
+}
+
+#notice div a:hover {
+  font-weight: bold;
+}
+
+#topBtn {
+  width:30px;
+  height:30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom:5%;
+  right:5%;
+  font-size: 0.8em;
+}
+
+#pcBtn {
+  display: block;
+  clear:both;
+  width:100%;
+  height:5%;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+
+/*index*/
+
+.container {
+  margin-top: 20%;
+  background: red;
+}
+
+.container .sliderBox {
+  background: skyblue;
+  height: 50%;
+}
+
+.container .sliderBox .sliderWrap {
+  height: 100%;
+  position: relative;
+}
+
+.container .sliderBox .sliderWrap>ul {
+  height: 95%;
+}
+
+.container .sliderBox .sliderWrap .slider {
+  height:100%;
+  display: none;
+}
+
+.container .sliderBox .sliderWrap .slider.now {
+  display: block;
+}
+
+.container .sliderBox .sliderWrap .slider.slide1 {
+  background: #f47272;
+}
+
+.container .sliderBox .sliderWrap .slider.slide2 {
+  background: orange;
+}
+
+.container .sliderBox .sliderWrap .slider.slide3 {
+  background: yellow;
+}
+
+.container .sliderBox .sliderWrap .slider.slide4 {
+  background: lightgreen;
+}
+
+.container .sliderBox .sliderWrap .slider.slide5 {
+  background: skyblue;
+}
+
+.container .sliderBox .sliderWrap .slider.slide5 {
+  background: #ddd;
+}
+
+.container .sliderBox .sliderWrap .slider .listWrap {
+  height: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.container .sliderBox .sliderWrap .slider .listWrap .slideList {
+  width:55%;
+  height:100%;
+  display: inline-block;
+  border:1px solid #000;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container .sliderBox .sliderWrap .slider .slideList>div{
+  position: absolute;
+  top:0;
+  left:0;
+  background: yellow;
+  font-weight: bold;
+  color:red;
+  width:20px;
+  height:20px;
+  text-align: center;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox {
+
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu {
+  height: 5%;
+  margin:0 auto;
+  width:100%;
+  text-align: center;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li {
+  display: inline-block;
+  background: #fff;
+  width:15%;
+  height: 100%;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-right:none;
+  font-size: 10px;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li:first-child {
+  margin-left: 0;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li:last-child {
+  border-right: 1px solid #000;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li:hover {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li.now {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container .contentsWrap {
+  clear:both;
+  width:100%;
+  margin: 0 auto;
+}
+
+.container .contentsWrap article {
+  background: rgb(164, 95, 254);
+  width: 100%;
+}
+
+.container .contentsWrap .reviewsEvents {
+  margin-top:5px;
+  height:300px;
+}
+
+.container .contentsWrap .reviewsEvents>div {
+  float:left;
+  height: 100%;
+  background: orange;
+}
+
+.container .contentsWrap .reviewsEvents .review {
+  width: 100%;
+}
+
+.container .contentsWrap .reviewsEvents .review>div {
+  background: yellow;
+  height:30px;
+  line-height: 30px;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList {
+  height:40px;
+  line-height: 40px;
+  background: gold;
+  position: relative;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniTitle {
+  position: absolute;
+  top:0;
+  left:110px;
+  width: 69%;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle>div {
+  float:right;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle>a {
+  float:left;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPointWrap {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniTitle .miniPointWrap {
+
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPointWrap .rateYo {
+  float: left;
+  margin-top: 10px
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniPoint {
+  display: none;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniTitle .miniPoint {
+  float: left;
+  width:50px;
+  font-size: 0.8em;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniReviews{
+  display: none;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniReviews{
+  float: left;
+  display: block;
+  margin-top:40px;
+  width:69%;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniReviews .miniReview{
+  height: 30px;
+  line-height: 30px;
+  background: pink;
+  margin-bottom:5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now {
+  height:150px;
+  background: #fff;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniPoster {
+  float: left;
+  height:140px;
+  min-width: 100px;
+  margin: 5px;
+  display: none;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList.now .miniPoster {
+  display: block;
+}
+
+.container .contentsWrap .reviewsEvents .event {
+  width:100%;
+  height: 300px;
+  background: pink;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventWrap {
+  background: rgb(254, 234, 95);
+  height:30px;
+  line-height: 30px;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventWrap .eventTab {
+  float: left;
+  margin-left: 10px;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventWrap .eventPage {
+  float: right;
+  margin-right: 10px;
+}
+
+.container .contentsWrap .reviewsEvents .event .eventImage {
+  height: 270px;
+  background: blue;
+  text-align: center;
+}

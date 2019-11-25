@@ -1,35 +1,40 @@
 .container .listWrap {
   width:1050px;
-  background: yellow;
   margin:0 auto;
   position: relative;
 }
 
 .container .listWrap .listTitle {
-  height:30px;
-  line-height: 30px;
   background: #fff;
   padding-left: 30px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2em;
+  padding:20px 0;
 }
 
 .container .listWrap .listOrder {
   position: absolute;
-  top:5px;
-  right:0;;
+  top:40px;
+  right:0;
 }
 
 .container .listWrap .listOrder button {
   float:left;
   width:100px;
-  height:20px;
   cursor: pointer;
   margin-right: 20px;
+  border:1px solid #888;
+  padding:5px 0;
 }
 
 .container .listWrap .listOrder button.clicked {
   font-weight: bold;
+  border: 1px solid #f19377;
+  color: #f74b17;
+}
+
+.listWrap .list {
+  border-top:1px solid #000;
 }
 
 .container .list .movie {
@@ -58,10 +63,10 @@
   width:240px;
   height:343px;
   position: absolute;
-  background: skyblue;
   top:0;
   left:0;
   display: none;
+  background: rgb(255, 255, 255);
 }
 
 .container .list .movie .posterMenu div {
@@ -76,16 +81,15 @@
 
 .container .list .movie .posterMenu>div {
   width:220px;
-  height:253px;
-  background: #ddd;
-  margin:10px;
-  margin-bottom: 0;
+  height:233px;
+  margin:0 10px;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 .container .list .movie .posterMenu ul {
   width:200px;
   height:30px;
-  background: red;
   margin:25px auto;
 }
 
@@ -94,9 +98,10 @@
   float: left;
   height:30px;
   line-height: 30px;
-  background: orange;
   width: 90px;
-  margin-left: 20px
+  margin-left: 20px;
+  border:1px solid #888;
+  box-sizing: border-box;
 }
 
 .container .list .movie .posterMenu ul li:first-child {
@@ -111,7 +116,8 @@
 }
 
 .container .list .movie .posterMenu ul li a:hover {
-  background: #fff;
+  background: #888;
+  color:#fff;
 }
 
 .container .list .movie .title {

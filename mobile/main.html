@@ -117,7 +117,7 @@
               <div class="rating"></div>
             </div>
             <div class="ticketing outlineMenu">
-              <button type="button" name="reserve" class="reserveBtn">예매하기</button>
+              <button type="button" name="reserve" class="reserveBtn">예매</button>
             </div>
           </div>
         </article>
@@ -125,41 +125,39 @@
         <article class="detailsWrap clearfix">
 
           <nav class="detailsNav">
-            <a href="./main.html" class="tab">주요정보</a>
-            <a href="./crew.html" class="tab now">배우 &amp; 출연진</a>
+            <a href="./main.html" class="tab now">주요정보</a>
+            <a href="./crew.html" class="tab">배우 &amp; 출연진</a>
             <a href="./grade.html" class="tab">평점</a>
           </nav>
 
-          <div class="crewWrap">
-
-            <div class="crewActor">
-              <div class="crewTab">배우</div>
-              <ul></ul>
+          <div class="details">
+            <div class="story">
+              <div class="detailsTab">
+                <p>줄거리</p>
+              </div>
+              <div class="storylineWrap">
+                <h3 class='keyword'>헤드라인</h3>
+                <p class='storyline'>줄거리</p>
+              </div>
             </div>
 
-            <div class="crewDirector">
-              <div class="crewTab">감독</div>
-              <ul></ul>
+            <div class="shortActorDirector">
+              <div class="detailsTab">
+                <p>배우 &amp; 제작진</p>
+                <a href="./crew.html" class="more">더보기</a>
+              </div>
+              <ul>
+                <!--최대 6명-->
+              </ul>
             </div>
 
-            <div class="crewCompany">
-              <div class="crewTab">제작, 수입, 배급사</div>
-              <table>
-                <tr class="production">
-                  <td>제작</td>
-                  <td class="companyName"></td>
-                </tr>
-                <tr class="importer">
-                  <td>수입</td>
-                  <td class="companyName"></td>
-                </tr>
-                <tr class="distributor">
-                  <td>배급</td>
-                  <td class="companyName"></td>
-                </tr>
-              </table>
+            <div class="shortRatings">
+              <div class="detailsTab">
+                <p>평점</p>
+                <a href="./grade.html" class="more">더보기</a>
+              </div>
+              <ul class='grades netizen'></ul>
             </div>
-
           </div>
         </article>
       </section>
