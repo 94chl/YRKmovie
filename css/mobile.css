@@ -7,7 +7,7 @@
 #wrap{
   width:100%;
   position: relative;
-  background: pink;
+  background: #888;
 }
 
 .newWindowIcon {
@@ -36,7 +36,7 @@
 
 .headerBox {
   text-align: center;
-  background: #ddd;
+  background: #fff;
 }
 
 #logo {
@@ -54,7 +54,6 @@
 }
 
 #mainPage {
-  background: rgb(0, 213, 100);
   width:50%;
   height:100%;
   text-align: center;
@@ -65,6 +64,7 @@
   height: 100%;
   width: 100%;
   display: block;
+  color: rgb(0, 213, 100);
 }
 
 #logo a img {
@@ -75,18 +75,24 @@
   float: left;
   height: 100%;
   width:25%;
-  background: gold;
 }
 
 .sidebar {
   height:100%;
   width:50%;
-  background: skyblue;
+  background: #fff;
+  border-right: 1px solid #888;
+  box-sizing:border-box;
+  padding-right: 1px;
   position: fixed;
   top:0;
   left:0;
   z-index: 51;
   display: none;
+}
+
+.sidebar.open {
+  display: block;
 }
 
 #subnav {
@@ -95,8 +101,10 @@
 }
 
 #subnav #loginBox {
-  border: 1px solid #000;
-  font-size: 10px;
+  background: rgb(0, 219, 97);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  font-size: 1.1em;
   text-align: center;
   width: 70%;
   cursor: pointer;
@@ -112,9 +120,14 @@
 .sidebar>ul>li {
   width:100%;
   min-height:5%;
-  background: yellow;
-  margin-top:3%;
-  border-top:2px solid #000;
+  border-bottom:1px solid #888;
+}
+
+.sidebar>ul>li>a {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .sidebar>ul>li:first-child {
@@ -130,7 +143,12 @@
 .sidebar>ul>li .sideBarMenu {
   min-height:5%;
   width:100%;
-  background: green;
+  padding: 10px 0;
+}
+
+.sidebar>ul>li .sideBarMenu>em {
+  font-size: 0.8em;
+  padding-left: 10px;
 }
 
 .sidebar>ul>li ul {
@@ -139,10 +157,13 @@
 
 .sidebar>ul>li .headerNavList {
   width:100%;
-  height:5%;
+  height:25px;
+  line-height: 25px;
   text-align: center;
-  background: rgb(0, 200, 100);
+  background: #ddd;
   display: none;
+  padding-top: 5px;
+  margin-bottom: 1px;
 }
 
 .sidebar>ul>li.now .headerNavList {
@@ -153,6 +174,9 @@
   display: block;
   width: 100%;
   height: 100%;
+  font-size: 0.9em;
+  text-align: left;
+  text-indent: 2em;
 }
 
 .sidebar>ul>li .headerNavList a:hover {
@@ -160,10 +184,18 @@
   font-weight: bold;
 }
 
+.sidebar .closeBtn {
+  position: absolute;
+  right:0;
+  top:0;
+  background: #fff;
+  width:20px;
+  height: 20px;
+}
+
 /*container*/
 .container {
   width: 100%;
-  margin-top: 10%;
 }
 
 footer {
@@ -178,19 +210,12 @@ footer p{
 #notice {
   width:100%;
   height: 5%;
-  margin:0 auto;
-  border:1px solid #ddd;
 }
 
 #notice div {
   float:left;
   margin-left: 1%;
   height:100%;
-  margin-top: 1%;
-}
-
-#notice div a:hover {
-  font-weight: bold;
 }
 
 #topBtn {
@@ -219,12 +244,12 @@ footer p{
 /*index*/
 
 .container {
-  margin-top: 20%;
-  background: red;
+  clear: both;
+  margin-top: 18%;
 }
 
 .container .sliderBox {
-  background: skyblue;
+  background: #888;
   height: 50%;
 }
 
@@ -246,30 +271,6 @@ footer p{
   display: block;
 }
 
-.container .sliderBox .sliderWrap .slider.slide1 {
-  background: #f47272;
-}
-
-.container .sliderBox .sliderWrap .slider.slide2 {
-  background: orange;
-}
-
-.container .sliderBox .sliderWrap .slider.slide3 {
-  background: yellow;
-}
-
-.container .sliderBox .sliderWrap .slider.slide4 {
-  background: lightgreen;
-}
-
-.container .sliderBox .sliderWrap .slider.slide5 {
-  background: skyblue;
-}
-
-.container .sliderBox .sliderWrap .slider.slide5 {
-  background: #ddd;
-}
-
 .container .sliderBox .sliderWrap .slider .listWrap {
   height: 100%;
   overflow-x: scroll;
@@ -280,18 +281,16 @@ footer p{
   width:55%;
   height:100%;
   display: inline-block;
-  border:1px solid #000;
   position: relative;
-  box-sizing: border-box;
 }
 
 .container .sliderBox .sliderWrap .slider .slideList>div{
   position: absolute;
   top:0;
   left:0;
-  background: yellow;
   font-weight: bold;
-  color:red;
+  color:#fff;
+  font-size: 2em;
   width:20px;
   height:20px;
   text-align: center;
@@ -302,8 +301,8 @@ footer p{
 }
 
 .container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu {
-  height: 5%;
-  margin:0 auto;
+  height: 6%;
+  margin:1px auto;
   width:100%;
   text-align: center;
 }
@@ -330,12 +329,6 @@ footer p{
   border-right: 1px solid #000;
 }
 
-.container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li:hover {
-  background: #000;
-  color: #fff;
-  font-weight: bold;
-}
-
 .container .sliderBox .sliderWrap .sliderBtnBox .sliderMenu li.now {
   background: #000;
   color: #fff;
@@ -349,7 +342,6 @@ footer p{
 }
 
 .container .contentsWrap article {
-  background: rgb(164, 95, 254);
   width: 100%;
 }
 
@@ -361,7 +353,6 @@ footer p{
 .container .contentsWrap .reviewsEvents>div {
   float:left;
   height: 100%;
-  background: orange;
 }
 
 .container .contentsWrap .reviewsEvents .review {
@@ -369,7 +360,10 @@ footer p{
 }
 
 .container .contentsWrap .reviewsEvents .review>div {
-  background: yellow;
+  background: rgb(0, 219, 97);
+  /* color: #fff; */
+  font-size:1.2em;
+  text-indent: 10px;
   height:30px;
   line-height: 30px;
 }
@@ -377,7 +371,8 @@ footer p{
 .container .contentsWrap .reviewsEvents .review .reviewList {
   height:40px;
   line-height: 40px;
-  background: gold;
+  border-bottom: 1px solid #888;
+  background: #fff;
   position: relative;
 }
 
@@ -386,6 +381,7 @@ footer p{
   top:0;
   left:0;
   width:100%;
+  font-size: 1.1em;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList.now .miniTitle {
@@ -418,7 +414,7 @@ footer p{
   margin-top: 10px
 }
 
-.container .contentsWrap .reviewsEvents .review .reviewList.now .miniPoint {
+.container .contentsWrap .reviewsEvents .review .reviewList.now .rateYo {
   display: none;
 }
 
@@ -442,11 +438,15 @@ footer p{
 .container .contentsWrap .reviewsEvents .review .reviewList .miniReviews .miniReview{
   height: 30px;
   line-height: 30px;
-  background: pink;
   margin-bottom:5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.container .contentsWrap .reviewsEvents .review .reviewList .miniReviews .miniReview>a {
+  color:#0018ff;
+  font-size: 0.9em;
 }
 
 .container .contentsWrap .reviewsEvents .review .reviewList.now {
@@ -469,27 +469,35 @@ footer p{
 .container .contentsWrap .reviewsEvents .event {
   width:100%;
   height: 300px;
-  background: pink;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap {
-  background: rgb(254, 234, 95);
-  height:30px;
-  line-height: 30px;
+  background: rgb(0, 219, 97);
+  height:40px;
+  line-height: 40px;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap .eventTab {
   float: left;
   margin-left: 10px;
+  font-size: 1.1em;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventWrap .eventPage {
   float: right;
   margin-right: 10px;
+  height:25px;
+  line-height: 25px;
+  width:50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin-top: 7px;
+  text-align: center;
+  color: #fff;
 }
 
 .container .contentsWrap .reviewsEvents .event .eventImage {
-  height: 270px;
-  background: blue;
+  height: 250px;
+  background: #fff;
   text-align: center;
 }

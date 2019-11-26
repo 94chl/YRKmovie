@@ -103,9 +103,14 @@
 
 .headerNav>ul>li {
   float:left;
-  width:140px;
-  height:40px;
-  line-height: 40px;
+  width:150px;
+  height:30px;
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+.headerNav>ul>li:last-child a{
+  border: none;
 }
 
 .headerNav>ul>li:hover>a {
@@ -127,6 +132,9 @@
   width:100%;
   height: 100%;
   text-align: center;
+  border-right: 1px solid #fff;
+  box-sizing: border-box;
+  margin-bottom: 5px;
 }
 
 .headerNav>ul>li ul {
@@ -134,7 +142,9 @@
 }
 
 .headerNav>ul>li .headerNavList {
-  width:140px;
+  width:150px;
+  padding: 5px 0;
+  border-bottom:1px solid #fff;
   height:30px;
   line-height: 30px;
   text-align: center;

@@ -1,4 +1,29 @@
 $(document).ready(function(){
+  $('.sideBarBtn').on('click', function() {
+    $('.sidebar').fadeIn();
+  })
+
+  $('.sidebar .closeBtn').on('click', function() {
+    $('.sidebar').hide();
+  })
+
+  //headerNavList 작동 함수
+  $('.sidebar>ul>li').click(function() {
+    $('.sidebar>ul>li').removeClass('now');
+    $('.sidebar>ul>li .sideBarList').text('▼');
+    $(this).addClass('now');
+    if($(this).find('.sideBarList')) {
+      $(this).find('.sideBarList').text('▲')
+    }
+  });
+
+  //top버튼 구현
+  $('#topBtn').on('click', function() {
+    $(window).scrollTop(0);
+  });
+  var newWindowIcon = '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
+  $('header a[target="_blank"]').append(newWindowIcon)
+
   var slides = [];
   var now = 1;
   // var sliderMove = setInterval(next, 3000);
