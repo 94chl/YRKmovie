@@ -1,10 +1,14 @@
 $(document).ready(function(){
   $('.sideBarBtn').on('click', function() {
-    $('.sidebar').fadeIn();
+    $('.sidebarWrap').addClass('open');
   })
 
   $('.sidebar .closeBtn').on('click', function() {
-    $('.sidebar').hide();
+    $('.sidebarWrap').removeClass('open');
+  })
+
+  $('.sidebarWrap .sidebarClose').on('click', function() {
+    $('.sidebarWrap').removeClass('open');
   })
 
   //headerNavList 작동 함수
@@ -81,8 +85,7 @@ $(document).ready(function(){
     $.each(data, function() {
       for(i = 1; i <= $('.slider.slide1 .listWrap:nth-child(1) .slideList').length; i++) {
         if(this.ranking == i && this.type=="current") {
-          $('.slider.slide1 .slideList:nth-child('+i+') > .listClickMenu').attr('title', this.title)
-          $('.slider.slide1 .slideList:nth-child('+i+') > img').attr('src', this.poster)
+          $('.slider.slide1 .slideList:nth-child('+i+') img').attr('src', this.poster)
            var movie = {
              title: this.title,
              point: this.point.netizen,

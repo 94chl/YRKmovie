@@ -36,7 +36,6 @@
 }
 
 #logo {
-  background: rgb(0, 219, 97);
   float: left;
   width:200px;
   text-align: center;
@@ -44,18 +43,36 @@
 }
 
 #logo a {
-  height: 100%;
   width: 100%;
+  height: 40px;
   display: block;
 }
 
 #logo a img {
+background: #fff;
+}
 
+#mainPage {
+  float: left;
+  width:550px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: 50px;
+}
+
+#mainPage a {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+#mainPage a img {
+background: #fff;
 }
 
 #searchBox {
   float:right;
-  margin-right: 10px;
 }
 
 #searchBox #search {
@@ -216,14 +233,20 @@ footer p{
 
 #mobileBtn {
   display: block;
-  clear:both;
   width:100%;
   height:100px;
   line-height: 100px;
-  font-size:3em;
-  line-height: 50px;
+  font-size:2.5em;
   cursor: pointer;
   font-weight: bold;
   text-align: center;
   background: #ddd;
+  color: rgb(0, 157, 11);
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  #mobileBtn {
+    display: block;
+  }
 }

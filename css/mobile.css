@@ -4,6 +4,10 @@
   clear: both;
 }
 
+body {
+  background: #888;
+}
+
 #wrap{
   width:100%;
   position: relative;
@@ -19,17 +23,17 @@
 
 #wrap header {
   width: 100%;
-  height: 10%;
+  height: 70px;
   position: fixed;
   z-index: 50;
   top:0;
   left:0;
   background: #fff;
+  border-bottom: 2px solid rgb(0, 219, 97);
 }
 
 #headerWrap {
   width: 100%;
-  height: 100%;
   background: #fff;
   margin: 0 auto;
 }
@@ -40,35 +44,33 @@
 }
 
 #logo {
-  background: orange;
   width:25%;
-  height:100%;
-  text-align: center;
   float: left;
 }
 
 #logo a {
-  height: 100%;
-  width: 100%;
   display: block;
+  text-align: left;
+}
+
+#logo a img {
+  height: 70px;
 }
 
 #mainPage {
   width:50%;
-  height:100%;
-  text-align: center;
   float: left;
 }
 
 #mainPage a {
-  height: 100%;
   width: 100%;
+  padding: 15px 0;
   display: block;
-  color: rgb(0, 213, 100);
+  height: 40px;
 }
 
 #logo a img {
-
+  display: block;
 }
 
 .sideBarBtn {
@@ -77,13 +79,9 @@
   width:25%;
 }
 
-.sidebar {
+.sidebarWrap {
   height:100%;
-  width:50%;
-  background: #fff;
-  border-right: 1px solid #888;
-  box-sizing:border-box;
-  padding-right: 1px;
+  width:100%;
   position: fixed;
   top:0;
   left:0;
@@ -91,7 +89,26 @@
   display: none;
 }
 
-.sidebar.open {
+.sidebarWrap .sidebarClose {
+  height:100%;
+  width:50%;
+  background: rgb(255, 255, 255, 0.7);
+  position: fixed;
+  top:0;
+  right: 0;
+}
+
+.sidebarWrap .sidebar {
+  height:100%;
+  width:50%;
+  background: #fff;
+  border-right: 1px solid #888;
+  box-sizing:border-box;
+  padding-right: 1px;
+  position: relative;
+}
+
+.sidebarWrap.open {
   display: block;
 }
 
@@ -216,6 +233,17 @@ footer p{
   float:left;
   margin-left: 1%;
   height:100%;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#notice div a{
+  color: #fff;
+  margin-left: 10px;
+  border-bottom: 1px solid #ddd;
+  padding:3px;
 }
 
 #topBtn {
@@ -245,12 +273,12 @@ footer p{
 
 .container {
   clear: both;
-  margin-top: 18%;
 }
 
 .container .sliderBox {
   background: #888;
   height: 50%;
+  margin-top: 80px;
 }
 
 .container .sliderBox .sliderWrap {
