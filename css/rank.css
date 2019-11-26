@@ -76,6 +76,8 @@
 
 .record .ranking {
   text-align: center;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .record .movie >div {
@@ -160,7 +162,7 @@
   background: #f177a2;
   color: #fff;
   position:absolute;
-  right:0;
+  right:10px;
   top:50%;
   margin-top:-40px;
   width:100px;
