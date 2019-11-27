@@ -117,6 +117,8 @@ $(document).ready(function (){
          if(ranknow[i] && ranknow[i].genre.indexOf(now)>=0) {
            addList(r, ranknow[i]);
            r++
+         } else if(!ranknow[i]) {
+           break
          }
        }
      } else if(orderBy == "pointNow" && now == "all") {
@@ -131,6 +133,8 @@ $(document).ready(function (){
          if(pointnow[i] && pointnow[i].genre.indexOf(now)>=0) {
            addList(r, pointnow[i]);
            r++
+         } else if(!pointnow[i]) {
+           break
          }
        }
      } else if(orderBy == "pointAll" && now == "all") {
@@ -141,11 +145,12 @@ $(document).ready(function (){
          }
        }
      } else if(orderBy == "pointAll" && now != "all") {
-       console.log(pointall)
        for(i=0, r=1; r<11; i++) {
          if(pointall[i] && pointall[i].genre.indexOf(now)>=0) {
            addList(r, pointall[i]);
            r++
+         } else if(!pointall[i]) {
+           break
          }
        }
      }
@@ -169,6 +174,8 @@ $(".orderList .orderBy").on("click", $(".orderBy"), function(e) {
       if(ranknow[i] && ranknow[i].genre.indexOf(now)>=0) {
         addList(r, ranknow[i]);
         r++
+      } else if(!ranknow[i]) {
+        break
       }
     }
   } else if(orderBy == "pointNow" && now == "all") {
@@ -183,6 +190,8 @@ $(".orderList .orderBy").on("click", $(".orderBy"), function(e) {
       if(pointnow[i] && pointnow[i].genre.indexOf(now)>=0) {
         addList(r, pointnow[i]);
         r++
+      } else if(!pointnow[i]) {
+        break
       }
     }
   } else if(orderBy == "pointAll" && now == "all") {
@@ -237,7 +246,6 @@ $(document).on('mouseleave', '.videoWrap', function() {
 $(document).on('click', '.videoWrap .video', function() {
   $('.player iframe').attr('src', 'https://www.youtube.com/embed/'+$(this).attr("id"));
   $('.player').addClass('open');
-
   // class text
 })
 

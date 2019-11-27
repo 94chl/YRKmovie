@@ -1,7 +1,8 @@
 [
   {
     "title": "겨울왕국2",
-    "director": [
+    "director":
+    [
 	    {
       "name": "크리스 벅",
       "nameEng" : "Chris Buck",
@@ -128,6 +129,7 @@
     "bookrate": "78.65",
     "poster": "https://movie-phinf.pstatic.net/20191121_221/1574298335357mqgLk_JPEG/movie_image.jpg",
     "type": "current",
+    "option":["일반", "우리말 녹음", "ATMOS", "3D", "3D-우리말 녹음","엄마랑아가랑-우리말 녹음"],
     "production" : "월트 디즈니 컴퍼니",
     "distributor" : "월트 디즈니 컴퍼니 코리아",
     "importer" : "월트 디즈니 컴퍼니 코리아"
@@ -135,11 +137,14 @@
 
   {
     "title": "블랙머니",
-    "director": {
+    "director":
+    [
+      {
       "name": "정지영",
       "nameEng" : "Jeong,Jiyoung",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F129%2F20160620115527461.jpg&type=u120_150&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -177,7 +182,7 @@
         },
         {
         "name": "최덕문",
-        "nameEng" : "",
+        "nameEng" : "서권영",
         "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F98%2F201303271521212981.jpg&type=u120_150&quality=95",
         "role": [""],
         "part": "supporting"
@@ -272,11 +277,14 @@
 
   {
     "title": "신의 한 수: 귀수편",
-    "director": {
+    "director":
+    [
+      {
       "name": "리건",
       "nameEng" : "Re.gun",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F152%2F201603231846083291.jpg&type=u120_150&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -402,11 +410,14 @@
 
   {
     "title": "82년생 김지영",
-    "director": {
+    "director":
+    [
+      {
       "name": "김도영",
       "nameEng" :"",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201211%2F20121116123203158.jpg&type=u120_150&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -528,11 +539,14 @@
 
   {
     "title": "터미네이터: 다크 페이트",
-    "director": {
+    "director":
+    [
+      {
       "name": "팀 밀러",
       "nameEng" : "Tim Miller",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F179%2F201910221349145471.jpg&type=u120_150&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -646,11 +660,14 @@
   },
   {
     "title": "엔젤 해즈 폴른",
-    "director": {
+    "director":
+    [
+      {
       "name": "릭 로먼 워",
       "nameEng" : "Ric Roman Waugh",
       "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000072%2FPM7264_135838_000.jpg&type=u120_150&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -734,7 +751,7 @@
         "link":"n5UUom9F8tc"
       }
     ],
-    "grade":"15세",
+    "grade":"15세 관람가",
     "nation":"미국",
     "runningtime":"121분",
     "release":"2019-11-13",
@@ -755,11 +772,14 @@
 
   {
     "title": "윤희에게",
-    "director": {
+    "director":
+    [
+      {
       "name": "임대형",
       "nameEng" : "",
       "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003291%2FPM329112_094539_000.jpg&type=u111_139&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -839,7 +859,7 @@
         "link":"Fyt4cujxQek"
       }
     ],
-    "grade":"12세",
+    "grade":"12세 관람가",
     "nation":"한국",
     "runningtime":"105분",
     "release":"2019-11-14",
@@ -853,17 +873,21 @@
     "bookrate": "0.54",
     "poster": "https://movie-phinf.pstatic.net/20191114_81/15737104663784PTG6_JPEG/movie_image.jpg",
     "type": "current",
+    "option":["일반","영어 자막", "GV"],
     "production" : "영화사 달리기",
     "distributor" : "(주)리틀빅픽처스"
   },
 
   {
     "title": "아이리시맨",
-    "director": {
+    "director":
+    [
+      {
       "name": "마틴 스코세이지",
       "nameEng" : "",
       "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F117%2F201709181603173771.jpg&type=u111_139&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -961,6 +985,7 @@
     "bookrate": "0.43",
     "poster": "https://movie-phinf.pstatic.net/20191024_143/1571893663418kwLN7_JPEG/movie_image.jpg",
     "type": "current",
+    "option":["일반", "ATMOS"],
     "production" : " ",
     "distributor" : "넷플릭스 코리아",
     "importer" : " "
@@ -968,11 +993,14 @@
 
   {
     "title": "대통령의 7시간",
-    "director": {
+    "director":
+    [
+      {
       "name": "이상호",
       "nameEng" : "",
-      "img": ""
-    },
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F196%2F201210091657186271.jpg&type=u111_139&quality=95"
+      }
+    ],
     "actor":
     {
       "leading":
@@ -1010,7 +1038,7 @@
         "link":"uO2SdQY7wOY"
       }
     ],
-    "grade":"12세",
+    "grade":"12세 관람가",
     "nation":"한국",
     "runningtime":"79분",
     "release":"2019-11-14",
@@ -1030,11 +1058,14 @@
 
   {
     "title": "좀비랜드:더블탭",
-    "director": {
+    "director":
+    [
+      {
       "name": "루벤 플레셔",
       "nameEng" : "",
       "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001688%2FPM168887_185908_000.jpg&type=u111_139&quality=95"
-    },
+      }
+    ],
     "actor":
     {
       "leading":
@@ -1114,7 +1145,7 @@
         "link":"zxhtSx1kOWg"
       }
     ],
-    "grade":"15세",
+    "grade":"15세 관람가",
     "nation":"미국",
     "runningtime":"99분",
     "release":"2019-11-13",
@@ -1134,12 +1165,583 @@
   },
 
   {
-    "title": "개봉예정1",
-    "director": {
+    "title": "파비안느에 관한 진실",
+    "director":
+    [
+      {
       "name": "이름",
       "nameEng" : "",
       "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
     },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-05",
+    "genre":["드라마"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191106_121/1573001259052YGdvh_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "미안해요, 리키",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-19",
+    "genre":["드라마"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191112_297/1573520672012Y8oWj_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "와일드라이프",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-12",
+    "genre":["드라마"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20180724_240/1532412643737GpXwK_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "포드V페라리",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-04",
+    "genre":["드라마", "액션"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191115_140/1573796416611lkMfW_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "베를린, 아이 러브 유",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-04",
+    "genre":["로맨스"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191127_107/1574818464998CffyD_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "영화로운 나날",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-12",
+    "genre":["로맨스", "판타지", "드라마"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191119_76/1574129271724YC9B4_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "샐린저",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-12",
+    "genre":["다큐멘터리"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191118_282/1574065368157Oll4A_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "감쪽같은 그녀",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-04",
+    "genre":["드라마"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191106_295/1573028041789kXu3r_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "공기인형",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
     "actor":
     {
       "leading":
@@ -1186,15 +1788,86 @@
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-27",
-    "genre":["장르1", "장르2"],
+    "genre":["드라마", "로맨스", "판타지"],
     "point": {
-      "netizen":"100",
+      "netizen":"0",
       "spectator":"관람객",
       "critic":"전문가"
     },
-    "ranking": "10",
+    "ranking": "100",
     "bookrate": "예매율",
-    "poster": "포스터src",
+    "poster": "https://movie-phinf.pstatic.net/20191126_138/1574748778055qhR5Q_JPEG/movie_image.jpg",
+    "type": "premovie",
+    "production" : "제작사",
+    "distributor" : "배급사",
+    "importer" : "수입사"
+  },
+
+  {
+    "title": "라스트 크리스마스",
+    "director":
+    [
+      {
+      "name": "이름",
+      "nameEng" : "",
+      "img": ""
+      }
+    ],
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "주연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        },
+        {
+        "name": "주연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조연1",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        },
+        {
+        "name": "조연2",
+        "nameEng" : " ",
+        "img": "",
+        "role": ["역할1"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"키워드",
+      "description": "설명"
+    },
+    "video":["비디오1", "비디오2", "비디오3"],
+    "grade":"관람등급",
+    "nation":"국가",
+    "runningtime":"러닝타임",
+    "release":"2019-12-05",
+    "genre":["로맨스", "코미디"],
+    "point": {
+      "netizen":"0",
+      "spectator":"관람객",
+      "critic":"전문가"
+    },
+    "ranking": "100",
+    "bookrate": "예매율",
+    "poster": "https://movie-phinf.pstatic.net/20191105_139/1572919493877EhG44_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
     "distributor" : "배급사",

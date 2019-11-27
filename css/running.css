@@ -123,4 +123,9 @@
 .container .list .movie .title {
   font-weight: bold;
   font-size: 16px;
+  margin-top: 5px;
+}
+
+.container .list .movie .title>a {
+  color:#1f00d0;
 }

@@ -16,7 +16,7 @@ $(document).ready(function (){
      $.each(data, function() {
        for(i = 1; i <= data.length; i++) {
          if(this.ranking == i && this.type == thisPage) {
-           var movieList = '<div class="'+thisPage+' movie"><div class="'+thisPage+' poster"><img src="'+this.poster+'" alt="poster" width="100%" height="100%"></div><div class="posterMenu"><div>'+this.storyline.description+'</div><ul><li><a href="../movieDetail/main.html">상세보기</a></li><li><a href="../ticket/reserve.html">예매하기</a></li></ul></div><div class="'+thisPage+' title">'+this.title+'</div><div class="'+thisPage+' rate">평점: '+this.point.netizen+'</div><div class="'+thisPage+' release">개봉일: '+this.release+'</div><div class="'+thisPage+' bookRate">예매율: '+this.bookrate+'%</div></div>'
+           var movieList = '<div class="'+thisPage+' movie"><div class="'+thisPage+' poster"><img src="'+this.poster+'" alt="poster" width="100%" height="100%"></div><div class="posterMenu"><div>'+this.storyline.description+'</div><ul><li><a href="../movieDetail/main.html">상세보기</a></li><li><a href="../ticket/reserve.html">예매하기</a></li></ul></div><div class="'+thisPage+' title"><a href="../movieDetail/main.html">'+this.title+'</a></div><div class="'+thisPage+' grade">등급: '+this.grade+'</div><div class="'+thisPage+' rate">평점: '+this.point.netizen+'</div><div class="'+thisPage+' release">개봉일: '+this.release+'</div><div class="'+thisPage+' bookRate">예매율: '+this.bookrate+'%</div></div>'
            $('.list').append(movieList);
          }
        }
@@ -71,6 +71,11 @@ $(document).on("mouseleave", ".posterMenu", function() {
 
 $(document).on('click', ".posterMenu ul li a", function() {
   var movieName = $(this).parents('.posterMenu').siblings('.title').text();
+  sessionStorage.setItem("selectedMovie", movieName);
+})
+
+$(document).on('click', ".title>a", function() {
+  var movieName = $(this).text();
   sessionStorage.setItem("selectedMovie", movieName);
 })
 

@@ -40,61 +40,113 @@ $(document).ready(function(){
   $.getJSON('../json/movies.json', function(data){
     $.each(data, function() {
       for(i = 1; i <= data.length; i++) {
-        if(this.ranking == i && this.type == "current") {
+        if(this.ranking == i && this.type == "current"&& !this.option) {
           var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
           $('.process.movie .movieList').append(movieList);
+          release.push({
+            title:this.title,
+            release:this.release,
+            ranking:this.ranking
+          });
+
+        } else if(this.ranking == i && this.type == "current" && this.option) {
+          var option = ""
+          for(o=0; o<this.option.length; o++) {
+            option = option+'<li class="option">'+this.option[o]+'</li>'
+          }
+          var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button><ul class="optionsWrap">'+option+'</ul></li>'
+          $('.process.movie .movieList').append(movieList);
+          release.push({
+            title:this.title,
+            release:this.release,
+            ranking:this.ranking,
+            option:this.option
+          });
         }
       }
-      release.push(this.release)
     });
-   release.sort(function(a, b){return new Date(b) - new Date(a)});
   });//getJSON
 
   $(".order .orderBtn").on("click", $("button"), function(e) {
-    var orderBy = e.target.innerText;
+    var orderBy = $(this);
     $('.process.movie .movieList .movies').remove();
     $('.order .orderBtn').css('font-weight', 'normal');
     $(this).css('font-weight', 'bold');
 
-    if(orderBy == "개봉순") {
-      $.getJSON('../json/movies.json', function(data){
-        for(i = 0; i < release.length; i++) {
-          $.each(data, function() {
-            if(release[i] == this.release && this.type == "current") {
-              var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
-              $('.process.movie .movieList').append(movieList);
-            }
-          })
-        };
-      });//getJSON
+    if(orderBy.text() == "개봉순") {
+     release.sort(function(a, b){return new Date(b.release) - new Date(a.release)});
+     for(i = 0; i < release.length; i++) {
+       var option = "";
+       if(release[i].option) {
+         for(o=0; o<release[i].option.length; o++) {
+           option = option+'<li class="option">'+release[i].option[o]+'</li>'
+         }
+         option = '<ul class="optionsWrap">'+option+'</ul>';
+       }
+       var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+release[i].title+'</button>'+option+'</li>'
+       $('.process.movie .movieList').append(movieList);
+     }
     } else {
-      $.getJSON('../json/movies.json', function(data){
-        $.each(data, function() {
-          for(i = 1; i <= data.length; i++) {
-            if(this.ranking == i && this.type == "current") {
-              var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+this.title+'</button></li>'
-              $('.process.movie .movieList').append(movieList);
-            }
+      release.sort(function(a, b){return a.ranking - b.ranking});
+      for(i = 0; i < release.length; i++) {
+        var option = "";
+        if(release[i].option) {
+          for(o=0; o<release[i].option.length; o++) {
+            option = option+'<li class="option">'+release[i].option[o]+'</li>'
           }
-        });
-      });//getJSON
+          option = '<ul class="optionsWrap">'+option+'</ul>';
+        }
+        var movieList = '<li class="movies"><button type="button" name="selectBtn" class="selectBtn movie">'+release[i].title+'</button>'+option+'</li>'
+        $('.process.movie .movieList').append(movieList);
+      }
     };
   });
 
   $('.process.movie .movieList').on('click', '.movies .selectBtn', function(e) {
-    var clicked = e.target.innerText;
+    var clicked = $(this).text();
     $.getJSON('../json/movies.json', function(data){
       $.each(data, function() {
-        if(this.title == clicked) {
+        if(this.title == clicked && !this.option) {
           $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
           $('#reservationInfo .title.reserveInfo .selected').text(this.title);
+          $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
+          reserveInfo.title = this.title;
+          $('#timetable .times .chosenMovie').text("");
+        } else if(this.title == clicked && this.option) {
+
+          $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
+          $('#reservationInfo .title.reserveInfo .selected').text(this.title+" (일반)");
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
           reserveInfo.title = this.title;
           $('#timetable .times .chosenMovie').text("");
         }
       });
     });//getJSON
-  })
+  });
+
+  $(document).on('mouseenter', '.movies', function() {
+    $(this).find('.optionsWrap').addClass('open');
+  });
+
+  $(document).on('mouseleave', '.movies', function() {
+    $(this).find('.optionsWrap').removeClass('open');
+  });
+
+  $('.process.movie .movieList').on('click', '.movies .option', function(e) {
+    var clicked = $(this).parents('.optionsWrap').siblings('.selectBtn').text();
+    var option = $(this).text();
+    $.getJSON('../json/movies.json', function(data){
+      $.each(data, function() {
+        if(this.title == clicked && this.option) {
+          $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
+          $('#reservationInfo .title.reserveInfo .selected').text(this.title+'('+option+')');
+          $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
+          reserveInfo.title = this.title;
+          $('#timetable .times .chosenMovie').text("");
+        }
+      });
+    });//getJSON
+  });
 
   $('.regionList .regions').on('click', function() {
     var clicked = $(this).text();

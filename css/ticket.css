@@ -1,12 +1,13 @@
 .container .contentsWrap {
   width:1050px;
-  background: #ddd;
+  background: #fff;
   margin: 0 auto;
   position: relative;
 }
 
 /* 선택부분 */
 #tabs {
+
 }
 
 #tabs .tab {
@@ -28,6 +29,8 @@
   line-height: 40px;
   background: #d1cbcb;
   border: 1px solid #fff;
+  border-bottom: none;
+  border-left: none;
 }
 
 #tabs .tab .tabBtn:hover {
@@ -39,6 +42,7 @@
   min-height:590px;
   width: 750px;
   margin-top: 10px;
+  border-top: 3px solid #000;
 }
 
 #processes .process {
@@ -88,6 +92,7 @@
   margin-right: 10px;
   margin-bottom:10px;
   height: 130px;
+  position: relative;
 }
 
 #processes .process.movie .movieList .movies .selectBtn {
@@ -99,6 +104,37 @@
   font-weight: bold;
   background: #fff;
   font-size: 1.2em;
+}
+
+#processes .process.movie .movieList .movies .optionsWrap {
+  background: #ddd;
+  border: 1px solid rgb(0, 219, 97);
+  position: absolute;
+  left:20px;
+  top:100px;
+  z-index: 10;
+  word-break: keep-all;
+  display: none;
+}
+
+#processes .process.movie .movieList .movies .optionsWrap.open {
+  display: block;
+}
+
+#processes .process.movie .movieList .movies .optionsWrap .option {
+  padding:3px 0;
+  padding-left: 5px;
+  width:150px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#processes .process.movie .movieList .movies .optionsWrap .option:hover {
+  font-weight: bold
+}
+
+#processes .process.movie .movieList .movies .optionsWrap .option:nth-child(odd) {
+  background: #fff;
 }
 
 #processes .process.theater {
@@ -152,8 +188,10 @@
 #processes .process.theater .theaterList .cityList .cityName {
 
   margin-right: 10px;
-  background: #ddd;
+  background: rgb(0, 219, 97);
   padding:0 10px;
+  height: 20px;
+  line-height: 20px;
 }
 
 #processes .process.theater .theaterList .theaters {
@@ -164,6 +202,10 @@
   line-height: 30px;
   margin-bottom: 10px;
   border:1px solid #000;
+}
+
+#processes .process.theater .theaterList .theaters .selectBtn.theater:hover {
+  font-weight: bold;
 }
 
 #processes .process.theater .theaterList .theaters .selectBtn.theater {

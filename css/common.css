@@ -4,6 +4,10 @@
   clear: both;
 }
 
+body {
+  background: #dfdfdf;
+}
+
 #wrap{
   position: relative;
 }
@@ -11,6 +15,10 @@
 .newWindowIcon {
  height:12px;
  margin-left: 5px;
+}
+
+button {
+  cursor: pointer;
 }
 
 /*header*/
@@ -49,7 +57,7 @@
 }
 
 #logo a img {
-background: #fff;
+  background: #fff;
 }
 
 #mainPage {
@@ -68,7 +76,7 @@ background: #fff;
 }
 
 #mainPage a img {
-background: #fff;
+  background: #fff;
 }
 
 #searchBox {
@@ -111,6 +119,7 @@ background: #fff;
   height:40px;
   clear:both;
   background: rgb(0, 219, 97);
+  border-bottom: 3px solid rgb(0, 157, 11);
 }
 
 .headerNav>ul {
@@ -185,8 +194,11 @@ background: #fff;
 
 /*container*/
 .container {
-  width: 100%;
+  width: 1050px;
   margin-top: 80px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top:80px;
 }
 
 footer {
@@ -204,6 +216,7 @@ footer p{
   line-height: 30px;
   margin:5px auto;
   border:1px solid #ddd;
+  background: #999;
 }
 
 #notice div {
@@ -213,6 +226,11 @@ footer p{
   height:20px;
   line-height: 20px;
   margin-top: 5px;
+  color:#fff;
+}
+
+#notice div>a {
+  color:#fff;
 }
 
 #notice div a:hover {
