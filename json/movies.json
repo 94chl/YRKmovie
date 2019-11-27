@@ -1,655 +1,976 @@
 [
   {
-    "title": "좀비랜드 더블탭",
-    "director": {
-      "name": "토드 필립스",
-      "nameEng" : "Todd Phillips",
-      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F116%2F201909241144466131.jpg&type=u120_150&quality=95"
-    },
-    "actor": {
-      "leading":
-      [
-        {
-        "name": "호아킨 피닉스",
-        "nameEng" : "Joaquin Phoenix",
-        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F195%2F201807031748145311.jpg&type=u120_150&quality=95",
-        "role": ["아서 플렉", "조커"],
-        "part": "leading"
-        }
-      ],
-      "supporting":
-      [
-        {
-        "name": "재지 비츠",
-        "nameEng" : "Zazie Beetz",
-        "img": "",
-        "role": ["소피 두몬드"],
-        "part": "supporting"
-        },
-        {
-        "name": "로버트 드 니로",
-        "nameEng" : "Robert De Niro",
-        "img": "",
-        "role": ["머레이 프랭클린"],
-        "part": "supporting"
-        },
-        {
-        "name": "프란시스 콘로이",
-        "nameEng" : "Frances Conroy",
-        "img": "",
-        "role": ["페니 플렉"],
-        "part": "supporting"
-        },
-        {
-        "name": "브래트 컬렌",
-        "nameEng" : "Brett Cullen",
-        "img": "",
-        "role": ["토마스 웨인"],
-        "part": "supporting"
-        },
-        {
-        "name": "쉐어 위햄",
-        "nameEng" : "Shea Whigham",
-        "img": "",
-        "role": ["버크 형사"],
-        "part": "supporting"
-        },
-        {
-        "name": "빌캠프",
-        "nameEng" : "Bill Camp",
-        "img": "",
-        "role": ["개러티 형사"],
-        "part": "supporting"
-        },
-        {
-        "name": "글렌 플레쉬러",
-        "nameEng" : "Glenn Fleshler",
-        "img": "",
-        "role": ["랜들"],
-        "part": "supporting"
-        },
-        {
-        "name": "리 길",
-        "nameEng" : "Leigh Gill",
-        "img": "",
-        "role": ["게리"],
-        "part": "supporting"
-        }
-      ]
-    },
-    "storyline": {
-      "keyword":"내 인생이 비극인줄 알았는데, 코미디였어",
-      "description": "고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자. 하지만 모두가 미쳐가는 코미디 같은 세상에서 맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데… 이제껏 본 적 없는 진짜 ‘조커’를 만나라!"
-    },
-    "video":["x60mB0zXZ38", "ZgAQpbkwNjQ", "NPeir2__O4s", "AfxN5aQrre4"],
-    "grade":"15세 관람가",
-    "nation":"미국",
-    "runningtime":"123분",
-    "release":"2019-10-02",
-    "genre":["스릴러", "드라마"],
-    "point": {
-      "netizen":"8.74",
-      "spectator":"9.05",
-      "critic":"7.50"
-    },
-    "ranking": "1",
-    "bookrate": "34.13",
-    "poster": "https://movie-phinf.pstatic.net/20190906_128/1567761736426S6Fje_JPEG/movie_image.jpg",
-    "type": "current",
-    "production" : "워너브라더스",
-    "distributor" : "워너브라더스 코리아",
-    "importer" : "워너브라더스 코리아"
-  },
-
-  {
     "title": "겨울왕국2",
-    "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
-    },
+    "director": [
+	    {
+      "name": "크리스 벅",
+      "nameEng" : "Chris Buck",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F38%2F201911151732055671.jpg&type=u120_150&quality=95"
+      },
+	    {
+      "name": "제니퍼 리",
+      "nameEng" : "Jennifer Lee",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F44%2F201911151740107681.jpg&type=u120_150&quality=95"
+      }
+	  ],
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "크리스틴 벨",
+        "nameEng" : "Kristen Bell",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F199%2F201803141427042791.jpg&type=u120_150&quality=95",
+        "role": ["안나 목소리"],
         "part": "leading"
         },
-        {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+		    {
+        "name": "이디나 멘젤",
+        "nameEng" : "Idina Menzel",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F130%2F201412021545271321.jpg&type=u120_150&quality=95",
+        "role": ["엘사 목소리"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "조시 게드",
+        "nameEng" : "Josh Gad",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F108%2F201712011659103281.jpg&type=u120_150&quality=95",
+        "role": ["올라프 목소리"],
         "part": "supporting"
         },
-        {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+	      {
+        "name": "조나단 그로프",
+        "nameEng" : "Jonathan Groff",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F194%2F201711301702556121.jpg&type=u120_150&quality=95",
+        "role": ["크리스토프 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "스털링 K.브라운",
+        "nameEng" : "Sterling K. Brown",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F50%2F201708251436526941.jpg&type=u120_150&quality=95",
+        "role": ["마티아스 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "제이슨 리터",
+        "nameEng" : "Jason Ritter",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000075%2FPM7505_183330_000.jpg&type=u120_150&quality=95",
+        "role": ["라이더 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "레이첼 매튜스",
+        "nameEng" : "Rachel Matthews",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000004050%2FPM405070_141100_000.jpg&type=u120_150&quality=95",
+        "role": ["허니마렌 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "마샤 플림튼",
+        "nameEng" : "Martha Plimpton",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000068%2F00000006855-t.jpg&type=u120_150&quality=95",
+        "role": ["옐라나 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "에반 레이첼 우드",
+        "nameEng" : "Evan Rachel Wood",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F49%2F201701121356153921.jpg&type=u120_150&quality=95",
+        "role": ["이두나 목소리"],
+        "part": "supporting"
+        },
+	      {
+        "name": "알프리드 몰리나",
+        "nameEng" : "Alfred Molina",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000047%2FPM4755_134935_000.jpg&type=u120_150&quality=95",
+        "role": ["아그나르 왕 목소리"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 표제",
-      "description": "스토리 설명"
+      "keyword":"내 마법의 힘은 어디서 왔을까? 나를 부르는 저 목소리는 누구지?",
+      "description": "어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다. 트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다. 위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 숨겨진 과거의 진실을 찾아 크리스토프, 올라프 그리고 스벤과 함께 위험천만한 놀라운 모험을 떠나게 된다. 자신의 힘을 두려워했던 엘사는 이제 이 모험을 헤쳐나가기에 자신의 힘이 충분하다고 믿어야만 하는데… 두려움을 깨고 새로운 운명을 만나다!"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-05",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"예고편",
+      "link":"eSEs4B4H-EA"
+      },
+      {
+        "name":"티저",
+        "link":"3WUw9thZR4k"
+      },
+      {
+        "name":"새로운 시작 예고편",
+        "link":"f6Yj6t6JN5w"
+      },
+      {
+        "name":"새로운 진실 예고편",
+        "link":"FytTCy_D8So"
+      }
+    ],
+    "grade":"전체 관람가",
+    "nation":"미국",
+    "runningtime":"103분",
+    "release":"2019-11-21",
+    "genre":["애니메이션", "모험", " 코미디", "뮤지컬"],
     "point": {
-      "netizen":"2",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.68",
+      "spectator":"8.94",
+      "critic":"6.75"
     },
-    "ranking": "2",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "1",
+    "bookrate": "78.65",
+    "poster": "https://movie-phinf.pstatic.net/20191121_221/1574298335357mqgLk_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "월트 디즈니 컴퍼니",
+    "distributor" : "월트 디즈니 컴퍼니 코리아",
+    "importer" : "월트 디즈니 컴퍼니 코리아"
   },
 
   {
     "title": "블랙머니",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "정지영",
+      "nameEng" : "Jeong,Jiyoung",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F129%2F20160620115527461.jpg&type=u120_150&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "조진웅",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201708%2F20170821165401677.jpg&type=u120_150&quality=95",
+        "role": ["양민혁"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "이하늬",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201901%2F20190117104025966.jpg&type=u120_150&quality=95",
+        "role": ["김나리"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "이경영",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F156%2F201402061550038851.jpg&type=u120_150&quality=95",
+        "role": ["이광주"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "강신일",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F9%2F201807161657166751.jpg&type=u120_150&quality=95",
+        "role": ["장수사관"],
+        "part": "supporting"
+        },
+        {
+        "name": "최덕문",
+        "nameEng" : "",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F98%2F201303271521212981.jpg&type=u120_150&quality=95",
+        "role": [""],
+        "part": "supporting"
+        },
+        {
+        "name": "조한철",
+        "nameEng" : "Cho Han-Cheul",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201810%2F20181012111036226.jpg&type=u120_150&quality=95",
+        "role": ["김남규"],
+        "part": "supporting"
+        },
+        {
+        "name": "허성태",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201805%2F20180531164352807.jpg&type=u120_150&quality=95",
+        "role": ["최검사"],
+        "part": "supporting"
+        },
+        {
+        "name": "윤병희",
+        "nameEng" : "",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F14%2F201904111140196571.jpg&type=u120_150&quality=95",
+        "role": ["박수사관"],
+        "part": "supporting"
+        },
+        {
+        "name": "서현철",
+        "nameEng" : "",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201910%2F2019100817305526.jpg&type=u120_150&quality=95",
+        "role": ["임승만"],
+        "part": "supporting"
+        },
+        {
+        "name": "남명렬",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201711%2F20171111214535605.jpg&type=u120_150&quality=95",
+        "role": ["나리부"],
+        "part": "supporting"
+        },
+        {
+        "name": "정민성",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F4%2F201908221527339271.png&type=u120_150&quality=95",
+        "role": ["오피디"],
+        "part": "supporting"
+        },
+        {
+        "name": "김종태",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201901%2F20190128142013181.jpg&type=u120_150&quality=95",
+        "role": ["윤피디"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"고발은 의무! 수사는 직진! 할말은 하고 깔 건 깐다!",
+      "description": "일명 서울지검 ‘막프로’! 검찰 내에서 거침이 막 나가는 문제적 검사로 이름을 날리는 ‘양민혁’은 자신이 조사를 담당한 피의자가 자살하는 사건으로 인해 하루 아침에 벼랑 끝에 내몰린다. 억울한 누명을 벗기 위해 내막을 파헤치던 그는 피의자가 대한은행 헐값 매각사건의 중요 증인이었음을 알게 된다. 근거는 의문의 팩스 5장! 자산가치 70조 은행이 1조 7천억원에 넘어간 희대의 사건 앞에서 ‘양민혁’ 검사는 금융감독원, 대형 로펌, 해외펀드 회사가 뒤얽힌 거대한 금융 비리의 실체와 마주하게 되는데… 대한민국 최대의 금융스캔들, 사건은 아직 끝나지 않았다!"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-20",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"예고편",
+      "link":"alSU8mnZCaM"
+      },
+      {
+        "name":"캐릭터 예고편",
+        "link":"1YI3lm5FjJg"
+      },
+      {
+        "name":"메인 예고편",
+        "link":"5oU1epO-zpk"
+      }
+    ],
+    "grade":"12세 관람가",
+    "nation":"한국",
+    "runningtime":"113분",
+    "release":"2019-11-13",
+    "genre":["범죄", "드라마"],
     "point": {
-      "netizen":"2",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.54",
+      "spectator":"9.05",
+      "critic":"6.00"
     },
-    "ranking": "3",
-    "bookrate": "예매율",
-    "poster": "./img/default_movieSelect.jpg",
+    "ranking": "2",
+    "bookrate": "5.13",
+    "poster": "https://movie-phinf.pstatic.net/20191113_203/1573610067050zNCj1_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "질라라비,아우라픽처스",
+    "distributor" : "에이스메이커무비웍스",
+    "importer" : ""
   },
 
   {
     "title": "신의 한 수: 귀수편",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "리건",
+      "nameEng" : "Re.gun",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F152%2F201603231846083291.jpg&type=u120_150&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "권상우",
+        "nameEng" : "Kwon Sang-Woo",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201611%2F20161108123345201-3692810.jpg&type=u120_150&quality=95",
+        "role": ["귀수"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "김희원",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201405%2F20140515132216682-5349227.jpg&type=u120_150&quality=95",
+        "role": ["똥선생"],
+        "part": "leading"
+        },
+        {
+        "name": "김성균",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201804%2F20180417170435109.jpg&type=u120_150&quality=95",
+        "role": ["허일도"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "허성태",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201805%2F20180531164352807.jpg&type=u120_150&quality=95",
+        "role": ["부산잡초"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "우도환",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201807%2F20180710171417279.jpg&type=u120_150&quality=95",
+        "role": ["외톨이"],
+        "part": "supporting"
+        },
+        {
+        "name": "정인겸",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201904%2F20190416122317193-9077089.png&type=u120_150&quality=95",
+        "role": ["황덕용"],
+        "part": "supporting"
+        },
+        {
+        "name": "원현준",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201712%2F20171226150521366-1123342.jpg&type=u120_150&quality=95",
+        "role": ["장성무당"],
+        "part": "supporting"
+        },
+        {
+        "name": "박상훈",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F8%2F201911181759427821.jpg&type=u120_150&quality=95",
+        "role": ["어린귀수"],
+        "part": "supporting"
+        },
+        {
+        "name": "신수연",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201910%2F20191008181628673-5483712.jpg&type=u120_150&quality=95",
+        "role": ["수연"],
+        "part": "supporting"
+        },
+        {
+        "name": "홍기준",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F10%2F201708171542114731.png&type=u120_150&quality=95",
+        "role": ["갈고리눈"],
+        "part": "supporting"
+        },
+        {
+        "name": "스테파니 리",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F134%2F201706281100026371.jpg&type=u120_150&quality=95",
+        "role": ["황선희 2단"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"세상은 둘 중 하나야 놀이터가 되던가, 생지옥이 되던가",
+      "description": "바둑으로 모든 것을 잃은 아이 ‘귀수’ 유일하게 기대던 스승 허일도마저 잃고 홀로 살아남아 세상을 향한 복수를 계획한다. 운명의 선택은 神의 놀음판에 있다! 자신을 사지로 내몬 냉혹한 내기바둑판으로 뛰어든 귀수(권상우)는 전국을 돌아다니며 귀신 같이 바둑을 두는 자들과 대결을 펼치는데… 사활을 건 대결! 신의 한 수를 다시 두시겠습니까?"
     },
-    "video":["UB_O1-tYJmk", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-21",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"캐릭터 예고편",
+      "link":"d4A9LOxqTqY"
+      },
+      {
+        "name":"예고편1",
+        "link":"L-MGk91Vf8k"
+      },
+      {
+        "name":"예고편2",
+        "link":"JPEOa01U_Ls"
+      }
+    ],
+    "grade":"15세 관람가",
+    "nation":"한국",
+    "runningtime":"106분",
+    "release":"2019-11-07",
+    "genre":["범죄", "액션"],
     "point": {
-      "netizen":"4",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.02",
+      "spectator":"8.84",
+      "critic":"5.00"
     },
-    "ranking": "4",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "3",
+    "bookrate": "10.1",
+    "poster": "https://movie-phinf.pstatic.net/20191029_52/15723135180872xOKy_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "메이스엔터테인먼트 (주)아지트필름",
+    "distributor" : "CJ 엔터테인먼트",
+    "importer" :""
   },
 
   {
     "title": "82년생 김지영",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "김도영",
+      "nameEng" :"",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201211%2F20121116123203158.jpg&type=u120_150&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "정유미",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F122%2F201703151820454931.jpg&type=u120_150&quality=95",
+        "role": ["지영"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "공유",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F76%2F201706081735556361.jpg&type=u120_150&quality=95",
+        "role": ["대현"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "김미경",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201507%2F20150706173033986-841908.jpg&type=u120_150&quality=95",
+        "role": ["미숙"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "공민정",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F76%2F201901171458225151.jpg&type=u120_150&quality=95",
+        "role": ["은영"],
+        "part": "supporting"
+        },
+        {
+        "name": "박성연",
+        "nameEng" : "",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201904%2F20190425154953910.png&type=u120_150&quality=95",
+        "role": ["김팀장"],
+        "part": "supporting"
+        },
+        {
+        "name": "이봉련",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201904%2F20190409112447346.jpg&type=u120_150&quality=95",
+        "role": ["혜수"],
+        "part": "supporting"
+        },
+        {
+        "name": "김성철",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201610%2F20161031143118113.jpg&type=u120_150&quality=95",
+        "role": ["지석"],
+        "part": "supporting"
+        },
+        {
+        "name": "이얼",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201811%2F20181122155508836.png&type=u120_150&quality=95",
+        "role": ["영수"],
+        "part": "supporting"
+        },
+        {
+        "name": "김미경",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201911%2F20191119164249482.jpg&type=u120_150&quality=95",
+        "role": ["대현모"],
+        "part": "supporting"
+        },
+        {
+        "name": "손성찬",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F22%2F201510141231086571.jpg&type=u120_150&quality=95",
+        "role": ["대현부"],
+        "part": "supporting"
+        },
+        {
+        "name": "김정영",
+        "nameEng" :"",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F166%2F201706201109316911.jpg&type=u120_150&quality=95",
+        "role": ["의사"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"",
+      "description": "1982년 봄에 태어나 누군가의 딸이자 아내, 동료이자 엄마로 2019년 오늘을 살아가는 ‘지영’(정유미). 때론 어딘가 갇힌 듯 답답하기도 하지만 남편 ‘대현’(공유)과 사랑스러운 딸, 그리고 자주 만나지 못해도 항상 든든한 가족들이 ‘지영’에겐 큰 힘이다. 하지만 언젠가부터 마치 다른 사람이 된 것처럼 말하는 ‘지영’. ‘대현’은 아내가 상처 입을까 두려워 그 사실을 털어놓지 못하고 ‘지영’은 이런 ‘대현’에게 언제나 “괜찮다”라며 웃어 보이기만 하는데… 모두가 알지만 아무도 몰랐던 당신과 나의 이야기"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-22",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+        "name":"예고편",
+        "link":"Gz0ZeY1U4vY"
+      },
+      {
+        "name":"캐릭터 예고편",
+        "link":"rK21wq8Y4Xw"
+      }
+    ],
+    "grade":"12세 관람가",
+    "nation":"한국",
+    "runningtime":"118분",
+    "release":"2019-10-23",
+    "genre":["드라마"],
     "point": {
-      "netizen":"5",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"6.69",
+      "spectator":"9.20",
+      "critic":"6.79"
     },
-    "ranking": "5",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "4",
+    "bookrate": "0.84",
+    "poster": "https://movie-phinf.pstatic.net/20191024_215/1571900079078PNazL_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "(주)봄바람영화사",
+    "distributor" : "롯데엔터테인먼트",
+    "importer" :""
   },
 
   {
     "title": "터미네이터: 다크 페이트",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "팀 밀러",
+      "nameEng" : "Tim Miller",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F179%2F201910221349145471.jpg&type=u120_150&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "맥켄지 데이비스",
+        "nameEng" : "Mackenzie Davis",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F113%2F201611031531384601.png&type=u120_150&quality=95",
+        "role": ["그레이스"],
         "part": "leading"
         },
-        {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+          {
+        "name": "아놀드 슈왈제네거",
+        "nameEng" : "Arnold Schwarzenegger",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F117%2F201402071210039231.jpg&type=u120_150&quality=95",
+        "role": ["터미네이터"],
+        "part": "leading"
+        },
+          {
+        "name": "린다 해밀턴",
+        "nameEng" : "Linda Hamilton",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F123%2F201910231037336701.jpg&type=u120_150&quality=95",
+        "role": ["사라 코너"],
+        "part": "leading"
+        },
+          {
+        "name": "나탈리아 레이즈",
+        "nameEng" : "Natalia Reyes",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F113%2F20191022184633671.jpg&type=u120_150&quality=95",
+        "role": ["대니 라모스"],
+        "part": "leading"
+        },
+          {
+        "name": "가브리엘 루나",
+        "nameEng" : "Gabriel Luna",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F27%2F201910231022172801.jpg&type=u120_150&quality=95",
+        "role": ["터미네이터"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "디에고 보네타",
+        "nameEng" : "Diego Boneta",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000002979%2FPM297920_135113_000.jpg&type=u120_150&quality=95",
+        "role": ["디에고 라모스"],
         "part": "supporting"
         },
-        {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+          {
+        "name": "에드워드 펄롱",
+        "nameEng" : "Edward Furlong",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000003%2F00000000386-t.jpg&type=u120_150&quality=95",
+        "role": ["존 코너"],
+        "part": "supporting"
+        },
+          {
+        "name": "톰 호퍼",
+        "nameEng" : "Tom Hopper",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000002215%2FPM221587_181338_000.jpg&type=u120_150&quality=95",
+        "role": ["윌리엄"],
+        "part": "supporting"
+        },
+          {
+        "name": "스티븐 크리",
+        "nameEng" : "Steven Cree",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000002480%2FPM248088_181113_000.jpg&type=u120_150&quality=95",
+        "role": ["릭비"],
+        "part": "supporting"
+        },
+          {
+        "name": "트리스탄 울로아",
+        "nameEng" : "Tristan Ulloa",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000126%2FPM12603_175756_000.jpg&type=u120_150&quality=95",
+        "role": ["펠리페 간달"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"심판의 날 그 후, 모든 것이 다시 시작된다!",
+      "description": "심판의 날 그 후, 뒤바뀐 미래 새로운 인류의 희망 ‘대니’(나탈리아 레이즈)를 지키기 위해 슈퍼 솔져 ‘그레이스’(맥켄지 데이비스)가 미래에서 찾아오고, ‘대니’를 제거하기 위한 터미네이터 ‘Rev-9’(가브리엘 루나)의 추격이 시작된다. 최첨단 기술력으로 무장한 최강의 적 터미네이터 ‘Rev-9’의 무차별적인 공격에 쫓기기 시작하던 ‘그레이스’와 ‘대니’ 앞에 터미네이터 헌터 ‘사라 코너’(린다 해밀턴)가 나타나 도움을 준다. 인류의 수호자이자 기계로 강화된 슈퍼 솔져 ‘그레이스’와 ‘사라 코너’는 ‘대니’를 지키기 위해 새로운 조력자를 찾아 나서고, 터미네이터 ‘Rev-9’은 그들의 뒤를 끈질기게 추격하는데... 더 이상 정해진 미래는 없다 지키려는 자 VS 제거하려는 자, 새로운 운명이 격돌한다!"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-23",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+        "name":"예고편",
+        "link":"mNezVsOX9N8"
+      },
+      {
+        "name":"티저",
+        "link":"eE4GPPnG1Mw"
+      }
+    ],
+    "grade":" 15세 관람가",
+    "nation":"미국",
+    "runningtime":"128분",
+    "release":"2019-10-30",
+    "genre":["SF", "액션"],
     "point": {
-      "netizen":"6",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.62",
+      "spectator":"8.59",
+      "critic":"6.43"
     },
-    "ranking": "6",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "5",
+    "bookrate": "0.86",
+    "poster": "https://movie-phinf.pstatic.net/20191030_118/1572411669676j0Arb_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "월트 디즈니 컴퍼니",
+    "distributor" : "월트 디즈니 컴퍼니 코리아",
+    "importer" : "월트 디즈니 컴퍼니 코리아"
   },
-
   {
     "title": "엔젤 해즈 폴른",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "릭 로먼 워",
+      "nameEng" : "Ric Roman Waugh",
+      "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000072%2FPM7264_135838_000.jpg&type=u120_150&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "제라드 버틀러",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F189%2F201911111811276411.jpg&type=u111_139&quality=95",
+        "role": ["마이크 배닝"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "모건 프리먼",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F52%2F201805251054475311.jpg&type=u111_139&quality=95",
+        "role": ["트럼불 대통령"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "대니 휴스턴",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F164%2F201911111838393301.jpg&type=u111_139&quality=95",
+        "role": ["웨이드 제닝스"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "프레드릭 슈미트",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000004156%2FPM415665_170431_000.jpg&type=u111_139&quality=95",
+        "role": ["트레비스 콜"],
+        "part": "supporting"
+        },
+        {
+        "name": "로시 윌리엄스",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000004325%2FPM432550_170357_000.jpg&type=u111_139&quality=95",
+        "role": ["브루노"],
+        "part": "supporting"
+        },
+        {
+        "name": "파이퍼 페라보",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F199%2F201702211651455691.jpg&type=u111_139&quality=95",
+        "role": ["레아 배닝"],
+        "part": "supporting"
+        },
+        {
+        "name": "제이다 핀켓 스미스",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F10%2F201802221501345511.jpg&type=u111_139&quality=95",
+        "role": ["톰슨"],
+        "part": "supporting"
+        },
+        {
+        "name": "닉 놀테",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F129%2F201701171443581471.jpg&type=u111_139&quality=95",
+        "role": ["클렐이 배닝"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"이번에는 영웅이 무너진다!",
+      "description": "비밀 경호국 최고 요원 ‘배닝’(제라드 버틀러)의 임무수행 중 '트럼불' 대통령(모건 프리먼)을 향한 의문의 사상 최대 규모의 드론 테러가 발생한다. 최악의 드론 테러 사건 후 '배닝'은 대통령 암살사건의 테러범으로 지목되고 국가 영웅은 한순간에 일급 수배자가 되어 FBI에게 쫓기게 되는데... 표적이 된 그가 다시 움직인다! 숨막히는 추격! 모두가 그를 쫓는다!"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-24",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"예고편",
+      "link":"inwP9hoWn4w"
+      },
+      {
+        "name":"비하인드",
+        "link":"0ww9oy827F8"
+      },
+      {
+        "name":"메이킹",
+        "link":"n5UUom9F8tc"
+      }
+    ],
+    "grade":"15세",
+    "nation":"미국",
+    "runningtime":"121분",
+    "release":"2019-11-13",
+    "genre":["액션", "스릴러"],
     "point": {
-      "netizen":"7",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.62",
+      "spectator":"9.21",
+      "critic":"5"
     },
-    "ranking": "7",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "6",
+    "bookrate": "0.62",
+    "poster": "https://movie-phinf.pstatic.net/20191113_233/1573623877830zX5e9_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : " ",
+    "distributor" : "메가박스중앙(주)플러스엠",
+    "importer" : "(주)우성엔터테인먼트"
   },
 
   {
     "title": "윤희에게",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "임대형",
+      "nameEng" : "",
+      "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003291%2FPM329112_094539_000.jpg&type=u111_139&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "김희애",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F47%2F20160704151359361.jpg&type=u111_139&quality=95",
+        "role": ["윤희"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "김소혜",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201907%2F20190717230004472.jpg&type=u111_139&quality=95",
+        "role": ["새봄"],
+        "part": "leading"
+        },
+        {
+        "name": "성유빈",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F154%2F201904191431211901.jpg&type=u111_139&quality=95",
+        "role": ["경수"],
+        "part": "leading"
+        },
+        {
+        "name": "나카무라 유코",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000028%2FPM2836_134833_000.jpg&type=u111_139&quality=95",
+        "role": ["쥰"],
+        "part": "leading"
+        },
+        {
+        "name": "키노 하나",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000637%2F00000063778-t.jpg&type=u111_139&quality=95",
+        "role": ["마사코"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "타키우치 쿠미",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003726%2FPM372608_135757_000.jpg&type=u111_139&quality=95",
+        "role": ["료코"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
+        "name": "야쿠마루 쇼",
+        "nameEng" : " ",
         "img": "",
-        "role": ["역할1"],
+        "role": ["류스케"],
+        "part": "supporting"
+        },
+        {
+        "name": "김학선",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201508%2F20150817190959382-7608789.jpg&type=u111_139&quality=95",
+        "role": ["용호"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"다시 날 가슴 뛰게 만든 그 말 `윤희에게, 잘 지내니?`",
+      "description": "평범한 일상을 살아가던 '윤희' 앞으로 도착한 한 통의 편지. 편지를 몰래 읽어본 딸 '새봄'은 편지의 내용을 숨긴 채 발신인이 살고 있는 곳으로 여행을 제안하고, '윤희'는 비밀스러웠던 첫사랑의 기억으로 가슴이 뛴다. '새봄'과 함께 여행을 떠난 ‘윤희’는 끝없이 눈이 내리는 그곳에서 첫사랑을 만날지도 모른다는 기대를 품는데…"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-25",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"예고편",
+      "link":"DixjiW8IfSk"
+      },
+      {
+        "name":"메이킹",
+        "link":"Fyt4cujxQek"
+      }
+    ],
+    "grade":"12세",
+    "nation":"한국",
+    "runningtime":"105분",
+    "release":"2019-11-14",
+    "genre":["로맨스"],
     "point": {
-      "netizen":"8",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"9.16",
+      "spectator":"9.22",
+      "critic":"6.71"
     },
-    "ranking": "8",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "7",
+    "bookrate": "0.54",
+    "poster": "https://movie-phinf.pstatic.net/20191114_81/15737104663784PTG6_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "영화사 달리기",
+    "distributor" : "(주)리틀빅픽처스"
   },
 
   {
     "title": "아이리시맨",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
-      "img": ""
+      "name": "마틴 스코세이지",
+      "nameEng" : "",
+      "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F117%2F201709181603173771.jpg&type=u111_139&quality=95"
     },
     "actor":
     {
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "로버트 드 니로",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F82%2F201909241213414821.jpg&type=u111_139&quality=95",
+        "role": ["프랭크 시런"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "name": "알 파치노",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F184%2F201409021125085831.jpg&type=u111_139&quality=95",
+        "role": ["지미 호파"],
+        "part": "leading"
+        },
+        {
+        "name": "조 페시",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F21%2F201805111743512891.jpg&type=u111_139&quality=95",
+        "role": ["러셀 버팔리노"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "제시 플레먼스",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F114%2F201911151637294631.jpg&type=u111_139&quality=95",
+        "role": ["처키 오브라이언"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "name": "바비 카나베일",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F178%2F201801121545337201.jpg&type=u111_139&quality=95",
+        "role": ["펠릭스 '스키니 레이저' 디툴리오"],
+        "part": "supporting"
+        },
+        {
+        "name": "안나 파킨",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F4%2F201910231514326811.png&type=u111_139&quality=95",
+        "role": ["페기 시런"],
+        "part": "supporting"
+        },
+        {
+        "name": "하비 케이틀",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F155%2F201510071859445151.jpg&type=u111_139&quality=95",
+        "role": ["안젤로 브루노"],
+        "part": "supporting"
+        },
+        {
+        "name": "잭 휴스턴",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F140%2F201608011850335151.jpg&type=u111_139&quality=95",
+        "role": ["로버트 F. 케네디"],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":" ",
+      "description": "전후 미국에 드리운 범죄 조직의 그림자. 이제 한 거물 암살자가 입을 연다. 마틴 스코세이지 감독과 로버트 드 니로, 알 파치노, 조 페시가 선사하는 장대한 범죄 드라마."
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-26",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"티저",
+      "link":"FoChl9jfAzg"
+      },
+      {
+        "name":"예고편1",
+        "link":"6v3bITkLqPI"
+      },
+      {
+        "name":"예고편2",
+        "link":"oKurZkEzQII"
+      }
+    ],
+    "grade":"청소년 관람불가",
+    "nation":"미국",
+    "runningtime":"209분",
+    "release":"2019-11-20",
+    "genre":["범죄", "드라마", "스릴러"],
     "point": {
-      "netizen":"9",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"8.82",
+      "spectator":"8.87",
+      "critic":"9.11"
     },
-    "ranking": "9",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "ranking": "8",
+    "bookrate": "0.43",
+    "poster": "https://movie-phinf.pstatic.net/20191024_143/1571893663418kwLN7_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : " ",
+    "distributor" : "넷플릭스 코리아",
+    "importer" : " "
   },
 
   {
     "title": "대통령의 7시간",
     "director": {
-      "name": "이름",
-      "nameEng" : "영어표기",
+      "name": "이상호",
+      "nameEng" : "",
       "img": ""
     },
     "actor":
@@ -657,67 +978,166 @@
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
+        "name": "",
+        "nameEng" : "",
         "img": "",
-        "role": ["역할1", "역할2"],
-        "part": "leading"
-        },
-        {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
-        "img": "",
-        "role": ["역할1", "역할2"],
+        "role": [""],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
+        "name": "",
+        "nameEng" : " ",
         "img": "",
-        "role": ["역할1"],
-        "part": "supporting"
-        },
-        {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
-        "img": "",
-        "role": ["역할1"],
+        "role": [""],
         "part": "supporting"
         }
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"잊어서도 잊혀져서도 안될 진실!",
+      "description": "한 국가의 대통령이 사이비 교주에게 혼을 빼앗겼다면 무슨 일이 벌어질까? 생각만으로도 끔찍한 일이 21세기 현대 민주국가 대한민국에서 벌어졌다. 정치와 꿈, 주술과 합리의 대결을 무려 7년 동안 좇은 현장 추적 다큐멘터리."
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
-    "grade":"관람등급",
-    "nation":"국가",
-    "runningtime":"러닝타임",
-    "release":"2019-09-27",
-    "genre":["장르1", "장르2"],
+    "video":[
+      {
+      "name":"티저",
+      "link":"BwV0UAUZD9M"
+      },
+      {
+        "name":"예고편",
+        "link":"uO2SdQY7wOY"
+      }
+    ],
+    "grade":"12세",
+    "nation":"한국",
+    "runningtime":"79분",
+    "release":"2019-11-14",
+    "genre":["다큐멘터리"],
     "point": {
-      "netizen":"10",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "netizen":"6.40",
+      "spectator":"9.49",
+      "critic":" "
+    },
+    "ranking": "9",
+    "bookrate": "0.32",
+    "poster": "https://movie-phinf.pstatic.net/20191101_140/15725985713955YYvh_JPEG/movie_image.jpg",
+    "type": "current",
+    "production" : "씨네포트",
+    "distributor" : "씨네포트"
+  },
+
+  {
+    "title": "좀비랜드:더블탭",
+    "director": {
+      "name": "루벤 플레셔",
+      "nameEng" : "",
+      "img": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001688%2FPM168887_185908_000.jpg&type=u111_139&quality=95"
+    },
+    "actor":
+    {
+      "leading":
+      [
+        {
+        "name": "우디 해럴슨",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F39%2F201807091741522641.jpg&type=u111_139&quality=95",
+        "role": ["텔러해시"],
+        "part": "leading"
+        },
+        {
+        "name": "제시 아이젠버그",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F21%2F201911121712347491.jpg&type=u111_139&quality=95",
+        "role": ["콜럼버스"],
+        "part": "leading"
+        },
+        {
+        "name": "아비게일 브레스린",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F175%2F201710201420433171.jpg&type=u111_139&quality=95",
+        "role": ["리틀록"],
+        "part": "leading"
+        },
+        {
+        "name": "엠마 스톤",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F92%2F20191112173026451.jpg&type=u111_139&quality=95",
+        "role": ["위치타"],
+        "part": "leading"
+        }
+      ],
+      "supporting":
+      [
+        {
+        "name": "조이 도이치",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F196%2F201803081841231801.jpg&type=u111_139&quality=95",
+        "role": ["매디슨"],
+        "part": "supporting"
+        },
+        {
+        "name": "빌 머레이",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F2%2F201805101657588751.jpg&type=u111_139&quality=95",
+        "role": ["빌 머레이"],
+        "part": "supporting"
+        },
+        {
+        "name": "로사리오 도슨",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F26%2F201610191028102271.jpg&type=u111_139&quality=95",
+        "role": ["네바다"],
+        "part": "supporting"
+        },
+        {
+        "name": "에반 조지아",
+        "nameEng" : " ",
+        "img": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F134%2F201304171114361241.jpg&type=u111_139&quality=95",
+        "role": ["버클"],
+        "part": "supporting"
+        }
+      ]
+    },
+    "storyline": {
+      "keyword":"",
+      "description": "좀비로 세상이 망한지 10년, 자신들만의 재능을 발휘하고 생존 규칙을 지키며 여전히 꿋꿋하게 살아가고 있는 희한한 가족 탤러해시, 콜럼버스, 위치타, 리틀록. 하지만 ‘좀비랜드’에 더욱 진화한 좀비가 나타나고 이들은 새로운 인간 생존자들과 함께 사투를 시작하는데…"
+    },
+    "video":[
+      {
+        "name":"예고편1",
+        "link":"uPMOTPB9vTY"
+      },
+      {
+        "name":"예고편2",
+        "link":"zxhtSx1kOWg"
+      }
+    ],
+    "grade":"15세",
+    "nation":"미국",
+    "runningtime":"99분",
+    "release":"2019-11-13",
+    "genre":["액션", "코미디", "공포"],
+    "point": {
+      "netizen":"8.14",
+      "spectator":"8.40",
+      "critic":"6.50"
     },
     "ranking": "10",
-    "bookrate": "예매율",
-    "poster": "포스터src",
+    "bookrate": "0.29",
+    "poster": "https://movie-phinf.pstatic.net/20191101_133/1572575304249ohmm8_JPEG/movie_image.jpg",
     "type": "current",
-    "production" : "제작사",
-    "distributor" : "배급사",
-    "importer" : "수입사"
+    "production" : "소니픽처스코리아",
+    "distributor" : "소니픽처스코리아",
+    "importer" : "소니픽처스코리아"
   },
 
   {
     "title": "개봉예정1",
     "director": {
       "name": "이름",
-      "nameEng" : "영어표기",
+      "nameEng" : "",
       "img": ""
     },
     "actor":
@@ -725,32 +1145,32 @@
       "leading":
       [
         {
-        "name": "주연1 이름",
-        "nameEng" : "주연1 영어표기",
+        "name": "주연1",
+        "nameEng" : " ",
         "img": "",
-        "role": ["역할1", "역할2"],
+        "role": ["역할1"],
         "part": "leading"
         },
         {
-        "name": "주연2 이름",
-        "nameEng" : "주연2 영어표기",
+        "name": "주연2",
+        "nameEng" : " ",
         "img": "",
-        "role": ["역할1", "역할2"],
+        "role": ["역할1"],
         "part": "leading"
         }
       ],
       "supporting":
       [
         {
-        "name": "조연1 이름",
-        "nameEng" : "조연1 영어표기",
+        "name": "조연1",
+        "nameEng" : " ",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
         },
         {
-        "name": "조연2 이름",
-        "nameEng" : "조연2 영어표기",
+        "name": "조연2",
+        "nameEng" : " ",
         "img": "",
         "role": ["역할1"],
         "part": "supporting"
@@ -758,10 +1178,10 @@
       ]
     },
     "storyline": {
-      "keyword":"스토리 키워드",
-      "description": "스토리 설명"
+      "keyword":"키워드",
+      "description": "설명"
     },
-    "video":["비디오1 id", "비디오2 id", "비디오3 id"],
+    "video":["비디오1", "비디오2", "비디오3"],
     "grade":"관람등급",
     "nation":"국가",
     "runningtime":"러닝타임",
@@ -769,8 +1189,8 @@
     "genre":["장르1", "장르2"],
     "point": {
       "netizen":"100",
-      "spectator":"관람객 평점",
-      "critic":"전문가 평점"
+      "spectator":"관람객",
+      "critic":"전문가"
     },
     "ranking": "10",
     "bookrate": "예매율",

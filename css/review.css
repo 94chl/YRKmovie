@@ -64,19 +64,14 @@
 .container .contentsWrap .reviewWrap .reviews .field>td {
   width:150px;
   text-align: center;
-}
-
-.container .contentsWrap .reviewWrap .reviews .field .title {
-  background: #ddd;
-}
-
-.container .contentsWrap .reviewWrap .reviews .field .pointWrap {
-
+  height:50px;
+  font-size: 1.2em;
+  background: rgb(0, 219, 97);
+  border: 1px solid #fff
 }
 
 .container .contentsWrap .reviewWrap .reviews .field .commentWrap {
   width:550px;
-  background: #ddd;
 }
 
 .container .contentsWrap .reviewWrap .reviews .field .writerWrap {
@@ -84,7 +79,6 @@
 }
 
 .container .contentsWrap .reviewWrap .reviews .field .likeWrap {
-  background: #ddd;
   width:100px;
 }
 /*리뷰*/
@@ -143,11 +137,11 @@
 }
 
 .container .contentsWrap .reviewWrap .reviews .review .writerWrap .writer {
-  color:#888;
+  color:#2b2b2b;
 }
 
 .container .contentsWrap .reviewWrap .reviews .review .writerWrap .writeDate {
-  color:#888;
+  color:#2b2b2b;
 }
 
 .container .contentsWrap .reviewWrap .reviews .review .likeWrap {

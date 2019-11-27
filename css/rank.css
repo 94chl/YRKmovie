@@ -104,6 +104,12 @@
   font-size: 18px;
 }
 
+.record .movie .title.outlineMenu .subMenu.filmRating {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .record .movie .outlineMenu {
   height: 20px;
   line-height: 20px;
@@ -131,7 +137,7 @@
   height: 20px;
 }
 
-.record .movie .outline li {
+.record .movie .outline>li {
   float: left;
   height: 20px;
   line-height: 20px;
@@ -154,7 +160,62 @@
 .record .movie .outlineMenu.media a {
   border:1px solid #888;
   margin-right: 10px;
-  padding: 5px 10px;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  width:50px;
+  text-align: center;
+  text-indent: 0;
+  float: left;
+}
+
+.record .movie .outlineMenu.media .videoWrap {
+  position: relative;
+  height: 30px;
+  width:450px;
+}
+
+.record .movie .outlineMenu.media .videoWrap .videoTab {
+  border:1px solid #888;
+  height: 30px;
+  line-height: 30px;
+  width:80px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.record .movie .outlineMenu.media .videos {
+  position: absolute;
+  left:80px;
+  top:0;
+  padding: 3px 0;
+  border: 1px solid #888;
+  border-left: none;
+  display: none;
+}
+
+.record .movie .outlineMenu.media .videos.open {
+  display: block;
+}
+
+.record .movie .outlineMenu.media .videos .video{
+  float:left;
+  height: 24px;
+  line-height: 24px;
+  border-right: 1px solid rgb(0, 157, 11);
+  padding-right: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.record .movie .outlineMenu.media .videos .video:hover {
+  font-weight: bold;
+}
+
+.record .movie .outlineMenu.media .videos .video:last-child {
+  margin-right: 0;
+  border-right: none;
 }
 
 .record .movie .reserveBtn{
@@ -169,4 +230,52 @@
   height:100px;
   line-height: 100px;
   text-align: center;
+}
+
+.player {
+  position: fixed;
+  top:50%;
+  margin-top: -270px;
+  left:50%;
+  margin-left: -320px;
+  width:640px;
+  height:540px;
+  z-index: 55;
+  background: #fff;
+  border:1px solid rgb(0, 157, 11);
+  display: none;
+}
+
+.player.open {
+  display: block;
+}
+
+.player .playerTab {
+  width: 100%;
+  height:60px;
+  line-height: 60px;
+  background: rgb(0, 157, 11);
+  color:#fff;
+  text-indent: 20px;
+  font-size:1.5em;
+}
+
+.player .playerWrap {
+  width:640px;
+  height:480px;
+}
+
+.player .playerWrap {
+
+}
+
+.player .closeBtn {
+  position: absolute;
+  top:0;
+  right:0;
+  width:60px;
+  height:60px;
+  font-size: 1.5em;
+  color:#fff;
+  font-weight: bold;
 }
