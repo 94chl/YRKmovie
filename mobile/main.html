@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>New Naver Movie</title>
-  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/movieDetail.css">
+  <link rel="stylesheet" href="../css/mobile.css">
   <link rel="stylesheet" href="../css/jquery.rateyo.css" type="text/css" />
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script src="../js/jquery.rateyo.js"></script>
-  <script src="../js/common.js"></script>
-  <script src="../js/movieDetail.js"></script>
+  <script src="../js/mobile.js"></script>
 </head>
 
 <body>
@@ -20,48 +18,39 @@
     <header>
       <div id="headerWrap" class="clearfix">
 
-        <div class="headerBox">
-          <h1 id="logo"><a href="../index.html">로고</a></h1>
+        <div class="headerBox clearfix">
+          <h1 id="logo"><a href="#"><img src="../img/mobileLogo.png" alt="mobileLogo" height="100%"></a></h1>
+          <h2 id="mainPage"><a href="./index.html"><img src="../img/movielogo.png" alt="movielogo" width="100%"></a></h2>
+          <button type="button" name="sideBarBtn" class="sideBarBtn"><img src="../img/sidebar.jpg" alt="sidebar" height="100%"></button>
         </div>
+      </div>
+    </header>
 
-        <div id="searchBox">
-          <form action="get">
-            <input type="text" name="search" id="search" placeholder="영화검색">
-            <button type="button" name="searchButton" id="searchButton">검색</button>
-          </form>
-        </div>
-
+    <nav class="sidebarWrap">
+      <div class="sidebar">
+        <div class="sidebarClose"></div>
         <nav id="subnav">
           <button type="button" name="searchButton" id="loginBox">로그인</button>
         </nav>
-      </div>
-
-      <nav class="headerNav">
         <ul>
           <li>
-            <a href="../index.html">홈</a>
-          </li>
-          <li>
-            <a href="../running/current.html">상영작, 예정작</a>
+            <button type="button" name="sideBarMenu" class="sideBarMenu">상영작, 예정작<em class="sideBarList">▼</em></button>
             <ul>
-              <li class="headerNavList"><a href="../running/current.html">현재 상영영화</a></li>
-              <li class="headerNavList"><a href="../running/premovie.html">개봉 예정영화</a></li>
+              <li class="headerNavList"><a href="./current.html" class="disable">현재 상영영화</a></li>
+              <li class="headerNavList"><a href="./premovie.html" class="disable">개봉 예정영화</a></li>
             </ul>
           </li>
           <li>
-            <a href="../rank/ranking.html">영화랭킹</a>
+            <button type="button" name="sideBarMenu" class="sideBarMenu">영화랭킹</button>
           </li>
           <li>
-            <a href="../ticket/reserve.html">예매</a>
+            <button type="button" name="sideBarMenu" class="sideBarMenu">예매<em class="sideBarList">▼</em></button>
             <ul>
-              <li class="headerNavList"><a href="../ticket/reserve.html">예매하기</a></li>
-              <li class="headerNavList"><a href="../ticket/orderList.html">예매확인, 취소</a></li>
+              <li class="headerNavList"><a href="./reserve.html" class="disable">예매하기</a></li>
+              <li class="headerNavList"><a href="./orderList.html" class="disable">예매확인, 취소</a></li>
               <li class="headerNavList"><a href="https://help.naver.com/support/contents/contents.help?serviceNo=800&categoryNo=2647" target="_blank" title="새 창에서 열기">할인카드 안내, 등록</a></li>
               <li class="headerNavList"><a href="https://help.naver.com/support/service/main.help?serviceNo=800&categoryNo=12386" target="_blank" title="새 창으로 열기">이용안내</a></li>
             </ul>
-          </li>
-          <li>
-            <a href="../point/review.html">평점</a>
           </li>
           <li>
             <a href="https://series.naver.com/" target="_blank" title="새 창에서 열기">다운로드</a>
@@ -70,8 +59,9 @@
             <a href="https://tv.naver.com/indiecinema" target="_blank" title="새 창에서 열기">인디극장</a>
           </li>
         </ul>
-      </nav>
-    </header>
+        <button type="button" name="closeBtn" class='closeBtn'>X</button>
+      </div>
+    </nav>
     <!--header(공통사항)-->
 
     <div class="container">
@@ -80,45 +70,21 @@
 
         <article class="trailerWrap">
           <div class="player">
-            <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <button type="button" class="up">up</button>
-          <ul class="trailers"></ul>
-          <button type="button" class="down">down</button>
         </article>
 
         <article class="outlineWrap clearfix">
-          <div class="poster"><img src="" alt="poster" width="100%" height="100%"></div>
-          <div class="outlines">
+          <div class="poster"><img src="" alt="poster" height="100%"></div>
+          <ul class="outline">
             <div class="title"></div>
-            <div class="outlineMenu">
-              <div>개요</div>
-              <ul class="outline">
-                <li class="genre"></li>
-                <li class="nation"></li>
-                <li class="runningTime"></li>
-                <li class="release"></li>
-              </ul>
-            </div>
-            <div class="outlineMenu">
-              <div>감독</div>
-              <div class="director"></div>
-            </div>
-            <div class="outlineMenu">
-              <div>주연</div>
-              <div class="actor"></div>
-            </div>
-            <div class="outlineMenu">
-              <div>등급</div>
-              <div class="filmRating"></div>
-            </div>
-            <div class="outlineMenu">
-              <div>평점</div>
-              <div class="rating"></div>
-            </div>
-            <div class="ticketing outlineMenu">
-              <button type="button" name="reserve" class="reserveBtn">예매</button>
-            </div>
+            <li class="genre"></li>
+            <li class="nation"></li>
+            <li class="runningTime"></li>
+            <li class="release"></li>
+          </ul>
+          <div class="ticketing outlineMenu">
+            <button type="button" name="reserve" class="reserveBtn disable">예매하기</button>
           </div>
         </article>
 
@@ -126,8 +92,7 @@
 
           <nav class="detailsNav">
             <a href="./main.html" class="tab now">주요정보</a>
-            <a href="./crew.html" class="tab">배우 &amp; 출연진</a>
-            <a href="./grade.html" class="tab">평점</a>
+            <a href="./grade.html" class="tab">한줄평</a>
           </nav>
 
           <div class="details">
@@ -136,27 +101,36 @@
                 <p>줄거리</p>
               </div>
               <div class="storylineWrap">
-                <h3 class='keyword'>헤드라인</h3>
-                <p class='storyline'>줄거리</p>
+                <h3 class='keyword'></h3>
+                <p class='storyline'></p>
               </div>
             </div>
 
-            <div class="shortActorDirector">
-              <div class="detailsTab">
-                <p>배우 &amp; 제작진</p>
-                <a href="./crew.html" class="more">더보기</a>
+            <div class="outlines">
+              <div class="outlineMenu">
+                <div>감독</div>
+                <div class="director"></div>
               </div>
-              <ul>
-                <!--최대 6명-->
-              </ul>
+              <div class="outlineMenu">
+                <div>주연</div>
+                <div class="actor"></div>
+              </div>
+              <div class="outlineMenu">
+                <div>등급</div>
+                <div class="filmRating"></div>
+              </div>
+              <div class="outlineMenu">
+                <div>평점</div>
+                <div class="rating"></div>
+              </div>
             </div>
 
             <div class="shortRatings">
               <div class="detailsTab">
-                <p>평점</p>
+                <p>한줄평</p>
                 <a href="./grade.html" class="more">더보기</a>
               </div>
-              <ul class='grades netizen'></ul>
+              <ul class='grades netizen someReview'></ul>
             </div>
           </div>
         </article>
@@ -171,6 +145,8 @@
   <!--wrap-->
 
   <button type="button" id="topBtn">TOP</button>
+
+  <a href="../index.html" id="pcBtn">PC 페이지 보기</a>
 
   <footer>
     <p>제작자 : 최용록 <span>/</span> contact : 94chl@naver.com</p>

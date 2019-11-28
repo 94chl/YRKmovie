@@ -17,6 +17,18 @@ $(document).ready(function(){
     $.getJSON('../json/movies.json', function(data){
       $.each(data, function() {
         if(this.title == title) {
+          var gIcon = "";
+          if (this.grade == "전체 관람가") {
+            gIcon = "../img/gall.png";
+          } else if (this.grade == "12세 관람가") {
+            gIcon = "../img/g12.png";
+          } else if (this.grade == "15세 관람가") {
+            gIcon = "../img/g15.png";
+          } else {
+            gIcon = "../img/g19.png";
+          }
+          $('.gradeIcon').addClass('clicked');
+          $('.gradeIcon').attr('src', gIcon);
           $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
           $('#reservationInfo .title.reserveInfo .selected').text(this.title);
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
@@ -107,13 +119,36 @@ $(document).ready(function(){
     $.getJSON('../json/movies.json', function(data){
       $.each(data, function() {
         if(this.title == clicked && !this.option) {
+          var gIcon = "";
+          if (this.grade == "전체 관람가") {
+            gIcon = "../img/gall.png";
+          } else if (this.grade == "12세 관람가") {
+            gIcon = "../img/g12.png";
+          } else if (this.grade == "15세 관람가") {
+            gIcon = "../img/g15.png";
+          } else {
+            gIcon = "../img/g19.png";
+          }
+          $('.gradeIcon').addClass('clicked');
+          $('.gradeIcon').attr('src', gIcon);
           $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
           $('#reservationInfo .title.reserveInfo .selected').text(this.title);
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
           reserveInfo.title = this.title;
           $('#timetable .times .chosenMovie').text("");
         } else if(this.title == clicked && this.option) {
-
+          var gIcon = "";
+          if (this.grade == "전체 관람가") {
+            gIcon = "../img/gall.png";
+          } else if (this.grade == "12세 관람가") {
+            gIcon = "../img/g12.png";
+          } else if (this.grade == "15세 관람가") {
+            gIcon = "../img/g15.png";
+          } else {
+            gIcon = "../img/g19.png";
+          }
+          $('.gradeIcon').addClass('clicked');
+          $('.gradeIcon').attr('src', gIcon);
           $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
           $('#reservationInfo .title.reserveInfo .selected').text(this.title+" (일반)");
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);
@@ -138,6 +173,18 @@ $(document).ready(function(){
     $.getJSON('../json/movies.json', function(data){
       $.each(data, function() {
         if(this.title == clicked && this.option) {
+          var gIcon = "";
+          if (this.grade == "전체 관람가") {
+            gIcon = "../img/gall.png";
+          } else if (this.grade == "12세 관람가") {
+            gIcon = "../img/g12.png";
+          } else if (this.grade == "15세 관람가") {
+            gIcon = "../img/g15.png";
+          } else {
+            gIcon = "../img/g19.png";
+          }
+          $('.gradeIcon').addClass('clicked');
+          $('.gradeIcon').attr('src', gIcon);
           $('#reservationInfo .poster.reserveInfo img').attr('src', this.poster);
           $('#reservationInfo .title.reserveInfo .selected').text(this.title+'('+option+')');
           $('#reservationInfo .point.reserveInfo .selected').text(this.point.netizen);

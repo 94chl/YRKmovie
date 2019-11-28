@@ -640,7 +640,7 @@
         "link":"eE4GPPnG1Mw"
       }
     ],
-    "grade":" 15세 관람가",
+    "grade":"15세 관람가",
     "nation":"미국",
     "runningtime":"128분",
     "release":"2019-10-30",
@@ -1216,7 +1216,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"12세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-05",
@@ -1227,7 +1227,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.4",
     "poster": "https://movie-phinf.pstatic.net/20191106_121/1573001259052YGdvh_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1287,7 +1287,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"12세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-19",
@@ -1298,7 +1298,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.2",
     "poster": "https://movie-phinf.pstatic.net/20191112_297/1573520672012Y8oWj_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1358,7 +1358,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"15세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-12",
@@ -1369,7 +1369,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.2",
     "poster": "https://movie-phinf.pstatic.net/20180724_240/1532412643737GpXwK_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1429,7 +1429,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"12세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-04",
@@ -1440,7 +1440,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191115_140/1573796416611lkMfW_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1500,7 +1500,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"15세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-04",
@@ -1511,7 +1511,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191127_107/1574818464998CffyD_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1571,7 +1571,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"12세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-12",
@@ -1582,7 +1582,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191119_76/1574129271724YC9B4_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1642,7 +1642,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"15세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-12",
@@ -1653,7 +1653,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191118_282/1574065368157Oll4A_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1713,7 +1713,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"전체 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-04",
@@ -1724,7 +1724,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191106_295/1573028041789kXu3r_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1784,7 +1784,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"청소년 관람불가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-27",
@@ -1795,7 +1795,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191126_138/1574748778055qhR5Q_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",
@@ -1855,7 +1855,7 @@
       "description": "설명"
     },
     "video":["비디오1", "비디오2", "비디오3"],
-    "grade":"관람등급",
+    "grade":"12세 관람가",
     "nation":"국가",
     "runningtime":"러닝타임",
     "release":"2019-12-05",
@@ -1866,7 +1866,7 @@
       "critic":"전문가"
     },
     "ranking": "100",
-    "bookrate": "예매율",
+    "bookrate": "0.1",
     "poster": "https://movie-phinf.pstatic.net/20191105_139/1572919493877EhG44_JPEG/movie_image.jpg",
     "type": "premovie",
     "production" : "제작사",

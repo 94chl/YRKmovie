@@ -24,7 +24,7 @@ $(document).ready(function() {
     if($('.indexPage')) {
       newWindowIcon = newWindowIcon + '<img src="./img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
     } else {
-      newWindowIcon = newWindowIcon + '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">;
+      newWindowIcon = newWindowIcon + '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
     }
     $('header a[target="_blank"]').append(newWindowIcon)
   })

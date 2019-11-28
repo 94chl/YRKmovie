@@ -124,7 +124,7 @@ body {
   font-size: 1.1em;
   text-align: center;
   width: 70%;
-  cursor: pointer;
+
   height: 50%;
   margin-left: 15%;
   margin-top: 15%;
@@ -251,7 +251,7 @@ footer p{
   height:30px;
   background: #000;
   color: #fff;
-  cursor: pointer;
+
   position: fixed;
   bottom:5%;
   right:5%;
@@ -263,7 +263,7 @@ footer p{
   clear:both;
   width:100%;
   height:5%;
-  cursor: pointer;
+
   font-weight: bold;
   text-align: center;
   background: #ddd;
@@ -342,7 +342,7 @@ footer p{
   height: 100%;
   line-height: 20px;
   text-align: center;
-  cursor: pointer;
+
   border: 1px solid #000;
   box-sizing: border-box;
   border-right:none;
@@ -528,4 +528,232 @@ footer p{
   height: 250px;
   background: #fff;
   text-align: center;
+}
+
+/* movieDetail */
+
+.container .contentsWrap .trailerWrap {
+  width:100%;
+  margin-top:80px;
+  position: relative;
+}
+
+.container .contentsWrap .trailerWrap .player {
+  width: 100%;
+  float:left;
+}
+
+.container .outlineWrap {
+  background: #fff;
+  clear: both;
+}
+
+.container .outlineWrap .outlineMenu {
+  clear: both;
+  height: 20px;
+  line-height: 20px;
+}
+
+.container .outlineWrap .poster {
+  height:200px;
+  float: left;
+  text-align: center;
+}
+
+.container .outlineWrap .title {
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.container .outlineWrap .outline li {
+  height: 20px;
+  line-height: 20px;
+  margin: 10px 0;
+  font-size: 0.9em;
+  text-indent: 1.2em;
+}
+
+.container .ticketing .reserveBtn{
+  background: #f177a2;
+  color: #fff;
+  width:100%;
+  height:50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: left;
+}
+
+.container .detailsWrap {
+  background: #ddd;
+}
+
+.container .detailsWrap .detailsNav {
+  background: rgb(0, 219, 97);
+  width: 100%;
+  height: 50px;
+}
+
+.container .detailsWrap .detailsNav .tab {
+  float: left;
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container .detailsWrap .detailsNav .tab.now {
+  font-size: 1.1em;
+  background: rgb(0, 157, 11);
+  color:#fff;
+}
+
+.container .detailsWrap .details {
+  clear:both;
+  padding:0 15px;
+  margin-top: 10px;
+}
+
+.container .detailsWrap .details>div {
+  clear:both;
+}
+
+.container .detailsWrap .details .detailsTab {
+  height: 30px;
+  line-height: 30px;;
+}
+
+.container .detailsWrap .details .detailsTab .more {
+  float: right;
+  border: 1px solid #888;
+  padding:0 5px;
+}
+
+.container .detailsWrap .details .detailsTab>p {
+  font-weight: bold;
+  font-size: 1.2em;
+  float:left;
+  padding-bottom: 20px;
+}
+
+.container .detailsWrap .details .story {
+  margin-bottom: 20px;
+}
+
+.container .detailsWrap .details .story .detailsTab>p {
+}
+
+.container .detailsWrap .details .story .storylineWrap {
+  clear: both;
+  text-indent: 10px;
+}
+
+.container .detailsWrap .details .story .storylineWrap .keyword {
+ font-size: 1.2em;
+ margin-bottom: 10px;
+ font-weight: bold;
+}
+
+.container .detailsWrap .details .story .storylineWrap .storyline {
+ margin-bottom: 30px;
+ line-height: 2em;
+}
+
+.outlines {
+  margin-bottom: 30px;
+}
+
+.outlines .outlineMenu {
+  clear: both;
+}
+
+.outlines .outlineMenu div {
+  float: left;
+  margin:5px 0;
+}
+
+.outlines .outlineMenu div:first-child {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.container .detailsWrap .details .shortRatings{
+
+}
+
+.container .detailsWrap .details .shortRatings .grades {
+  clear: both;
+  border:1px solid #888;
+  box-sizing: border-box;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade {
+  clear:both;
+  width:100%;
+  border-bottom:1px solid #888;
+  box-sizing: border-box;
+  background: #fff;
+  padding-top: 10px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .pointWrap {
+  width:100%;
+  height: 20px;
+  line-height:20px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .pointWrap .starPoint {
+  float: left;
+  margin-left: 10px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .pointWrap .point {
+  float: right;
+  margin-right: 20px;
+  color:rgb(0, 36, 255);
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .commentWrap {
+  float:left;
+  width:100%;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .commentWrap p{
+  margin:5px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap {
+  float: right;
+  margin-right:10px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap div {
+  float:left;
+  font-size: 0.8em;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .writer {
+  padding-right: 5px;
+  border-right: 1px solid #888;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .writeDate {
+  margin-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #888;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .report {
+  margin-left: 5px;
+}
+
+.container .detailsWrap .details .shortRatings .grades .grade .writerWrap .report button {
+  font-size: 0.9em;
+}
+
+.container .detailsWrap .details .shortRatings .likeWrap {
+  display: none;
 }

@@ -137,6 +137,17 @@
   background: #fff;
 }
 
+.gradeIcon {
+  display: none;
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.gradeIcon.clicked {
+  display: block;
+}
+
 #processes .process.theater {
   position: relative;
   display: none;
@@ -289,6 +300,11 @@
   font-size: 1.2em;
 }
 
+#processes .process.date #numbers .inputs em {
+  color:#333;
+  font-size: 0.8em;
+}
+
 #processes .process.date #numbers .inputs select {
   height: 30px;
   width: 80px;
@@ -331,6 +347,10 @@
   margin: 5px;
   height: 20px;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
 }
 
 .contentsWrap #reservationInfo .reserveInfo .selected {

@@ -187,22 +187,32 @@
 
 .container .detailsWrap .details .detailsTab {
   position: relative;
+  height: 30px;
+  line-height: 30px;
 }
 
 .container .detailsWrap .details .detailsTab .more {
   position: absolute;
-  top:0;
-  right:0;
+  bottom:0;
+  right:50px;
   cursor: pointer;
+  border: 1px solid #888;
+  display: block;
+  padding:0 5px;
+  margin-bottom: -10px;
 }
 
 .container .detailsWrap .details .detailsTab>p {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.2em;
   float:left;
   border-bottom:1px solid #888;
   padding-bottom: 20px;
   width:100%;
+}
+
+.container .detailsWrap .details .story {
+  margin-bottom: 50px;
 }
 
 .container .detailsWrap .details .story .detailsTab>p {
@@ -225,6 +235,10 @@
  line-height: 2em;
 }
 
+.container .detailsWrap .details .shortActorDirector {
+  margin-bottom: 50px;
+}
+
 .container .detailsWrap .details .shortActorDirector ul {
   clear:both;
   padding-top: 20px;
@@ -244,6 +258,26 @@
 .container .detailsWrap .details .shortActorDirector ul li .picture {
   width:140px;
   height:175px;
+}
+
+.container .detailsWrap .details .shortActorDirector .director .name {
+  font-weight: bold;
+}
+
+.container .detailsWrap .details .shortActorDirector .actor .name {
+  font-weight: bold;
+}
+
+.container .detailsWrap .details .shortActorDirector .director .role {
+  font-size: 0.9em;
+}
+
+.container .detailsWrap .details .shortActorDirector .actor .role {
+  font-size: 0.9em;
+}
+
+.container .detailsWrap .details .shortRatings{
+
 }
 
 .container .detailsWrap .details .shortRatings .grades {

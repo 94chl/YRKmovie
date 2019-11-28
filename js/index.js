@@ -104,7 +104,6 @@ $(document).ready(function(){
     });
     $(function() {
       currentMovies.sort(function(a, b){return new Date(b.release) - new Date(a.release)});
-      console.log(currentMovies);
       for(i = 0; i < $('.slider.slide2 .listWrap:nth-child(1) .slideList').length; i++) {
         $('.slider.slide2 .slideList:nth-child('+(i+1)+') > .listClickMenu').attr('title', currentMovies[i].title);
         $('.slider.slide2 .slideList:nth-child('+(i+1)+') > img').attr('src', currentMovies[i].poster);
@@ -114,7 +113,6 @@ $(document).ready(function(){
 
     $(function() {
       preMovie.sort(function(a, b){return new Date(b.release) - new Date(a.release)});
-      console.log(preMovie);
       for(i = 0; i < $('.slider.slide3 .listWrap:nth-child(1) .slideList').length; i++) {
         $('.slider.slide3 .slideList:nth-child('+(i+1)+') > .listClickMenu').attr('title', preMovie[i].title);
         $('.slider.slide3 .slideList:nth-child('+(i+1)+') > img').attr('src', preMovie[i].poster);
@@ -124,7 +122,6 @@ $(document).ready(function(){
 
     $(function() {
       currentMovies.sort(function(a, b){return b.point - a.point});
-      console.log(currentMovies);
       for(i = 0; i < $('.slider.slide4 .listWrap:nth-child(1) .slideList').length; i++) {
         $('.slider.slide4 .slideList:nth-child('+(i+1)+') > .listClickMenu').attr('title', currentMovies[i].title)
         $('.slider.slide4 .slideList:nth-child('+(i+1)+') > img').attr('src', currentMovies[i].poster)
@@ -139,6 +136,7 @@ $(document).ready(function(){
       $('.reviewList:nth-child('+(u+1)+') .miniTitle .rateYo').text(random[u].point);
       $('.reviewList:nth-child('+(u+1)+') .miniTitle .miniPoint').text(random[u].point+" / 10");
       $('.trailer .trailerList:nth-child('+(u+1)+')').addClass(random[u].video);
+      $('.trailer .trailerList:nth-child('+(u+1)+')').text(random[u].title);
     }
     $('.miniTitle .rateYo').each(function(){
       $(this).rateYo({
@@ -148,14 +146,13 @@ $(document).ready(function(){
       })
     })
     $('.trailer .trailerList').each(function() {
-      $(this).append('<button type="button"><img src="http://img.youtube.com/vi/' +$(this)[0].classList[1]+ '/sddefault.jpg" height="100%" alt="video" id="'+$(this)[0].classList[1]+'"></button>');
+      var title = $(this).text();
+      $(this).text("");
+      $(this).append('<button type="button"><img src="http://img.youtube.com/vi/' +$(this)[0].classList[1]+ '/sddefault.jpg" height="100%" alt="video" id="'+$(this)[0].classList[1]+'"></button><div class="videoTitle"><a href="./movieDetail/main.html">'+title+'</a></div>');
     })
   });//getJSON
 
-  $(document).on('click', '.trailer .trailerList', function() {
-    console.log($(this).find('img').attr("id"))
-    // var movieName = $(this).find('img').attr("id");
-    // sessionStorage.setItem("selectedMovie", movieName);
+  $(document).on('click', '.trailer .trailerList>a', function() {
     $('.player .playerWrap iframe').attr('src', 'https://www.youtube.com/embed/'+$(this).find('img').attr("id"));
     $('.player').addClass('open');
   })
@@ -203,6 +200,11 @@ $(document).ready(function(){
 
   $(document).on('click', '.reviewList a', function() {
     var movieName = $(this).parents('.reviewList').find('.miniTitle>div:first-child').text();
+    sessionStorage.setItem("selectedMovie", movieName);
+  })
+
+  $(document).on('click', '.videoTitle>a', function() {
+    var movieName = $(this).text();
     sessionStorage.setItem("selectedMovie", movieName);
   })
 });
