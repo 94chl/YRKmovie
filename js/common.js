@@ -19,6 +19,14 @@ $(document).ready(function() {
   $('#topBtn').on('click', function() {
     $(window).scrollTop(0);
   });
-  var newWindowIcon = '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
-  $('header a[target="_blank"]').append(newWindowIcon)
+  $(function() {
+    var newWindowIcon="";
+    if($('.indexPage')) {
+      newWindowIcon = newWindowIcon + '<img src="./img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
+    } else {
+      newWindowIcon = newWindowIcon + '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">;
+    }
+    $('header a[target="_blank"]').append(newWindowIcon)
+  })
+
 })
