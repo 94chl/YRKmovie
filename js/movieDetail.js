@@ -25,6 +25,7 @@ $(document).ready(function(){
         var number =0;
         $('.outlineWrap .poster img').attr('src', this.poster);
         $('.outlineWrap .title').text(this.title);
+        $('.outlineWrap .aka').text('(a.k.a '+this.aka+')');
         var genres = "";
         for(o=0; o<this.genre.length;o++) {
           genres = genres + this.genre[o]+ " ";
@@ -153,6 +154,7 @@ $(document).ready(function(){
 
   $(".addReviewBtn").on('click', function() {
     $("form.addReview").show();
+    $("form.addReview .addReviewTitle").text(title);
   });
 
   $('.cancleBtn').on('click', function() {
@@ -187,7 +189,8 @@ $(document).ready(function(){
         tension: $('.question.tension input:radio:checked').val(),
         spoiler: $('.question.spoiler input:radio:checked').val(),
         writer: "임시 사용자",
-        userId: "test"
+        userId: "test",
+        like:0
       };
       //로그인시스템 미구현으로 userId, writer는 임시값
       sessionStorage.setItem("reviews", JSON.stringify(newReview));

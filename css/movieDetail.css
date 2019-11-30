@@ -111,6 +111,13 @@
   line-height: 60px;
   font-weight: bold;
   font-size: 18px;
+  float: left;
+}
+
+.container .outlineWrap .aka {
+  height: 60px;
+  line-height: 60px;
+  color:#888;
 }
 
 .container .outlineWrap .outline {
@@ -346,6 +353,126 @@
 
 .container .detailsWrap .details .shortRatings .likeWrap {
   display: none;
+}
+
+.container .detailsWrap .details .shortRatings .addReviewBtn {
+  height: 35px;
+  line-height: 35px;
+  float: right;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.container .detailsWrap .details .shortRatings .addReview {
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -300px;
+  margin-top: -375px;
+  z-index: 50;
+  background: #fff;
+  width: 600px;
+  height: 750px;
+  display: none;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .addReviewTab {
+  width:100%;
+  height:30px;
+  line-height:30px;
+  text-indent: 10px;
+  color:#fff;
+  background: #000;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .addReviewTitle {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview em {
+  color:#777;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question {
+  width:550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  border-top:1px solid #ddd;
+  padding-top:10px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question .starRating {
+  width:270px;
+  margin: 0 auto;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question #rateYo {
+  float: left;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question #minbeds {
+  float: left;
+  height: 20px;
+  width: 70px;
+  margin-left: 30px;
+  top: 50%;
+  margin-top:5px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question.slider em {
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question .ui-slider {
+  width:300px;
+  height: 18px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .question .ui-slider .ui-slider-handle {
+  background: #000;
+  height: 24px;
+  width: 24px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview textarea {
+  resize:none;
+  overflow-y: scroll;
+  width: 100%;
+  border: none;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .textCheck {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .textCheck em{
+  color:#000fff;
+  font-weight: bold;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .btnWrap {
+  width:550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .detailsWrap .details .shortRatings .addReview .btnWrap button {
+  border:1px solid #000;
+  width:100px;
+  height:50px;
+  line-height: 50px;
+  cursor: pointer;
 }
 
 /*crew*/
