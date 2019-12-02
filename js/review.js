@@ -253,9 +253,7 @@ $(document).ready(function(){
   });
 
   $(document).on('click', '.dateBtn', function() {
-    console.log('date')
-    var selected = $('.movieSelect .movieTitle>input').val();
-    console.log(selected);
+    var selected = $('.movieSelect .movieTitle>input:checked').val();
     $('.reviewWrap .reviews .review').remove();
     selectedReview.length = 0;
 
@@ -316,9 +314,7 @@ $(document).ready(function(){
   })
 
   $(document).on('click', '.likeBtn', function() {
-    console.log('like');
-    var selected = $('.movieSelect .movieTitle>input').val();
-    console.log(selected);
+    var selected = $('.movieSelect .movieTitle>input:checked').val();
     $('.reviewWrap .reviews .review').remove();
     selectedReview.length = 0;
 
