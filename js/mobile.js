@@ -225,7 +225,7 @@ $(document).ready(function(){
         $('.outlineWrap .release').text(this.release);
         var leadingActors = "";
         for(i=0; i<this.actor.leading.length; i++) {
-          leadingActors = leadingActors + this.actor.leading[0].name + " ";
+          leadingActors = leadingActors + this.actor.leading[i].name + " ";
         }
         var director = "";
         for(u=0; u<this.director.length; u++) {
