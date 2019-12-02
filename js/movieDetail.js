@@ -25,7 +25,9 @@ $(document).ready(function(){
         var number =0;
         $('.outlineWrap .poster img').attr('src', this.poster);
         $('.outlineWrap .title').text(this.title);
-        $('.outlineWrap .aka').text('(a.k.a '+this.aka+')');
+        if(this.aka != "") {
+          $('.outlineWrap .aka').text('(a.k.a '+this.aka+')');
+        }
         var genres = "";
         for(o=0; o<this.genre.length;o++) {
           genres = genres + this.genre[o]+ " ";
