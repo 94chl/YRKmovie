@@ -261,6 +261,7 @@ $(document).on('click', '.videoWrap .video', function() {
 })
 
 $('.player .closeBtn').on('click', function() {
+  $(this).siblings('.playerWrap').find('iframe').attr('src', 'https://www.youtube.com/embed/');
   $('.player').removeClass('open');
 })
 
