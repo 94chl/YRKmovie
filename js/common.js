@@ -21,7 +21,7 @@ $(document).ready(function() {
   });
   $(function() {
     var newWindowIcon="";
-    if($('.indexPage')) {
+    if($('.indexPage')>0) {
       newWindowIcon = newWindowIcon + '<img src="./img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
     } else {
       newWindowIcon = newWindowIcon + '<img src="../img/newWindow.png" alt="newWindowIcon" class="newWindowIcon">';
