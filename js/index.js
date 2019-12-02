@@ -152,7 +152,7 @@ $(document).ready(function(){
     })
   });//getJSON
 
-  $(document).on('click', '.trailer .trailerList>a', function() {
+  $(document).on('click', '.trailer .trailerList>button', function() {
     $('.player .playerWrap iframe').attr('src', 'https://www.youtube.com/embed/'+$(this).find('img').attr("id"));
     $('.player').addClass('open');
   })
