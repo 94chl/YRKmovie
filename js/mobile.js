@@ -196,7 +196,7 @@ $(document).ready(function(){
   });
 
   $(document).on('click', '.reviewList a', function() {
-    var movieName = $(this).parents('.reviewList').find('.miniTitle>div:first-child').text();
+    var movieName = $(this).parents('.reviewList').find('.miniTitle>a').text();
     sessionStorage.setItem("selectedMovie", movieName);
   });
 
